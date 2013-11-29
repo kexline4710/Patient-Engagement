@@ -1,6 +1,6 @@
 require 'spec_helper.rb'
 
-describe ParticipantModel do
+describe Participant do
 	let(:participant) {FactoryGirl.build(:participant)}
 
 	describe "email address" do 
