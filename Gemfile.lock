@@ -56,6 +56,9 @@ GEM
     execjs (2.0.2)
     factory_girl (4.3.0)
       activesupport (>= 3.0.0)
+    factory_girl_rails (4.3.0)
+      factory_girl (~> 4.3.0)
+      railties (>= 3.0.0)
     hike (1.2.3)
     i18n (0.6.5)
     journey (1.0.4)
@@ -151,7 +154,7 @@ DEPENDENCIES
   capybara
   coffee-rails (~> 3.2.1)
   coveralls
-  factory_girl
+  factory_girl_rails
   jquery-rails
   pg
   rails (= 3.2.15)

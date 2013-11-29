@@ -25,7 +25,7 @@ gem 'jquery-rails'
 group :development, :test do
 	gem 'rspec-rails'
 	gem 'coveralls', require: false
-	gem 'factory_girl'
+	gem 'factory_girl_rails'
 	gem 'capybara'
 	gem 'shoulda-matchers'
 end
