@@ -25,6 +25,8 @@ gem 'jquery-rails'
 group :development, :test do
 	gem 'rspec-rails'
 	gem 'coveralls', require: false
+	gem 'factory_girl'
+	gem 'capybara'
 end
 
 # To use ActiveModel has_secure_password
