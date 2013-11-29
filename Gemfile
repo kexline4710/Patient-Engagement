@@ -27,6 +27,7 @@ group :development, :test do
 	gem 'coveralls', require: false
 	gem 'factory_girl'
 	gem 'capybara'
+	gem 'shoulda-matchers'
 end
 
 # To use ActiveModel has_secure_password
