@@ -24,13 +24,13 @@ gem 'jquery-rails'
 
 group :development, :test do
 	gem 'rspec-rails'
+	gem 'coveralls', require: false
 end
 
 # To use ActiveModel has_secure_password
 gem 'bcrypt-ruby', '~> 3.0.0'
 
 # Install Coveralls
-gem 'coveralls', require: false
 
 # To use Jbuilder templates for JSON
 # gem 'jbuilder'
