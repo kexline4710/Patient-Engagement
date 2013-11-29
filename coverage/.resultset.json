@@ -200,13 +200,21 @@
         1,
         1,
         null,
-        1,
-        null,
-        null,
         null
       ],
       "/Users/alexfroelich/Desktop/patient_engagement/app/helpers/application_helper.rb": [
         1,
+        null
+      ],
+      "/Users/alexfroelich/Desktop/patient_engagement/app/controllers/participants_controller.rb": [
+        1,
+        null,
+        1,
+        null,
+        null,
+        1,
+        null,
+        null,
         null
       ],
       "/Users/alexfroelich/Desktop/patient_engagement/app/models/participant.rb": [
@@ -218,6 +226,14 @@
         1,
         1,
         1,
+        null
+      ],
+      "/Users/alexfroelich/Desktop/patient_engagement/app/controllers/sessions_controller.rb": [
+        1,
+        null,
+        1,
+        null,
+        null,
         null
       ],
       "/Users/alexfroelich/Desktop/patient_engagement/spec/factories/user.rb": [
@@ -235,7 +251,11 @@
       ],
       "/Users/alexfroelich/Desktop/patient_engagement/config/routes.rb": [
         1,
+        null,
         1,
+        null,
+        1,
+        null,
         null,
         null,
         null,
@@ -313,6 +333,6 @@
         null
       ]
     },
-    "timestamp": 1385765609
+    "timestamp": 1385769097
   }
 }
