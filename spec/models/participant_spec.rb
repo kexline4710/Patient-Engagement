@@ -1,7 +1,7 @@
 require 'spec_helper.rb'
 
 describe Participant do
-	participant = FactoryGirl.build(:participant)
+	let(:participant) {FactoryGirl.build(:participant) }
 	describe "validations" do 
 		it {should validate_presence_of(:email)}
 		it {should validate_uniqueness_of(:email)}
@@ -40,7 +40,6 @@ describe Participant do
   #     expect(participant.questions).to eq([test_question])
   #   end 
   # end
-
 
 end
 
