@@ -13,7 +13,7 @@ p2.save
 p3 = Participant.new(first_name: "Clay", last_name: "Lyons", email: "c@dbc.com", password: "password" )
 p3.save
 
-# p1.questions.create(title: "Question no. 1", content: "What do you think of my first question?")
-# p1.questions.create(title: "Question no. 2", content: "What do you think of my second question?")
-# p2.questions.create(title: "Question no. 1", content: "What do you think of my first question?")
+p1.questions.create(title: "Question no. 1", content: "What do you think of my first question?")
+p1.questions.create(title: "Question no. 2", content: "What do you think of my second question?")
+p2.questions.create(title: "Question no. 1", content: "What do you think of my first question?")
 
