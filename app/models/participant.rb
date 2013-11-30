@@ -10,13 +10,11 @@ class Participant < ActiveRecord::Base
 
   def self.authenticate_participant(password, email)
 		participant = Participant.find_by_email(email)
-			if particpant 
-				
-
-
-			end
-
-
+		if participant
+		end
 	end
+
+
+	
 
 end

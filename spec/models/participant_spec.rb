@@ -1,8 +1,7 @@
 require 'spec_helper.rb'
 
 describe Participant do
-	let(:participant) {FactoryGirl.build(:participant)}
-
+	let(:participant) {FactoryGirl.create(:participant)}
 	describe "validations" do 
 		it {should validate_presence_of(:email)}
 		it {should validate_uniqueness_of(:email)}
@@ -16,8 +15,9 @@ describe Participant do
 	end
 
 	describe "authenticate accepts two parameters" do
-		it "should raise an ArgumentError error if no param eters are passed" do
-			expect { participant.authenticate }.to raise_error(ArgumentError)
+		subject {Participant}
+		it "should raise an ArgumentError error if no parameters are passed" do
+			expect { Participant.authenticate_participant }.to raise_error(ArgumentError)
 		end
 	end
 
