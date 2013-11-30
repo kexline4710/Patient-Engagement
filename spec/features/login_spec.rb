@@ -34,9 +34,11 @@ describe "Authentication" do
       fill_in "Email",    with: participant.email
       fill_in "Password", with: participant.password
       click_button "Login"
-      save_and_open_page
     end
 
     it { should have_content('Welcome') }
+  end
+
+  describe "allows a participant to login to their account" do
   end
 end
