@@ -1,6 +1,6 @@
 require 'spec_helper'
 
-describe "Participant submits questions" do
+describe "Participant submits question" do
 
   describe "with complete information" do
     let(:question) { FactoryGirl.create(:question) }
