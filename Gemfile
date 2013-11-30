@@ -30,7 +30,6 @@ group :development, :test do
 	gem 'shoulda-matchers'
 	gem 'debugger'
   gem 'launchy'
-
 end
 
 # To use ActiveModel has_secure_password
