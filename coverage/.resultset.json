@@ -1,14 +1,14 @@
 {
   "RSpec": {
     "coverage": {
-      "/Users/apprentice/Desktop/patientengagement/config/environment.rb": [
+      "/Users/alexfroelich/Desktop/patient_engagement/config/environment.rb": [
         null,
         1,
         null,
         null,
         1
       ],
-      "/Users/apprentice/Desktop/patientengagement/config/application.rb": [
+      "/Users/alexfroelich/Desktop/patient_engagement/config/application.rb": [
         1,
         null,
         null,
@@ -81,7 +81,7 @@
         null,
         null
       ],
-      "/Users/apprentice/Desktop/patientengagement/config/boot.rb": [
+      "/Users/alexfroelich/Desktop/patient_engagement/config/boot.rb": [
         1,
         null,
         null,
@@ -89,7 +89,7 @@
         null,
         1
       ],
-      "/Users/apprentice/Desktop/patientengagement/config/environments/test.rb": [
+      "/Users/alexfroelich/Desktop/patient_engagement/config/environments/test.rb": [
         1,
         null,
         null,
@@ -128,7 +128,7 @@
         1,
         null
       ],
-      "/Users/apprentice/Desktop/patientengagement/config/initializers/backtrace_silencers.rb": [
+      "/Users/alexfroelich/Desktop/patient_engagement/config/initializers/backtrace_silencers.rb": [
         null,
         null,
         null,
@@ -137,7 +137,7 @@
         null,
         null
       ],
-      "/Users/apprentice/Desktop/patientengagement/config/initializers/inflections.rb": [
+      "/Users/alexfroelich/Desktop/patient_engagement/config/initializers/inflections.rb": [
         null,
         null,
         null,
@@ -154,14 +154,14 @@
         null,
         null
       ],
-      "/Users/apprentice/Desktop/patientengagement/config/initializers/mime_types.rb": [
+      "/Users/alexfroelich/Desktop/patient_engagement/config/initializers/mime_types.rb": [
         null,
         null,
         null,
         null,
         null
       ],
-      "/Users/apprentice/Desktop/patientengagement/config/initializers/secret_token.rb": [
+      "/Users/alexfroelich/Desktop/patient_engagement/config/initializers/secret_token.rb": [
         null,
         null,
         null,
@@ -170,7 +170,7 @@
         null,
         1
       ],
-      "/Users/apprentice/Desktop/patientengagement/config/initializers/session_store.rb": [
+      "/Users/alexfroelich/Desktop/patient_engagement/config/initializers/session_store.rb": [
         null,
         null,
         1,
@@ -180,7 +180,7 @@
         null,
         null
       ],
-      "/Users/apprentice/Desktop/patientengagement/config/initializers/wrap_parameters.rb": [
+      "/Users/alexfroelich/Desktop/patient_engagement/config/initializers/wrap_parameters.rb": [
         null,
         null,
         null,
@@ -196,55 +196,75 @@
         1,
         null
       ],
-      "/Users/apprentice/Desktop/patientengagement/app/controllers/application_controller.rb": [
+      "/Users/alexfroelich/Desktop/patient_engagement/app/controllers/application_controller.rb": [
         1,
         1,
         null,
         null
       ],
-      "/Users/apprentice/Desktop/patientengagement/app/helpers/application_helper.rb": [
+      "/Users/alexfroelich/Desktop/patient_engagement/app/helpers/application_helper.rb": [
         1,
+        null,
+        1,
+        null,
+        8,
+        8,
+        null,
+        null,
+        1,
+        1,
+        1,
+        null,
+        0,
+        null,
+        null,
         null
       ],
-      "/Users/apprentice/Desktop/patientengagement/app/controllers/coordinator_controller.rb": [
+      "/Users/alexfroelich/Desktop/patient_engagement/app/controllers/coordinator_controller.rb": [
         1,
         null,
-        1,
-        null,
-        null,
-        null
-      ],
-      "/Users/apprentice/Desktop/patientengagement/app/models/coordinator.rb": [
-        1,
-        1,
-        null,
-        1,
-        1,
-        1,
-        1,
-        null
-      ],
-      "/Users/apprentice/Desktop/patientengagement/app/controllers/participants_controller.rb": [
-        1,
-        null,
-        1,
-        null,
-        null,
-        1,
-        null,
-        null,
-        1,
-        null,
-        1,
         1,
         null,
         null,
         null
       ],
-      "/Users/apprentice/Desktop/patientengagement/app/models/participant.rb": [
+      "/Users/alexfroelich/Desktop/patient_engagement/app/models/coordinator.rb": [
+        1,
+        1,
+        null,
+        1,
+        5,
+        null,
         1,
         1,
         1,
+        1,
+        null
+      ],
+      "/Users/alexfroelich/Desktop/patient_engagement/app/controllers/participants_controller.rb": [
+        1,
+        1,
+        null,
+        1,
+        null,
+        null,
+        1,
+        null,
+        null,
+        1,
+        null,
+        1,
+        null,
+        null,
+        null
+      ],
+      "/Users/alexfroelich/Desktop/patient_engagement/app/models/participant.rb": [
+        1,
+        1,
+        null,
+        1,
+        1,
+        5,
         null,
         null,
         1,
@@ -254,7 +274,7 @@
         null,
         null
       ],
-      "/Users/apprentice/Desktop/patientengagement/app/controllers/questions_controller.rb": [
+      "/Users/alexfroelich/Desktop/patient_engagement/app/controllers/questions_controller.rb": [
         1,
         null,
         1,
@@ -269,14 +289,15 @@
         null,
         null
       ],
-      "/Users/apprentice/Desktop/patientengagement/app/models/question.rb": [
+      "/Users/alexfroelich/Desktop/patient_engagement/app/models/question.rb": [
         1,
         1,
         null,
         1,
         null
       ],
-      "/Users/apprentice/Desktop/patientengagement/app/controllers/sessions_controller.rb": [
+      "/Users/alexfroelich/Desktop/patient_engagement/app/controllers/sessions_controller.rb": [
+        1,
         1,
         null,
         1,
@@ -300,28 +321,8 @@
         null,
         null
       ],
-      "/Users/apprentice/Desktop/patientengagement/spec/factories/coordinators.rb": [
+      "/Users/alexfroelich/Desktop/patient_engagement/spec/factories/coordinators.rb": [
         null,
-        1,
-        1,
-        1,
-        1,
-        null,
-        null
-      ],
-      "/Users/apprentice/Desktop/patientengagement/spec/factories/questions.rb": [
-        null,
-        null,
-        1,
-        1,
-        null,
-        null
-      ],
-      "/Users/apprentice/Desktop/patientengagement/spec/factories/user.rb": [
-        1,
-        1,
-        1,
-        1,
         1,
         1,
         1,
@@ -330,7 +331,28 @@
         null,
         null
       ],
-      "/Users/apprentice/Desktop/patientengagement/config/routes.rb": [
+      "/Users/alexfroelich/Desktop/patient_engagement/spec/factories/questions.rb": [
+        null,
+        null,
+        1,
+        1,
+        null,
+        null
+      ],
+      "/Users/alexfroelich/Desktop/patient_engagement/spec/factories/user.rb": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        null,
+        null
+      ],
+      "/Users/alexfroelich/Desktop/patient_engagement/config/routes.rb": [
         1,
         null,
         1,
@@ -401,7 +423,7 @@
         null,
         null
       ],
-      "/Users/apprentice/Desktop/patientengagement/spec/controllers/session_spec.rb": [
+      "/Users/alexfroelich/Desktop/patient_engagement/spec/controllers/session_spec.rb": [
         1,
         null,
         1,
@@ -436,7 +458,7 @@
         null,
         null
       ],
-      "/Users/apprentice/Desktop/patientengagement/spec/features/login_spec.rb": [
+      "/Users/alexfroelich/Desktop/patient_engagement/spec/features/login_spec.rb": [
         1,
         null,
         1,
@@ -472,10 +494,10 @@
         null,
         null
       ],
-      "/Users/apprentice/Desktop/patientengagement/spec/helpers/application_helper_spec.rb": [
+      "/Users/alexfroelich/Desktop/patient_engagement/spec/helpers/application_helper_spec.rb": [
 
       ],
-      "/Users/apprentice/Desktop/patientengagement/spec/models/coordinator_spec.rb": [
+      "/Users/alexfroelich/Desktop/patient_engagement/spec/models/coordinator_spec.rb": [
         1,
         null,
         1,
@@ -489,7 +511,7 @@
         null,
         null
       ],
-      "/Users/apprentice/Desktop/patientengagement/spec/models/participant_spec.rb": [
+      "/Users/alexfroelich/Desktop/patient_engagement/spec/models/participant_spec.rb": [
         1,
         null,
         1,
@@ -510,7 +532,7 @@
         null,
         null
       ],
-      "/Users/apprentice/Desktop/patientengagement/spec/models/question_spec.rb": [
+      "/Users/alexfroelich/Desktop/patient_engagement/spec/models/question_spec.rb": [
         1,
         null,
         1,
@@ -520,6 +542,5 @@
         null
       ]
     },
-    "timestamp": 1385845439
   }
 }

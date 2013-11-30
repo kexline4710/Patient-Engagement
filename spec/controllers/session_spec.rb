@@ -10,7 +10,7 @@ describe SessionsController do
       it "should redirect to participant#show upon authentication" do
         post :create, :session => { :email => participant.email, :password => participant.password }
 
-        response.should redirect_to "/participants/#{participant.id}"
+        response.should redirect_to "/participants/#{participant.authenticity_token}"
       end
       it "should not authenticate particpant's invalid password" do
         post :create, :session => { :email => participant.email, :password => "invalid" }
@@ -22,7 +22,7 @@ describe SessionsController do
       it "should redirect to coordinator#show upon authentication" do
         post :create, :session => {:email => coordinator.email, :password => coordinator.password }
 
-        response.should redirect_to "/coordinators/#{coordinator.id}"
+        response.should redirect_to "/coordinators/#{coordinator.authenticity_token}"
       end
       it "should not authenticate coordinator's invalid password" do
         post :create, :session => {:email => coordinator.email, :password => "invalid"}
