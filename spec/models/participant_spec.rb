@@ -8,6 +8,11 @@ describe Participant do
 		it {should validate_presence_of(:password)}
 		it {should have_secure_password}
 	end
+
+	describe "associations" do
+		it { should have_many(:questions)}
+	end
+
 end
 
 
