@@ -216,8 +216,10 @@
         null,
         null,
         1,
+        null,
         2,
-        2,
+        null,
+        1,
         null,
         null,
         null
@@ -248,7 +250,7 @@
       ],
       "/Users/apprentice/Desktop/patientengagement/app/models/question.rb": [
         1,
-        null,
+        1,
         null
       ],
       "/Users/apprentice/Desktop/patientengagement/app/controllers/sessions_controller.rb": [
@@ -373,6 +375,36 @@
         null,
         null
       ],
+      "/Users/apprentice/Desktop/patientengagement/spec/controllers/participants_controller_spec.rb": [
+
+      ],
+      "/Users/apprentice/Desktop/patientengagement/spec/features/coordinator_login_spec.rb": [
+        1,
+        null,
+        1,
+        null,
+        2,
+        null,
+        1,
+        2,
+        2,
+        null,
+        null,
+        1,
+        2,
+        1,
+        1,
+        null,
+        1,
+        1,
+        1,
+        1,
+        null,
+        1,
+        null,
+        null,
+        null
+      ],
       "/Users/apprentice/Desktop/patientengagement/spec/features/login_spec.rb": [
         1,
         null,
@@ -472,11 +504,11 @@
         null,
         null,
         null,
-        1,
-        2,
         null,
-        1,
-        1,
+        null,
+        null,
+        null,
+        null,
         null,
         null,
         null,
@@ -494,6 +526,6 @@
         null
       ]
     },
-    "timestamp": 1385835990
+    "timestamp": 1385837931
   }
 }
