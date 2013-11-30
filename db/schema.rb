@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20131130170837) do
+ActiveRecord::Schema.define(:version => 20131130181049) do
 
   create_table "coordinators", :force => true do |t|
     t.string   "email"
@@ -33,8 +33,11 @@ ActiveRecord::Schema.define(:version => 20131130170837) do
   end
 
   create_table "questions", :force => true do |t|
-    t.datetime "created_at", :null => false
-    t.datetime "updated_at", :null => false
+    t.integer  "participant_id"
+    t.string   "title"
+    t.text     "content"
+    t.datetime "created_at",     :null => false
+    t.datetime "updated_at",     :null => false
   end
 
 end

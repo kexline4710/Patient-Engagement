@@ -1,4 +1,3 @@
 class Question < ActiveRecord::Base
-  belongs_to :participant
-
+  # attr_accessible :title, :body
 end

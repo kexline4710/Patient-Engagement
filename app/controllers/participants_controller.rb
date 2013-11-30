@@ -7,7 +7,7 @@ class ParticipantsController < ApplicationController
 	end
 
   def show
-    @test = "test"
+    
   end
 
 end
