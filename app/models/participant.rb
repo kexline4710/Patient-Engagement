@@ -1,5 +1,5 @@
 class Participant < ActiveRecord::Base
-  attr_accessible :email, :password_digest
+  attr_accessible :email, :password_digest, :first_name, :last_name, :password
   has_many :questions
   
 

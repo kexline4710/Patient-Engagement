@@ -33,13 +33,13 @@ describe Participant do
 		end
 	end
 
-  describe "#questions" do
-    let(:test_question) {FactoryGirl.create(:question, participant_id: participant.id)}
+  # describe "#questions" do
+  #   let(:test_question) {FactoryGirl.create(:question, participant_id: participant.id)}
     
-    it "returns all of a participant's questions" do
-      expect(participant.questions).to eq([test_question])
-    end 
-  end
+  #   it "returns all of a participant's questions" do
+  #     expect(participant.questions).to eq([test_question])
+  #   end 
+  # end
 
 
 end

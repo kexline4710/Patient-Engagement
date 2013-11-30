@@ -7,7 +7,9 @@ class ParticipantsController < ApplicationController
 	end
 
   def show
-    current_user = Participant.create(email: "p@dbc.com", password_digest: "password")
+    # want to take this line out as soon as current_user is implemented
+    current_user = Participant.find(1)
+    
     @questions = current_user.questions.all
   end
 
