@@ -1,5 +1,6 @@
 class SessionsController < ApplicationController
   include ApplicationHelper
+  before_filter :first_time_visiting?
 
 	def new
 	end
