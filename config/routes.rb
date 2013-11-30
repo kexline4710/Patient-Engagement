@@ -9,7 +9,11 @@ PatientEngagement::Application.routes.draw do
 
   resources :coordinators
 
+
   resources :questions
+
+  resources :password_resets, only: [:new, :edit, :update, :create]
+
 
   # The priority is based upon order of creation:
   # first created -> highest priority.
