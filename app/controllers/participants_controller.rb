@@ -6,4 +6,8 @@ class ParticipantsController < ApplicationController
 	def create
 	end
 
+  def show
+    @test = "test"
+  end
+
 end

@@ -29,6 +29,15 @@ describe Participant do
 		end
 	end
 
+  describe "#questions" do
+    let(:test_question) {FactoryGirl.build(:question, participant_id: participant.id)}
+    
+    it "returns all of a participant's questions" do
+      expect(participant.questions).to eq([test_question])
+    end 
+  end
+
+
 end
 
 
