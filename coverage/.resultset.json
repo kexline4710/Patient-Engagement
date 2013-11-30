@@ -237,9 +237,29 @@
         null,
         1,
         null,
+        2,
+        null,
+        null,
+        null,
+        null
+      ],
+      "/Users/Claylyons/Desktop/patient_engagement/app/models/coordinator.rb": [
+        1,
         1,
         null,
+        1,
+        1,
+        1,
+        1,
+        null
+      ],
+      "/Users/Claylyons/Desktop/patient_engagement/spec/factories/coordinators.rb": [
         null,
+        null,
+        1,
+        1,
+        1,
+        1,
         null,
         null
       ],
@@ -323,6 +343,64 @@
         null,
         null
       ],
+      "/Users/Claylyons/Desktop/patient_engagement/spec/features/login_spec.rb": [
+        1,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        1,
+        null,
+        3,
+        null,
+        1,
+        2,
+        2,
+        null,
+        null,
+        null,
+        1,
+        2,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        null,
+        null,
+        2,
+        null,
+        null
+      ],
+      "/Users/Claylyons/Desktop/patient_engagement/spec/models/coordinator_spec.rb": [
+        1,
+        null,
+        1,
+        1,
+        null,
+        1,
+        2,
+        2,
+        2,
+        2,
+        null,
+        null
+      ],
       "/Users/Claylyons/Desktop/patient_engagement/spec/models/participant_spec.rb": [
         1,
         null,
@@ -342,6 +420,6 @@
         null
       ]
     },
-    "timestamp": 1385776006
+    "timestamp": 1385827082
   }
 }
