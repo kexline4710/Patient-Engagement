@@ -3,6 +3,7 @@ PatientEngagement::Application.routes.draw do
   root :to => "sessions#new"
 
   post 'login' => 'sessions#create'
+  post 'logout' => 'sessions#destroy'
 
   resources :participants
 
