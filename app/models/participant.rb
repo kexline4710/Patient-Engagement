@@ -1,5 +1,6 @@
 class Participant < ActiveRecord::Base
   attr_accessible :email, :password_digest
+  has_many :questions
   
 
   validates :email, :presence => true

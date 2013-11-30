@@ -11,7 +11,17 @@
     <div class="col-md-8">
       <h1>Welcome</h1>
             
-      <h2>Your Questions</h2>  
+      <h2>Your Questions</h2> 
+      <% if @questions.length == 0 %>
+        <div>These are the instructions for you to ask a question.</div> 
+      <% else %>
+        <% @questions.each do |question| %>
+          <div>
+            <div><%= question.title %></div>
+            <div><%= question.content %></div>
+        </div> <!-- closes question and answer block-->
+        <% end %>
+      <% end %> 
     </div> <!-- closes content div-->
 
     <div class="col-md-4">

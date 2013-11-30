@@ -9,6 +9,10 @@ describe Participant do
 		it {should have_secure_password}
 	end
 
+	describe "associations" do
+		it { should have_many(:questions)}
+	end
+
 	describe "authenticate is defined" do
 		subject {Participant}
 		it {should respond_to :authenticate_participant }
@@ -30,7 +34,7 @@ describe Participant do
 	end
 
   describe "#questions" do
-    let(:test_question) {FactoryGirl.build(:question, participant_id: participant.id)}
+    let(:test_question) {FactoryGirl.create(:question, participant_id: participant.id)}
     
     it "returns all of a participant's questions" do
       expect(participant.questions).to eq([test_question])
