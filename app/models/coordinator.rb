@@ -1,5 +1,8 @@
 class Coordinator < ActiveRecord::Base
-  attr_accessible :email, :password_digest
+	include ApplicationHelper
+	
+  attr_accessible :email, :password_digest, :authenticity_token
+  before_create {generate_token(:authenticity_token)}
 
   validates :email, :presence => true
   validates :email, :uniqueness => true
