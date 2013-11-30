@@ -1,6 +1,9 @@
 class Participant < ActiveRecord::Base
-  attr_accessible :email, :password_digest, :first_name, :last_name, :password
+	include ApplicationHelper
+
+  attr_accessible :email, :password_digest, :first_name, :last_name, :password, :authenticity_token
   has_many :questions
+  before_create { generate_token(:authenticity_token) }
   
 
   validates :email, :presence => true

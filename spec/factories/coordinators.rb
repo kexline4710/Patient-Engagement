@@ -1,7 +1,8 @@
 # Read about factories at https://github.com/thoughtbot/factory_girl
 FactoryGirl.define do
-  factory :coordinator do
-    email "coor@smo.com"
-    password "talidaga"
+  factory :coordinator do |f|
+   f.email "coor@smo.com"
+   f.password "talidaga"
+   f.authenticity_token "abc123"
   end
 end
