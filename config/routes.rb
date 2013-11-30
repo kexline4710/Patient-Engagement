@@ -3,10 +3,13 @@ PatientEngagement::Application.routes.draw do
   root :to => "sessions#new"
 
   post 'login' => 'sessions#create'
+  post 'logout' => 'sessions#destroy'
 
   resources :participants
 
   resources :coordinators
+
+  resources :questions
 
   # The priority is based upon order of creation:
   # first created -> highest priority.
