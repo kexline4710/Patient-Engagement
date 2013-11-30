@@ -6,4 +6,17 @@ class Participant < ActiveRecord::Base
   validates :email, :uniqueness => true
   validates :password, :presence => true
   has_secure_password
+
+
+  def self.authenticate_participant(password, email)
+		participant = Participant.find_by_email(email)
+			if particpant 
+				
+
+
+			end
+
+
+	end
+
 end
