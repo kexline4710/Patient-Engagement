@@ -1,22 +1,5 @@
 require 'spec_helper'
 
-# describe 'log-in' do
-# 	let(:participant) {FactoryGirl.create(:participant)}
-
-# 		it "allows  valid participant to login" do
-# 			visit root_path
-# 			fill_in "Email", :with => participant.email
-# 			fill_in "Password", :with => participant.password
-# 			click_button "Login"
-
-# 		end
-
-# 		it "allows participant to login to their account" do
-#       visit
-
-# 		# it "allows a valid coordinator to login"
-# end
-
 describe "Authentication" do
 
   subject { page }
@@ -27,7 +10,7 @@ describe "Authentication" do
   end
 
 
-  describe "with valid information" do
+  describe "allows a participant to login to their account" do
     let(:participant) { FactoryGirl.create(:participant) }
     before do
       visit root_path
@@ -35,10 +18,17 @@ describe "Authentication" do
       fill_in "Password", with: participant.password
       click_button "Login"
     end
-
     it { should have_content('Welcome') }
   end
 
-  describe "allows a participant to login to their account" do
+  describe "allows a coordinator to login to their account" do
+    let(:coordinator) { FactoryGirl.create(:coordinator) }
+    before do
+      visit root_path
+      fill_in "Email",    with: coordinator.email
+      fill_in "Password", with: coordinator.password
+      click_button "Login"
+    end
+    it { should have_content('Welcome') }
   end
 end
