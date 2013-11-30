@@ -8,8 +8,7 @@ class ParticipantsController < ApplicationController
 
   def show
     # want to take this line out as soon as current_user is implemented
-    current_user = Participant.find(1)
-    
+    current_user = Participant.find(2)
     @questions = current_user.questions.all
   end
 

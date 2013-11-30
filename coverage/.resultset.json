@@ -218,8 +218,7 @@
         1,
         null,
         2,
-        null,
-        1,
+        0,
         null,
         null,
         null
@@ -375,9 +374,6 @@
         null,
         null
       ],
-      "/Users/apprentice/Desktop/patientengagement/spec/controllers/participants_controller_spec.rb": [
-
-      ],
       "/Users/apprentice/Desktop/patientengagement/spec/features/coordinator_login_spec.rb": [
         1,
         null,
@@ -427,7 +423,7 @@
         null,
         1,
         null,
-        3,
+        2,
         null,
         1,
         2,
@@ -444,7 +440,7 @@
         1,
         null,
         null,
-        2,
+        1,
         null,
         null,
         1,
@@ -522,10 +518,9 @@
         1,
         null,
         1,
-        1,
         null
       ]
     },
-    "timestamp": 1385837931
+    "timestamp": 1385839612
   }
 }
