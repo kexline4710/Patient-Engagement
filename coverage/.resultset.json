@@ -1,14 +1,14 @@
 {
   "RSpec": {
     "coverage": {
-      "/Users/alexfroelich/Desktop/patient_engagement/config/environment.rb": [
+      "/Users/Claylyons/Desktop/patient_engagement/config/environment.rb": [
         null,
         1,
         null,
         null,
         1
       ],
-      "/Users/alexfroelich/Desktop/patient_engagement/config/application.rb": [
+      "/Users/Claylyons/Desktop/patient_engagement/config/application.rb": [
         1,
         null,
         null,
@@ -81,7 +81,7 @@
         null,
         null
       ],
-      "/Users/alexfroelich/Desktop/patient_engagement/config/boot.rb": [
+      "/Users/Claylyons/Desktop/patient_engagement/config/boot.rb": [
         1,
         null,
         null,
@@ -89,7 +89,7 @@
         null,
         1
       ],
-      "/Users/alexfroelich/Desktop/patient_engagement/config/environments/test.rb": [
+      "/Users/Claylyons/Desktop/patient_engagement/config/environments/test.rb": [
         1,
         null,
         null,
@@ -128,7 +128,7 @@
         1,
         null
       ],
-      "/Users/alexfroelich/Desktop/patient_engagement/config/initializers/backtrace_silencers.rb": [
+      "/Users/Claylyons/Desktop/patient_engagement/config/initializers/backtrace_silencers.rb": [
         null,
         null,
         null,
@@ -137,7 +137,7 @@
         null,
         null
       ],
-      "/Users/alexfroelich/Desktop/patient_engagement/config/initializers/inflections.rb": [
+      "/Users/Claylyons/Desktop/patient_engagement/config/initializers/inflections.rb": [
         null,
         null,
         null,
@@ -154,14 +154,14 @@
         null,
         null
       ],
-      "/Users/alexfroelich/Desktop/patient_engagement/config/initializers/mime_types.rb": [
+      "/Users/Claylyons/Desktop/patient_engagement/config/initializers/mime_types.rb": [
         null,
         null,
         null,
         null,
         null
       ],
-      "/Users/alexfroelich/Desktop/patient_engagement/config/initializers/secret_token.rb": [
+      "/Users/Claylyons/Desktop/patient_engagement/config/initializers/secret_token.rb": [
         null,
         null,
         null,
@@ -170,7 +170,7 @@
         null,
         1
       ],
-      "/Users/alexfroelich/Desktop/patient_engagement/config/initializers/session_store.rb": [
+      "/Users/Claylyons/Desktop/patient_engagement/config/initializers/session_store.rb": [
         null,
         null,
         1,
@@ -180,7 +180,7 @@
         null,
         null
       ],
-      "/Users/alexfroelich/Desktop/patient_engagement/config/initializers/wrap_parameters.rb": [
+      "/Users/Claylyons/Desktop/patient_engagement/config/initializers/wrap_parameters.rb": [
         null,
         null,
         null,
@@ -196,47 +196,54 @@
         1,
         null
       ],
-      "/Users/alexfroelich/Desktop/patient_engagement/app/controllers/application_controller.rb": [
+      "/Users/Claylyons/Desktop/patient_engagement/app/controllers/application_controller.rb": [
         1,
         1,
         null,
         null
       ],
-      "/Users/alexfroelich/Desktop/patient_engagement/app/helpers/application_helper.rb": [
+      "/Users/Claylyons/Desktop/patient_engagement/app/helpers/application_helper.rb": [
         1,
         null
       ],
-      "/Users/alexfroelich/Desktop/patient_engagement/app/controllers/participants_controller.rb": [
+      "/Users/Claylyons/Desktop/patient_engagement/app/controllers/participants_controller.rb": [
         1,
         null,
         1,
         null,
-        null,
-        1,
-        null,
-        null,
-        null
-      ],
-      "/Users/alexfroelich/Desktop/patient_engagement/app/models/participant.rb": [
-        1,
-        1,
-        null,
-        null,
-        1,
-        1,
-        1,
-        1,
-        null
-      ],
-      "/Users/alexfroelich/Desktop/patient_engagement/app/controllers/sessions_controller.rb": [
-        1,
         null,
         1,
         null,
         null,
         null
       ],
-      "/Users/alexfroelich/Desktop/patient_engagement/spec/factories/user.rb": [
+      "/Users/Claylyons/Desktop/patient_engagement/app/models/participant.rb": [
+        1,
+        1,
+        null,
+        null,
+        1,
+        1,
+        1,
+        1,
+        null
+      ],
+      "/Users/Claylyons/Desktop/patient_engagement/app/controllers/sessions_controller.rb": [
+        1,
+        null,
+        1,
+        null,
+        null,
+        null,
+        1,
+        null,
+        1,
+        null,
+        null,
+        null,
+        null
+      ],
+      "/Users/Claylyons/Desktop/patient_engagement/spec/factories/user.rb": [
         1,
         1,
         1,
@@ -249,7 +256,9 @@
         null,
         null
       ],
-      "/Users/alexfroelich/Desktop/patient_engagement/config/routes.rb": [
+      "/Users/Claylyons/Desktop/patient_engagement/config/routes.rb": [
+        1,
+        null,
         1,
         null,
         1,
@@ -314,7 +323,7 @@
         null,
         null
       ],
-      "/Users/alexfroelich/Desktop/patient_engagement/spec/models/participant_spec.rb": [
+      "/Users/Claylyons/Desktop/patient_engagement/spec/models/participant_spec.rb": [
         1,
         null,
         1,
@@ -333,6 +342,6 @@
         null
       ]
     },
-    "timestamp": 1385769097
+    "timestamp": 1385776006
   }
 }

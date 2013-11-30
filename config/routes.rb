@@ -2,6 +2,8 @@ PatientEngagement::Application.routes.draw do
   # root :to => "application#login"
   root :to => "sessions#new"
 
+  post 'login' => 'sessions#create'
+
   resources :participants
 
   # The priority is based upon order of creation:
