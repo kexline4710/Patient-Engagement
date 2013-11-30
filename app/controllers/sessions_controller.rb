@@ -5,9 +5,18 @@ class SessionsController < ApplicationController
 	end
 
   def create
-
-    redirect_to '/participants/1'
+    user = Coordinator.find_by_email(params[:session][:email])
+    if user && user.authenticate(params[:session][:password])
+      session[:id] = user.id
+      redirect_to "/coordinators/#{user.id}" and return
+    else 
+      user = Participant.find_by_email(params[:session][:email])
+      if user && user.authenticate(params[:session][:password])
+        session[:id] = user.id
+        redirect_to "/participants/#{user.id}" and return
+      end
+    end
+    flash[:notice] = "Invalid Password or Email Address"
+    redirect_to root_path
   end
-
-
 end
