@@ -1,1 +1,44 @@
-<h1>Welcome</h1>
+<div class="container">
+  <div class="row">
+    <!--  insert navbar -->
+  </div> <!-- closes row -->
+
+  <div class="row">
+  <!-- main body 2 columns-->
+    <div class="col-md-8">
+      <h1>Welcome</h1>
+
+      <% if @participants %>
+      	<h2>Participant's Questions</h2>
+        <% @participants.each do |participant| %>
+        	<% if participant.questions %>
+	        	<% participant.questions.each do |question| %>
+		          <div>
+		          	<div>Subject: <%= participant.subject_number %></div>
+		            <div><%= question.title %></div>
+		            <div><%= question.content %></div>
+		        	</div> <!-- closes question and answer block-->
+		        <% end %>
+          <% end %>
+        <% end %>
+      <% end %>
+    </div> <!-- closes content div-->
+
+    <!-- <div class="col-md-4"> -->
+      <!-- right hand sidebar butttons-->
+      <!-- <a href="/answer/new">Ask a question</a> -->
+    <!-- </div>  closes sidebar div -->
+  </div> <!-- closes row -->
+
+
+
+  <div class="row">
+    <%= form_for :session, url: logout_path do |f| %>
+      <%= f.submit "Logout" %>
+    <% end %>
+  <!-- insert footer -->
+
+  </div> <!-- closes row-->
+</div> <!-- closes container-->
+
+
