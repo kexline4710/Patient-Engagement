@@ -202,12 +202,12 @@
         1,
         null,
         1,
-        0,
-        0,
-        0,
-        0,
+        5,
+        2,
+        2,
+        2,
         null,
-        0,
+        3,
         null,
         null,
         null,
@@ -218,16 +218,16 @@
         null,
         1,
         null,
-        0,
-        0,
+        14,
+        14,
         null,
         null,
         1,
         null,
-        0,
-        0,
+        26,
+        25,
         null,
-        0,
+        1,
         null,
         null,
         null
@@ -237,7 +237,7 @@
         1,
         null,
         1,
-        0,
+        1,
         null,
         null,
         null
@@ -248,7 +248,7 @@
         null,
         1,
         null,
-        1,
+        8,
         1,
         1,
         1,
@@ -257,7 +257,7 @@
         1,
         null,
         1,
-        0,
+        2,
         null,
         null
       ],
@@ -273,7 +273,7 @@
         null,
         1,
         null,
-        0,
+        3,
         null,
         null,
         null
@@ -285,7 +285,7 @@
         1,
         null,
         null,
-        1,
+        8,
         1,
         1,
         1,
@@ -315,13 +315,18 @@
         null,
         null,
         1,
-        0,
+        2,
         null,
         null,
         1,
+        1,
+        1,
+        1,
+        1,
+        null,
         0,
         0,
-        0,
+        null,
         null,
         null,
         null
@@ -334,10 +339,10 @@
         null,
         null,
         1,
-        0,
-        0,
+        1,
+        1,
         null,
-        0,
+        1,
         null,
         null,
         null
@@ -359,17 +364,18 @@
         null,
         null,
         1,
-        0,
-        0,
-        0,
-        0,
+        9,
+        9,
+        2,
+        2,
         null,
-        0,
-        0,
-        0,
-        0,
+        7,
+        7,
+        5,
+        5,
         null,
-        0,
+        2,
+        2,
         null,
         null,
         null,
@@ -385,15 +391,15 @@
         1,
         null,
         1,
-        1,
-        1,
-        1,
+        3,
+        3,
+        3,
         null,
         null,
         1,
-        0,
-        0,
-        0,
+        4,
+        4,
+        4,
         null,
         null
       ],
@@ -420,7 +426,7 @@
       "/Users/KatyX/Desktop/patientengagement/spec/factories/user.rb": [
         1,
         1,
-        2,
+        9,
         null,
         null,
         1,
@@ -510,9 +516,13 @@
         null,
         null,
         null
-<<<<<<< HEAD
+
       ],
       "/Users/KatyX/Desktop/patientengagement/spec/controllers/session_spec.rb": [
+
+      ],
+      "/Users/alexfroelich/Desktop/patient_engagement/spec/controllers/session_spec.rb": [
+
         1,
         null,
         1,
@@ -547,7 +557,11 @@
         null,
         null
       ],
+
       "/Users/KatyX/Desktop/patientengagement/spec/features/first_time_login_spec.rb": [
+
+      "/Users/alexfroelich/Desktop/patient_engagement/spec/features/first_time_login_spec.rb": [
+
         1,
         null,
         1,
@@ -580,7 +594,11 @@
         null,
         null
       ],
+
       "/Users/KatyX/Desktop/patientengagement/spec/features/login_spec.rb": [
+
+      "/Users/alexfroelich/Desktop/patient_engagement/spec/features/login_spec.rb": [
+
         1,
         null,
         1,
@@ -616,7 +634,11 @@
         null,
         null
       ],
+
       "/Users/KatyX/Desktop/patientengagement/spec/features/participant_submits_question_spec.rb": [
+
+      "/Users/alexfroelich/Desktop/patient_engagement/spec/features/participant_submits_question_spec.rb": [
+
         1,
         null,
         1,
@@ -641,7 +663,11 @@
         null,
         null
       ],
+
       "/Users/KatyX/Desktop/patientengagement/spec/helpers/application_helper_spec.rb": [
+
+      "/Users/alexfroelich/Desktop/patient_engagement/spec/helpers/application_helper_spec.rb": [
+
         null,
         null,
         null,
@@ -654,7 +680,11 @@
         null,
         null
       ],
+
       "/Users/KatyX/Desktop/patientengagement/spec/mailers/user_mailer_spec.rb": [
+
+      "/Users/alexfroelich/Desktop/patient_engagement/spec/mailers/user_mailer_spec.rb": [
+
         1,
         null,
         1,
@@ -687,7 +717,11 @@
         null,
         null
       ],
+
       "/Users/KatyX/Desktop/patientengagement/spec/models/coordinator_spec.rb": [
+
+      "/Users/alexfroelich/Desktop/patient_engagement/spec/models/coordinator_spec.rb": [
+
         1,
         null,
         1,
@@ -708,11 +742,19 @@
         null,
         null
       ],
+
       "/Users/KatyX/Desktop/patientengagement/spec/models/participant_spec.rb": [
         1,
         null,
         1,
         2,
+
+      "/Users/alexfroelich/Desktop/patient_engagement/spec/models/participant_spec.rb": [
+        1,
+        null,
+        1,
+        3,
+
         1,
         2,
         2,
@@ -730,6 +772,7 @@
         1,
         null,
         null,
+
         null,
         1,
         1,
@@ -743,6 +786,15 @@
         null
       ],
       "/Users/KatyX/Desktop/patientengagement/spec/models/question_spec.rb": [
+
+        1,
+        2,
+        2,
+        null,
+        null
+      ],
+      "/Users/alexfroelich/Desktop/patient_engagement/spec/models/question_spec.rb": [
+
         1,
         null,
         1,
@@ -752,10 +804,14 @@
         null
       ]
     },
+
     "timestamp": 1385930870
 
       
     },
     "timestamp": 1385931352
+
+    "timestamp": 1385934422
+
   }
 }
