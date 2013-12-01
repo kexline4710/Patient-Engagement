@@ -1,6 +1,16 @@
+<div class="container">
+
 <h1> Reset Password </h1>
 
-<%= form_for @participant, :url => password_reset_path(current_user.authenticity_token) do |f| %>
+  <div class="row">
+    <div class="col-lg-3"> </div> <!-- left page spacing using columns-->
+
+    <div class="col-lg-6"> <!-- main content space on page using columns-->
+      <div class="well">
+        <fieldset>
+          <legend>Login</legend>
+
+<%= form_for @participant, :url => password_reset_path(current_user.authenticity_token), html: { class: "bs-example form-horizontal" } do |f| %>
 		<% if @participant.errors.any? %>
 			<div class="error_messages">
 					<h2> Form is Invalid </h2>
@@ -11,11 +21,32 @@
 					<ul>
 			</div>
 		<% end %>
-		<div>
-				<%= f.label :password_digest, "Password" %>
-				<%= f.password_field :password_digest %>
-				<%= f.label :password_confirmation, "Password_Confirmation" %>
-				<%= f.password_field :password_confirmation %>
+
+		<div class="form-group">
+      <div class="col-lg-2">
+				<%= f.label :password_digest, "Password", :input_html => { :class => "control-label"}  %>
+			</div>
+			<div class="col-lg-10">
+				<%= f.password_field :password_digest, :input_html => { :class => "form-control" } %>
+			</div>
 		</div>
-			<div> <%=f.submit "Update Password" %></div>
+
+		<div class="form-group">
+      <div class="col-lg-2">
+				<%= f.label :password_confirmation, "Password_Confirmation", :input_html => { :class => "control-label"} %>
+			</div>
+			<div class="col-lg-10">
+				<%= f.password_field :password_confirmation, :input_html => { :class => "control-label"}  %>
+			</div>
+		</div>
+
+    <div class="form-group">
+      <div class="col-lg-10 col-lg-offset-2">
+			<div> <%=f.submit "Update Password", :id => "update-password", :class => "btn btn-info"  %></div>
 <% end %>
+
+      </div><!--end of class="well" -->
+    </div><!-- end of class="col-lg-6" -->
+    <div class="col-lg-3"></div><!-- end of class="col-lg-3" -->
+  </div>  <!-- end of class="row"-->
+</div><!-- end of class="container"-->
