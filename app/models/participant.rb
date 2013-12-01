@@ -18,6 +18,6 @@ class Participant < ActiveRecord::Base
   end
 
   def self.generate_password
-    SecureRandom.base64(n=6)
+    SecureRandom.hex(n=4)
   end
 end

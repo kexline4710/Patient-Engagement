@@ -19,4 +19,14 @@ describe Participant do
 			expect(ActionMailer::Base.deliveries.last.to).to eq([participant.email])
 		end
 	end
+
+	describe "generate_password" do
+		it "should be 8 characters long" do
+			expect(Participant.generate_password.length).to eq(8)
+		end
+
+		it "should be word characters" do
+			expect(Participant.generate_password).to match(/\w{8}/)
+		end
+	end
 end
