@@ -16,4 +16,8 @@ class Participant < ActiveRecord::Base
   def send_initial_email
   	UserMailer.welcome_email(self).deliver
   end
+
+  def send_question_answered_email
+    UserMailer.notify_participant_question_answered(self).deliver
+  end
 end
