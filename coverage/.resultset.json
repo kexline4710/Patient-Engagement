@@ -1,14 +1,14 @@
 {
   "RSpec": {
     "coverage": {
-      "/Users/Claylyons/Desktop/patience_not/config/environment.rb": [
+      "/Users/KatyX/Desktop/patientengagement/config/environment.rb": [
         null,
         1,
         null,
         null,
         1
       ],
-      "/Users/Claylyons/Desktop/patience_not/config/application.rb": [
+      "/Users/KatyX/Desktop/patientengagement/config/application.rb": [
         1,
         null,
         null,
@@ -81,7 +81,7 @@
         null,
         null
       ],
-      "/Users/Claylyons/Desktop/patience_not/config/boot.rb": [
+      "/Users/KatyX/Desktop/patientengagement/config/boot.rb": [
         1,
         null,
         null,
@@ -89,7 +89,7 @@
         null,
         1
       ],
-      "/Users/Claylyons/Desktop/patience_not/config/environments/test.rb": [
+      "/Users/KatyX/Desktop/patientengagement/config/environments/test.rb": [
         1,
         null,
         null,
@@ -128,7 +128,7 @@
         1,
         null
       ],
-      "/Users/Claylyons/Desktop/patience_not/config/initializers/backtrace_silencers.rb": [
+      "/Users/KatyX/Desktop/patientengagement/config/initializers/backtrace_silencers.rb": [
         null,
         null,
         null,
@@ -137,7 +137,7 @@
         null,
         null
       ],
-      "/Users/Claylyons/Desktop/patience_not/config/initializers/inflections.rb": [
+      "/Users/KatyX/Desktop/patientengagement/config/initializers/inflections.rb": [
         null,
         null,
         null,
@@ -154,14 +154,14 @@
         null,
         null
       ],
-      "/Users/Claylyons/Desktop/patience_not/config/initializers/mime_types.rb": [
+      "/Users/KatyX/Desktop/patientengagement/config/initializers/mime_types.rb": [
         null,
         null,
         null,
         null,
         null
       ],
-      "/Users/Claylyons/Desktop/patience_not/config/initializers/secret_token.rb": [
+      "/Users/KatyX/Desktop/patientengagement/config/initializers/secret_token.rb": [
         null,
         null,
         null,
@@ -170,7 +170,7 @@
         null,
         1
       ],
-      "/Users/Claylyons/Desktop/patience_not/config/initializers/session_store.rb": [
+      "/Users/KatyX/Desktop/patientengagement/config/initializers/session_store.rb": [
         null,
         null,
         1,
@@ -180,7 +180,7 @@
         null,
         null
       ],
-      "/Users/Claylyons/Desktop/patience_not/config/initializers/wrap_parameters.rb": [
+      "/Users/KatyX/Desktop/patientengagement/config/initializers/wrap_parameters.rb": [
         null,
         null,
         null,
@@ -196,7 +196,7 @@
         1,
         null
       ],
-      "/Users/Claylyons/Desktop/patience_not/app/controllers/application_controller.rb": [
+      "/Users/KatyX/Desktop/patientengagement/app/controllers/application_controller.rb": [
         1,
         1,
         1,
@@ -213,7 +213,7 @@
         null,
         null
       ],
-      "/Users/Claylyons/Desktop/patience_not/app/helpers/application_helper.rb": [
+      "/Users/KatyX/Desktop/patientengagement/app/helpers/application_helper.rb": [
         1,
         null,
         1,
@@ -232,7 +232,7 @@
         null,
         null
       ],
-      "/Users/Claylyons/Desktop/patience_not/app/controllers/coordinators_controller.rb": [
+      "/Users/KatyX/Desktop/patientengagement/app/controllers/coordinators_controller.rb": [
         1,
         1,
         null,
@@ -242,7 +242,7 @@
         null,
         null
       ],
-      "/Users/Claylyons/Desktop/patience_not/app/models/coordinator.rb": [
+      "/Users/KatyX/Desktop/patientengagement/app/models/coordinator.rb": [
         1,
         1,
         null,
@@ -257,7 +257,7 @@
         1,
         null
       ],
-      "/Users/Claylyons/Desktop/patience_not/app/controllers/participants_controller.rb": [
+      "/Users/KatyX/Desktop/patientengagement/app/controllers/participants_controller.rb": [
         1,
         1,
         null,
@@ -274,7 +274,7 @@
         null,
         null
       ],
-      "/Users/Claylyons/Desktop/patience_not/app/models/participant.rb": [
+      "/Users/KatyX/Desktop/patientengagement/app/models/participant.rb": [
         1,
         1,
         null,
@@ -289,9 +289,13 @@
         null,
         1,
         1,
+        null,
+        1,
+        1,
+        null,
         null
       ],
-      "/Users/Claylyons/Desktop/patience_not/app/controllers/password_resets_controller.rb": [
+      "/Users/KatyX/Desktop/patientengagement/app/controllers/password_resets_controller.rb": [
         1,
         null,
         null,
@@ -313,7 +317,7 @@
         null,
         null
       ],
-      "/Users/Claylyons/Desktop/patience_not/app/controllers/questions_controller.rb": [
+      "/Users/KatyX/Desktop/patientengagement/app/controllers/questions_controller.rb": [
         1,
         1,
         null,
@@ -328,14 +332,14 @@
         null,
         null
       ],
-      "/Users/Claylyons/Desktop/patience_not/app/models/question.rb": [
+      "/Users/KatyX/Desktop/patientengagement/app/models/question.rb": [
         1,
         1,
         null,
         1,
         null
       ],
-      "/Users/Claylyons/Desktop/patience_not/app/controllers/sessions_controller.rb": [
+      "/Users/KatyX/Desktop/patientengagement/app/controllers/sessions_controller.rb": [
         1,
         1,
         null,
@@ -366,44 +370,20 @@
         null,
         null
       ],
-      "/Users/Claylyons/Desktop/patience_not/app/mailers/user_mailer.rb": [
+      "/Users/KatyX/Desktop/patientengagement/app/mailers/user_mailer.rb": [
         1,
         1,
         null,
         1,
-        0,
-        0,
-        0,
+        1,
+        1,
+        1,
         null,
         null,
         null
       ],
-      "/Users/Claylyons/Desktop/patience_not/spec/factories/coordinators.rb": [
+      "/Users/KatyX/Desktop/patientengagement/spec/factories/coordinators.rb": [
         null,
-        1,
-        1,
-        1,
-        1,
-        1,
-        null,
-        null
-      ],
-      "/Users/Claylyons/Desktop/patience_not/spec/factories/questions.rb": [
-        null,
-        null,
-        1,
-        1,
-        1,
-        1,
-        null,
-        null
-      ],
-      "/Users/Claylyons/Desktop/patience_not/spec/factories/user.rb": [
-        1,
-        1,
-        1,
-        1,
-        1,
         1,
         1,
         1,
@@ -412,7 +392,31 @@
         null,
         null
       ],
-      "/Users/Claylyons/Desktop/patience_not/config/routes.rb": [
+      "/Users/KatyX/Desktop/patientengagement/spec/factories/questions.rb": [
+        null,
+        null,
+        1,
+        1,
+        1,
+        1,
+        null,
+        null
+      ],
+      "/Users/KatyX/Desktop/patientengagement/spec/factories/user.rb": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        null,
+        null
+      ],
+      "/Users/KatyX/Desktop/patientengagement/config/routes.rb": [
         1,
         null,
         1,
@@ -488,7 +492,7 @@
         null,
         null
       ],
-      "/Users/Claylyons/Desktop/patience_not/spec/controllers/session_spec.rb": [
+      "/Users/KatyX/Desktop/patientengagement/spec/controllers/session_spec.rb": [
         1,
         null,
         1,
@@ -523,7 +527,7 @@
         null,
         null
       ],
-      "/Users/Claylyons/Desktop/patience_not/spec/features/login_spec.rb": [
+      "/Users/KatyX/Desktop/patientengagement/spec/features/login_spec.rb": [
         1,
         null,
         1,
@@ -559,7 +563,7 @@
         null,
         null
       ],
-      "/Users/Claylyons/Desktop/patience_not/spec/features/participant_submits_question_spec.rb": [
+      "/Users/KatyX/Desktop/patientengagement/spec/features/participant_submits_question_spec.rb": [
         1,
         null,
         1,
@@ -583,13 +587,13 @@
         null,
         null
       ],
-      "/Users/Claylyons/Desktop/patience_not/spec/helpers/application_helper_spec.rb": [
+      "/Users/KatyX/Desktop/patientengagement/spec/helpers/application_helper_spec.rb": [
 
       ],
-      "/Users/Claylyons/Desktop/patience_not/spec/mailers/user_mailer_spec.rb": [
-        null
+      "/Users/KatyX/Desktop/patientengagement/spec/mailers/user_mailer_spec.rb": [
+
       ],
-      "/Users/Claylyons/Desktop/patience_not/spec/models/coordinator_spec.rb": [
+      "/Users/KatyX/Desktop/patientengagement/spec/models/coordinator_spec.rb": [
         1,
         null,
         1,
@@ -600,31 +604,37 @@
         2,
         2,
         2,
-        null,
-        null
-      ],
-      "/Users/Claylyons/Desktop/patience_not/spec/models/participant_spec.rb": [
-        1,
-        null,
-        1,
-        1,
-        1,
-        2,
-        2,
-        2,
-        2,
-        null,
-        null,
-        1,
-        2,
-        null,
-        null,
-        null,
-        null,
         null,
         null
       ],
-      "/Users/Claylyons/Desktop/patience_not/spec/models/question_spec.rb": [
+      "/Users/KatyX/Desktop/patientengagement/spec/models/participant_spec.rb": [
+        1,
+        null,
+        1,
+        2,
+        1,
+        2,
+        2,
+        2,
+        2,
+        null,
+        null,
+        1,
+        2,
+        null,
+        null,
+        1,
+        1,
+        1,
+        1,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "/Users/KatyX/Desktop/patientengagement/spec/models/question_spec.rb": [
         1,
         null,
         1,
@@ -634,6 +644,6 @@
         null
       ]
     },
-    "timestamp": 1385876430
+    "timestamp": 1385917385
   }
 }
