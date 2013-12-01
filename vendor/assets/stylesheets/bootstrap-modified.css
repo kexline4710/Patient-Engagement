@@ -4011,8 +4011,13 @@ textarea.input-group-sm > .input-group-btn > .btn {
   }
 }
 .navbar-default {
+<<<<<<< HEAD
   background-color: #f8f8f8;
   border-color: #e7e7e7;
+=======
+  background-color: #00265a;
+  border-color: #00265a;
+>>>>>>> initial css for blank navbar and login page
 }
 .navbar-default .navbar-brand {
   color: #777777;
@@ -4037,7 +4042,11 @@ textarea.input-group-sm > .input-group-btn > .btn {
 .navbar-default .navbar-nav > .active > a:hover,
 .navbar-default .navbar-nav > .active > a:focus {
   color: #555555;
+<<<<<<< HEAD
   background-color: #e7e7e7;
+=======
+  background-color: #00265a;
+>>>>>>> initial css for blank navbar and login page
 }
 .navbar-default .navbar-nav > .disabled > a,
 .navbar-default .navbar-nav > .disabled > a:hover,
