@@ -1,0 +1,21 @@
+<h1> Reset Password </h1>
+
+<%= form_for @participant, :url => password_reset_path(current_user.authenticity_token) do |f| %>
+		<% if @participant.errors.any? %>
+			<div class="error_messages">
+					<h2> Form is Invalid </h2>
+					<ul>
+						<% for message in @participant.errors.full_messages %>
+							<li><%= messages %></li>
+						<% end %>
+					<ul>
+			</div>
+		<% end %>
+		<div>
+				<%= f.label :password_digest, "Password" %>
+				<%= f.password_field :password_digest %>
+				<%= f.label :password_confirmation, "Password_Confirmation" %>
+				<%= f.password_field :password_confirmation %>
+		</div>
+			<div> <%=f.submit "Update Password" %></div>
+<% end %>

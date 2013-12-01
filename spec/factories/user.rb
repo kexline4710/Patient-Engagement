@@ -7,5 +7,6 @@ FactoryGirl.define do
 		f.subject_number 123
 		f.coordinator_id 1
 		f.authenticity_token "abc123"
+		f.first_time_login false
 	end
 end
