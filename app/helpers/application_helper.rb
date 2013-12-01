@@ -7,10 +7,10 @@ module ApplicationHelper
 	end
 
 	def current_user
-		if Coordinator.find_by_authenticity_token(cookies[:authenticity_token]).nil?
-			@current_user ||= Participant.find_by_authenticity_token(cookies[:authenticity_token]) if cookies[:authenticity_token]
+		if Coordinator.find_by_authenticity_token(session[:authenticity_token]).nil?
+			@current_user ||= Participant.find_by_authenticity_token(session[:authenticity_token]) if session[:authenticity_token]
 		else
-			@current_user ||= Coordinator.find_by_authenticity_token(cookies[:authenticity_token]) if cookies[:authenticity_token]
+			@current_user ||= Coordinator.find_by_authenticity_token(session[:authenticity_token]) if session[:authenticity_token]
 		end
 	end
 end
