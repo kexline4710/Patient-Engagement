@@ -17,6 +17,11 @@
 		          	<div>Subject: <%= participant.subject_number %></div>
 		            <div><%= question.title %></div>
 		            <div><%= question.content %></div>
+                  <%= form_for( :answer , url: new_answer_path, :html => {:method => :get}) do |f| %>
+                    <%= hidden_field_tag 'question', question.id %>
+                    <%= f.submit "Answer"%>
+                  <% end %>
+
 		        	</div> <!-- closes question and answer block-->
 		        <% end %>
           <% end %>
