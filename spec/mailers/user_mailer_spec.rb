@@ -15,4 +15,17 @@ describe UserMailer do
 		end
 	end
 
+	describe '#notify_coordinator_new_question' do
+		let(:coordinator) { FactoryGirl.create(:coordinator) }
+		let(:mail) { UserMailer.notify_coordinator_new_question(coordinator) }
+
+		it 'renders the receiver email' do
+			expect(mail.to).to eq([coordinator.email])
+		end
+
+		it 'renders the subject' do
+			expect(mail.subject).to eq('You have received a new question!')
+		end
+	end
+
 end
