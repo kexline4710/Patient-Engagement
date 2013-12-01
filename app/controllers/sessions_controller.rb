@@ -17,6 +17,7 @@ class SessionsController < ApplicationController
           session[:authenticity_token] = user.authenticity_token
           first_time_visiting?
         else
+          flash[:message] = ["Invalid email or Password"]
           redirect_to root_path
       end
     end
