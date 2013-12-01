@@ -1,0 +1,15 @@
+<h1> Reset Password </h1>
+
+<div>
+	<%= form_tag  password_resets_path do %>
+		<div>
+				<%= label_tag :email, "Email" %><br>
+				<%= text_field_tag :email %><br>
+				<%= label_tag :password, "Password" %><br>
+				<%= text_field_tag :password %><br>
+				<%= label_tag :password_confirmation, "Password Confirmation" %><br>
+				<%= text_field_tag :password_confirmation %><br>
+				<%= submit_tag "Reset Password" %>
+		</div>
+	<% end %>
+</div>
