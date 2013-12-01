@@ -29,4 +29,9 @@ describe Participant do
 			expect(Participant.generate_password).to match(/\w{8}/)
 		end
 	end
+
+	describe "validates password" do
+		subject {participant}
+			it { should ensure_length_of(:password).is_at_least(6).with_message("- must be between 6 and 20 characters")}
+	end
 end

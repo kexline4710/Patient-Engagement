@@ -8,6 +8,7 @@ class Participant < ActiveRecord::Base
   validates :email, :presence => true
   validates :email, :uniqueness => true
   validates :password, :presence => true
+  validates :password, length: { in: 6..20, message: "- must be between 6 and 20 characters"}
   has_secure_password
 
   belongs_to :coordinator
