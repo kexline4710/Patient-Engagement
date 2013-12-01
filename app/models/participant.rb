@@ -20,4 +20,8 @@ class Participant < ActiveRecord::Base
   def send_question_answered_email
     UserMailer.notify_participant_question_answered(self).deliver
   end
+
+  def self.generate_password
+    SecureRandom.hex(n=4)
+  end
 end
