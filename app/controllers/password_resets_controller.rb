@@ -8,7 +8,7 @@ class PasswordResetsController < ApplicationController
  end
 
  def edit
- 		@participant = current_user
+ 	@participant = current_user
  end
 
  def update

@@ -24,7 +24,7 @@
 
             <div class="panel-body">You asked: <%= question.content %></div>
             <% if question.answer %>
-              <div class="panel-body"><%= question.answer.content %> - Amy</div>
+              <div class="panel-body"><%= question.answer.content %> - <%= question.coordinator_name %></div>
             <% end %>
 
           </div><!-- end of class="panel panel-success" -->
