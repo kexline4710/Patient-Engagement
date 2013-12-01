@@ -9,4 +9,11 @@ describe Coordinator do
     it {should validate_presence_of(:password)}
     it {should have_secure_password}
   end
+
+  describe "#send_question_notification_email" do
+  	it "sends the notification email" do
+  		coordinator.send_question_notification_email
+			expect(ActionMailer::Base.deliveries.last.to).to eq([coordinator.email])
+  	end
+	end
 end
