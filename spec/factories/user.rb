@@ -1,12 +1,16 @@
 FactoryGirl.define do
-	factory :participant do |f|
-		f.first_name "Clay"
-		f.last_name	"Morten"
-		f.email	"Cman1@aol.com"
-		f.password "password"
-		f.subject_number 123
-		f.coordinator_id 1
-		f.authenticity_token "abc123"
-		f.first_time_login false
+	sequence :email do |n|
+		"email#{n}@email.com"
+	end
+
+	factory :participant do 
+		first_name "Clay"
+		last_name	"Morten"
+		email	
+		password "password"
+		subject_number 123
+		coordinator_id 1
+		authenticity_token "12412wer"
+		first_time_login false
 	end
 end
