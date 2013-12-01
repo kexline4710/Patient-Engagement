@@ -12,4 +12,8 @@ class Participant < ActiveRecord::Base
 
   belongs_to :coordinator
   has_many :questions
+
+  def send_initial_email
+  	UserMailer.welcome_email(self).deliver
+  end
 end

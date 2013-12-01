@@ -8,6 +8,7 @@
 
 p1 = Participant.new(first_name: "Katy", last_name: "Exline", email: "k@dbc.com", password: "password", subject_number: 40008 )
 p1.save
+# p1.send_initial_email
 p2 = Participant.new(first_name: "Jane", last_name: "Smith", email: "j@dbc.com", password: "password", subject_number: 40009 )
 p2.save
 p3 = Participant.new(first_name: "Clay", last_name: "Lyons", email: "c@dbc.com", password: "password", subject_number: 40010 )
