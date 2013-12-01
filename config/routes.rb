@@ -9,8 +9,9 @@ PatientEngagement::Application.routes.draw do
 
   resources :coordinators
 
-
   resources :questions
+
+  resources :answers
 
   resources :password_resets, only: [:new, :edit, :update, :create]
 

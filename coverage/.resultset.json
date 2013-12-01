@@ -196,21 +196,32 @@
         1,
         null
       ],
-      "/Users/Claylyons/Desktop/patience_not/app/controllers/application_controller.rb": [
+      "/Users/Claylyons/Desktop/patience_not/app/controllers/answers_controller.rb": [
         1,
         1,
         1,
         null,
         1,
-        3,
+        0,
+        0,
+        null,
+        null,
+        1,
         0,
         0,
         0,
         null,
-        3,
+        0,
+        0,
+        0,
+        0,
         null,
-        null,
-        null,
+        null
+      ],
+      "/Users/Claylyons/Desktop/patience_not/app/models/answer.rb": [
+        1,
+        1,
+        1,
         null
       ],
       "/Users/Claylyons/Desktop/patience_not/app/helpers/application_helper.rb": [
@@ -228,6 +239,23 @@
         11,
         null,
         1,
+        null,
+        null,
+        null
+      ],
+      "/Users/Claylyons/Desktop/patience_not/app/controllers/application_controller.rb": [
+        1,
+        1,
+        1,
+        null,
+        1,
+        3,
+        0,
+        0,
+        0,
+        null,
+        3,
+        null,
         null,
         null,
         null
@@ -333,6 +361,7 @@
         1,
         null,
         1,
+        1,
         null
       ],
       "/Users/Claylyons/Desktop/patience_not/app/controllers/sessions_controller.rb": [
@@ -375,6 +404,15 @@
         0,
         0,
         null,
+        null,
+        null
+      ],
+      "/Users/Claylyons/Desktop/patience_not/spec/factories/answers.rb": [
+        null,
+        null,
+        1,
+        1,
+        1,
         null,
         null
       ],
@@ -424,6 +462,7 @@
         null,
         1,
         null,
+        1,
         null,
         1,
         null,
@@ -589,6 +628,15 @@
       "/Users/Claylyons/Desktop/patience_not/spec/mailers/user_mailer_spec.rb": [
         null
       ],
+      "/Users/Claylyons/Desktop/patience_not/spec/models/answer_spec.rb": [
+        1,
+        null,
+        1,
+        1,
+        2,
+        null,
+        null
+      ],
       "/Users/Claylyons/Desktop/patience_not/spec/models/coordinator_spec.rb": [
         1,
         null,
@@ -634,6 +682,6 @@
         null
       ]
     },
-    "timestamp": 1385876430
+    "timestamp": 1385930128
   }
 }
