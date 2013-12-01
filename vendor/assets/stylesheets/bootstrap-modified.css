@@ -2191,16 +2191,16 @@ fieldset[disabled] .btn-success.active {
 }
 .btn-info {
   color: #ffffff;
-  background-color: #00fbf8;
-  border-color: #00e2df;
+  background-color: #004387;
+  border-color: #004387;
 }
 .btn-info:hover,
 .btn-info:focus,
 .btn-info:active,
 .btn-info.active,
 .open .dropdown-toggle.btn-info {
-  color: #ffffff;
-  background-color: #00d2d0;
+  color: #d8fa9f;
+  background-color: #00265a;
   border-color: #00a4a2;
 }
 .btn-info:active,
