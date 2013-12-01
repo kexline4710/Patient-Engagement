@@ -7,6 +7,7 @@ module ApplicationHelper
 	end
 
 	def current_user
+
 		if Coordinator.find_by_authenticity_token(session[:authenticity_token]).nil?
 			@current_user ||= Participant.find_by_authenticity_token(session[:authenticity_token]) if session[:authenticity_token]
 		else
