@@ -6,10 +6,6 @@
 #   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
 #   Mayor.create(name: 'Emanuel', city: cities.first)
 
-<<<<<<< HEAD
-=======
-
->>>>>>> f7e31e8c824a430f3a434c94a6fae2e43473bfbe
 p1 = Participant.new(first_name: "Katy", last_name: "Exline", email: "k@dbc.com", password: "password", subject_number: 40008 )
 p1.save
 p2 = Participant.new(first_name: "Jane", last_name: "Smith", email: "j@dbc.com", password: "password", subject_number: 40009 )
@@ -25,8 +21,5 @@ c1 = Coordinator.create(email: "james@james.com", password: "password")
 
 c1.participants << p1
 c1.participants << p2
-<<<<<<< HEAD
 c1.participants << p3
-=======
-c1.participants << p3
->>>>>>> f7e31e8c824a430f3a434c94a6fae2e43473bfbe
+
