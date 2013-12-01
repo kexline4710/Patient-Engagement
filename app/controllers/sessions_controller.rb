@@ -9,7 +9,7 @@ class SessionsController < ApplicationController
     if user && user.authenticate(params[:session][:password])
       cookies[:authenticity_token] = user.authenticity_token
       redirect_to "/coordinators/#{user.authenticity_token}" and return
-    else 
+    else
       user = Participant.find_by_email(params[:session][:email])
       if user && user.authenticate(params[:session][:password])
         cookies[:authenticity_token] = user.authenticity_token
