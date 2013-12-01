@@ -16,4 +16,8 @@ class Participant < ActiveRecord::Base
   def send_initial_email
   	UserMailer.welcome_email(self).deliver
   end
+
+  def self.generate_password
+    SecureRandom.base64(n=6)
+  end
 end
