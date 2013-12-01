@@ -2,7 +2,7 @@ FactoryGirl.define do
 	factory :participant do |f|
 		f.first_name "Clay"
 		f.last_name	"Morten"
-		f.email	"Cman5@aol.com"
+		f.email	"Cman20@aol.com"
 		f.password "password"
 		f.subject_number 123
 		f.coordinator_id 1
@@ -12,7 +12,7 @@ FactoryGirl.define do
 end
 
 FactoryGirl.define do
-	factory :first_time do |f|
+	factory :first do |f|
 		f.first_name "Clay"
 		f.last_name	"Morten"
 		f.email	"Cman5@aol.com"
