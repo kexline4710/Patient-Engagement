@@ -7,4 +7,9 @@ class UserMailer < ActionMailer::Base
   	 mail(to: @participant.email, subject: 'Welcome to <NAME OF APP>! Important Password information in this email')
 	end
 
+	def notify_coordinator_new_question(coordinator)
+		@coordinator = coordinator
+		@url = "http://patientengagement.herokuapp.com/"
+		mail(to: @coordinator.email, subject: 'You have received a new question!')
+	end
 end

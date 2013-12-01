@@ -4,8 +4,9 @@ describe "Participant submits question" do
 
   describe "with complete information" do
     let(:question) { FactoryGirl.create(:question) }
-    let(:participant) { FactoryGirl.create(:participant) }
-    
+    let(:coordinator) { FactoryGirl.create(:coordinator) }
+    let(:participant) { FactoryGirl.create(:participant, :coordinator_id => coordinator.id) }
+
 
     it 'should direct to dashboard' do
       visit root_path
