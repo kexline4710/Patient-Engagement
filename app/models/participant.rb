@@ -5,7 +5,7 @@ class Participant < ActiveRecord::Base
 
 
   before_create { generate_token(:authenticity_token) }
-  before_create { generate_password }
+  # before_create { generate_password }
   validates :email, :presence => true
   validates :email, :uniqueness => true
   validates :password, :presence => true
@@ -14,12 +14,13 @@ class Participant < ActiveRecord::Base
   belongs_to :coordinator
   has_many :questions
 
-  def send_initial_email
-  	UserMailer.welcome_email(self).deliver
+  def send_initial_email(password)
+  	UserMailer.welcome_email(self, password).deliver
   end
 
   def generate_password
-    # SecureRandom.hex(n=4)
-    self[password] = "password"
+    password = SecureRandom.hex(n=4)
+    self.update_attribute(:password, password)
+    self.send_initial_email(password)
   end
 end
