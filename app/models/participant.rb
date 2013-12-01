@@ -9,6 +9,7 @@ class Participant < ActiveRecord::Base
   validates :email, :presence => true
   validates :email, :uniqueness => true
   validates :password, :presence => true
+  validates :password, length: { in: 6..20, message: "- must be between 6 and 20 characters"}
   has_secure_password
 
   belongs_to :coordinator
@@ -22,5 +23,9 @@ class Participant < ActiveRecord::Base
     password = SecureRandom.hex(n=4)
     self.update_attribute(:password, password)
     self.send_initial_email(password)
+  end
+
+  def send_question_answered_email
+    UserMailer.notify_participant_question_answered(self).deliver
   end
 end

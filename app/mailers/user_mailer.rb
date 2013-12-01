@@ -13,4 +13,10 @@ class UserMailer < ActionMailer::Base
 		@url = "http://patientengagement.herokuapp.com/"
 		mail(to: @coordinator.email, subject: 'You have received a new question!')
 	end
+
+  def notify_participant_question_answered(participant)
+    @participant = participant
+    @url = "http://patientengagement.herokuapp.com/"
+    mail(to: @participant.email, subject: "You're question has been answered!")
+  end
 end

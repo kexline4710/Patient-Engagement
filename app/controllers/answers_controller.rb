@@ -8,13 +8,10 @@ class AnswersController < ActionController::Base
   end
 
   def create
-    puts "**************************************"
-    p params
-    puts "**************************************"
-
     content = params[:answer][:content]
     question = Question.find(params[:question_id].to_i)
     answer = Answer.create(content: content)
+    current_user.participant.send_question_answered_email
     redirect_to coordinator_path(current_user)
   end
 end
