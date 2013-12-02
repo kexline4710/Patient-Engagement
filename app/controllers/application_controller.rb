@@ -1,6 +1,8 @@
 class ApplicationController < ActionController::Base
   protect_from_forgery
+  before_filter :require_login
   include ApplicationHelper
+
 
   def first_time_visiting?
   	if current_user.try(:first_time_login)
@@ -12,4 +14,11 @@ class ApplicationController < ActionController::Base
   	end
   end
 
+  def require_login
+    if current_user
+      return current_user
+    else
+      redirect_to login_path
+    end
+  end
 end
