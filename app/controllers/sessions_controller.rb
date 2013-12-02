@@ -5,7 +5,6 @@ class SessionsController < ApplicationController
 	def new
 	end
 
-  
   def create
       user = Coordinator.find_by_email(params[:session][:email])
     if user && user.authenticate(params[:session][:password])
@@ -17,6 +16,7 @@ class SessionsController < ApplicationController
           session[:authenticity_token] = user.authenticity_token
           first_time_visiting?
         else
+          flash[:message] = ["Invalid email or Password"]
           redirect_to root_path
       end
     end

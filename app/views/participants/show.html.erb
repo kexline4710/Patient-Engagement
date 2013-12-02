@@ -22,10 +22,12 @@
               <h3 class="panel-title"><%= question.title %></h3>
             </div><!-- end of class="panel-heading" -->
 
+            <div class="panel-body">You asked: <%= question.content %></div>
+            <% if question.answer %>
+              <div class="panel-body"><%= question.answer.content %> - <%= question.coordinator_name %></div>
+            <% end %>
 
-            <div class="panel-body"><%= question.content %></div>
-            </div><!-- end of class="panel panel-success" -->
-
+          </div><!-- end of class="panel panel-success" -->
 
         <% end %>
       <% end %>
