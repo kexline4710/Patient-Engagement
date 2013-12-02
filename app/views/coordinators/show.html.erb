@@ -25,7 +25,7 @@
     		            <td><%= question.title %></td>
                     <td>
                     <% if !question.answer %>
-                      <%= form_for( :answer , url: new_answer_path, :html => {:method => :get}) do |f| %>
+                      <%= form_for( :answer , url: "/answers/new", :html => {:method => :get}) do |f| %>
                         <%= hidden_field_tag 'question', question.id %>
                         <%= f.submit "Answer", :class => "btn btn-block"%>
                       <% end %>
