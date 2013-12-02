@@ -7,7 +7,6 @@ class QuestionsController < ApplicationController
   def create
     current_user.questions.create(params[:question])
     current_user.coordinator.send_question_notification_email
-    # p question
     redirect_to participant_path(current_user)
   end
 
