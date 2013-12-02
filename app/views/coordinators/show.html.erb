@@ -9,8 +9,8 @@
       <h1>Welcome</h1>
 
       <% if @participants %>
-      	<h2>Participant's Questions</h2>
-        <table>
+      	<h2>Participant Questions</h2>
+        <table class="table">
           <tr>
             <th>Subject</th>
             <th>Title</th>
@@ -24,11 +24,13 @@
                     <td><%= participant.subject_number %></td>
     		            <td><%= question.title %></td>
                     <td>
-                    <% if question.answer %>
-                      <%= form_for( :answer , url: new_answer_path, :html => {:method => :get}) do |f| %>
+                    <% if !question.answer %>
+                      <%= form_for( :answer , url: "/answers/new", :html => {:method => :get}) do |f| %>
                         <%= hidden_field_tag 'question', question.id %>
-                        <%= f.submit "Answer"%>
+                        <%= f.submit "Answer", :class => "btn btn-block"%>
                       <% end %>
+                    <% else %>
+                    <p class="text-center">Answered</p>
                     <% end %>
                     </td>
                   </tr>
@@ -45,16 +47,6 @@
       <!-- <a href="/answer/new">Ask a question</a> -->
     <!-- </div>  closes sidebar div -->
   </div> <!-- closes row -->
-
-
-
-  <div class="row">
-    <%= form_for :session, url: logout_path do |f| %>
-      <%= f.submit "Logout" %>
-    <% end %>
-  <!-- insert footer -->
-
-  </div> <!-- closes row-->
 </div> <!-- closes container-->
 
 

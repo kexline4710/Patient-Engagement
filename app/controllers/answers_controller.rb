@@ -1,4 +1,4 @@
-class AnswersController < ActionController::Base
+class AnswersController < ApplicationController
   protect_from_forgery
   include ApplicationHelper
 
