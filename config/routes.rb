@@ -5,7 +5,7 @@ PatientEngagement::Application.routes.draw do
   post 'login' => 'sessions#create'
   post 'logout' => 'sessions#destroy'
 
-
+  resources :trials, only: [:show]
 
   resources :participants
 
