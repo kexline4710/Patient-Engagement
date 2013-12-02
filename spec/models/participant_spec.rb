@@ -11,6 +11,8 @@ describe Participant do
 
 	describe "associations" do
 		it { should have_many(:questions)}
+    it { should belong_to(:coordinator)}
+    it { should have_one(:trial)}
 	end
 
 	describe "#send_initial_email" do
