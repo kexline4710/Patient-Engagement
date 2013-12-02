@@ -1,7 +1,7 @@
 PatientEngagement::Application.routes.draw do
-  # root :to => "application#login"
-  root :to => "sessions#new"
+  root :to => "dashboards#show"
 
+  get  'login'=> "sessions#new"
   post 'login' => 'sessions#create'
   post 'logout' => 'sessions#destroy'
 
@@ -9,7 +9,7 @@ PatientEngagement::Application.routes.draw do
 
   resources :participants
 
-  resources :coordinators
+  resources :coordinators, except: [:index]
 
   resources :questions
 
