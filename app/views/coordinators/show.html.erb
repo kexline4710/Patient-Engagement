@@ -9,8 +9,8 @@
       <h1>Welcome</h1>
 
       <% if @participants %>
-      	<h2>Participant's Questions</h2>
-        <table>
+      	<h2>Participant Questions</h2>
+        <table class="table">
           <tr>
             <th>Subject</th>
             <th>Title</th>
@@ -24,7 +24,7 @@
                     <td><%= participant.subject_number %></td>
     		            <td><%= question.title %></td>
                     <td>
-                    <% if question.answer %>
+                    <% if !question.answer %>
                       <%= form_for( :answer , url: new_answer_path, :html => {:method => :get}) do |f| %>
                         <%= hidden_field_tag 'question', question.id %>
                         <%= f.submit "Answer"%>
