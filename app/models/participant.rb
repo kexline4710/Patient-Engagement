@@ -13,6 +13,7 @@ class Participant < ActiveRecord::Base
   has_secure_password
 
   belongs_to :coordinator
+  has_one :trial, through: :coordinator
   has_many :questions
 
   def send_initial_email(password)

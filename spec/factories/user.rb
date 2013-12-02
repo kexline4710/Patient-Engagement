@@ -3,10 +3,10 @@ FactoryGirl.define do
 		"email#{n}@email.com"
 	end
 
-	factory :participant do 
+	factory :participant do
 		first_name "Clay"
 		last_name	"Morten"
-		email	
+		email
 		password "password"
 		subject_number 123
 		coordinator_id 1
