@@ -1,5 +1,5 @@
 class Participant < ActiveRecord::Base
-	include ApplicationHelper
+
 
   attr_accessible :email, :first_name, :last_name, :password, :authenticity_token, :password_digest, :password_confirmation, :first_time_login, :subject_number
 
@@ -30,4 +30,11 @@ class Participant < ActiveRecord::Base
   def send_question_answered_email
     UserMailer.notify_participant_question_answered(self).deliver
   end
+
+  def generate_token(column)
+    begin
+      self[column] = SecureRandom.urlsafe_base64
+    end while Participant.exists?(column => self[column])
+  end
+
 end
