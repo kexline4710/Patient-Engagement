@@ -1,5 +1,5 @@
 class Question < ActiveRecord::Base
-  attr_accessible :title, :content, :participant_id
+  attr_accessible :title, :content, :participant_id, :private
 
   belongs_to :participant
   has_one :answer
