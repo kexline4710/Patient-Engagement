@@ -15,8 +15,25 @@ describe Participant do
 
 	describe "#send_initial_email" do
 		it "sends an initial email" do
-			participant.send_initial_email
+			participant.send_initial_email("password")
 			expect(ActionMailer::Base.deliveries.last.to).to eq([participant.email])
 		end
+	end
+
+	describe "generate_password" do
+		let(:participant) { FactoryGirl.create(:participant) }
+
+		it "should be 8 characters long" do
+			expect(participant.generate_password.length).to eq(8)
+		end
+
+		it "should be word characters" do
+			expect(participant.generate_password).to match(/\w{8}/)
+		end
+	end
+
+	describe "validates password" do
+		subject {participant}
+			it { should ensure_length_of(:password).is_at_least(6).with_message("- must be between 6 and 20 characters")}
 	end
 end

@@ -19,8 +19,8 @@ describe "First Time User Reset" do
     	end
     	it { should have_content('Reset Password') }
   			it "allows participant to reset password" do
-	  			fill_in "Password", with: "Alex"
-	  			fill_in "Password_Confirmation", with: "Alex"
+	  			fill_in "Password", with: "Alexander"
+	  			fill_in "Password_Confirmation", with: "Alexander"
 	  			click_button "Update Password"
 				expect(page).to have_content("Email")	  			
 	  		end
