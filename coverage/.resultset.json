@@ -1,14 +1,14 @@
 {
   "RSpec": {
     "coverage": {
-      "/Users/KatyX/Desktop/patientengagement/config/environment.rb": [
+      "/Users/ryanbriones/Projects/dbc/salamanders/final-projects/ryanbriones-PatientEngagement/config/environment.rb": [
         null,
         1,
         null,
         null,
         1
       ],
-      "/Users/KatyX/Desktop/patientengagement/config/application.rb": [
+      "/Users/ryanbriones/Projects/dbc/salamanders/final-projects/ryanbriones-PatientEngagement/config/application.rb": [
         1,
         null,
         null,
@@ -78,10 +78,12 @@
         null,
         null,
         1,
+        null,
+        null,
         null,
         null
       ],
-      "/Users/KatyX/Desktop/patientengagement/config/boot.rb": [
+      "/Users/ryanbriones/Projects/dbc/salamanders/final-projects/ryanbriones-PatientEngagement/config/boot.rb": [
         1,
         null,
         null,
@@ -89,7 +91,7 @@
         null,
         1
       ],
-      "/Users/KatyX/Desktop/patientengagement/config/environments/test.rb": [
+      "/Users/ryanbriones/Projects/dbc/salamanders/final-projects/ryanbriones-PatientEngagement/config/environments/test.rb": [
         1,
         null,
         null,
@@ -128,7 +130,7 @@
         1,
         null
       ],
-      "/Users/KatyX/Desktop/patientengagement/config/initializers/backtrace_silencers.rb": [
+      "/Users/ryanbriones/Projects/dbc/salamanders/final-projects/ryanbriones-PatientEngagement/config/initializers/backtrace_silencers.rb": [
         null,
         null,
         null,
@@ -137,7 +139,7 @@
         null,
         null
       ],
-      "/Users/KatyX/Desktop/patientengagement/config/initializers/inflections.rb": [
+      "/Users/ryanbriones/Projects/dbc/salamanders/final-projects/ryanbriones-PatientEngagement/config/initializers/inflections.rb": [
         null,
         null,
         null,
@@ -154,14 +156,14 @@
         null,
         null
       ],
-      "/Users/KatyX/Desktop/patientengagement/config/initializers/mime_types.rb": [
+      "/Users/ryanbriones/Projects/dbc/salamanders/final-projects/ryanbriones-PatientEngagement/config/initializers/mime_types.rb": [
         null,
         null,
         null,
         null,
         null
       ],
-      "/Users/KatyX/Desktop/patientengagement/config/initializers/secret_token.rb": [
+      "/Users/ryanbriones/Projects/dbc/salamanders/final-projects/ryanbriones-PatientEngagement/config/initializers/secret_token.rb": [
         null,
         null,
         null,
@@ -170,7 +172,7 @@
         null,
         1
       ],
-      "/Users/KatyX/Desktop/patientengagement/config/initializers/session_store.rb": [
+      "/Users/ryanbriones/Projects/dbc/salamanders/final-projects/ryanbriones-PatientEngagement/config/initializers/session_store.rb": [
         null,
         null,
         1,
@@ -180,7 +182,7 @@
         null,
         null
       ],
-      "/Users/KatyX/Desktop/patientengagement/config/initializers/wrap_parameters.rb": [
+      "/Users/ryanbriones/Projects/dbc/salamanders/final-projects/ryanbriones-PatientEngagement/config/initializers/wrap_parameters.rb": [
         null,
         null,
         null,
@@ -196,7 +198,7 @@
         1,
         null
       ],
-      "/Users/KatyX/Desktop/patientengagement/app/controllers/answers_controller.rb": [
+      "/Users/ryanbriones/Projects/dbc/salamanders/final-projects/ryanbriones-PatientEngagement/app/controllers/answers_controller.rb": [
         1,
         1,
         1,
@@ -214,14 +216,24 @@
         null,
         null
       ],
-      "/Users/KatyX/Desktop/patientengagement/app/models/answer.rb": [
+      "/Users/ryanbriones/Projects/dbc/salamanders/final-projects/ryanbriones-PatientEngagement/app/controllers/application_controller.rb": [
         1,
         1,
         1,
         null,
+        1,
+        5,
+        2,
+        2,
+        2,
+        null,
+        3,
+        null,
+        null,
+        null,
         null
       ],
-      "/Users/KatyX/Desktop/patientengagement/app/helpers/application_helper.rb": [
+      "/Users/ryanbriones/Projects/dbc/salamanders/final-projects/ryanbriones-PatientEngagement/app/helpers/application_helper.rb": [
         1,
         null,
         1,
@@ -231,6 +243,13 @@
         null,
         null,
         1,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
         null,
         41,
         39,
@@ -240,24 +259,14 @@
         null,
         null
       ],
-      "/Users/KatyX/Desktop/patientengagement/app/controllers/application_controller.rb": [
+      "/Users/ryanbriones/Projects/dbc/salamanders/final-projects/ryanbriones-PatientEngagement/app/models/answer.rb": [
         1,
         1,
         1,
-        null,
-        1,
-        5,
-        2,
-        2,
-        2,
-        null,
-        3,
-        null,
-        null,
         null,
         null
       ],
-      "/Users/KatyX/Desktop/patientengagement/app/controllers/coordinators_controller.rb": [
+      "/Users/ryanbriones/Projects/dbc/salamanders/final-projects/ryanbriones-PatientEngagement/app/controllers/coordinators_controller.rb": [
         1,
         1,
         null,
@@ -267,14 +276,16 @@
         null,
         null
       ],
-      "/Users/KatyX/Desktop/patientengagement/app/models/coordinator.rb": [
+      "/Users/ryanbriones/Projects/dbc/salamanders/final-projects/ryanbriones-PatientEngagement/app/models/coordinator.rb": [
         1,
+        null,
+        null,
         1,
         null,
         1,
         null,
         8,
-        1,
+        null,
         1,
         1,
         1,
@@ -286,7 +297,7 @@
         null,
         null
       ],
-      "/Users/KatyX/Desktop/patientengagement/app/controllers/participants_controller.rb": [
+      "/Users/ryanbriones/Projects/dbc/salamanders/final-projects/ryanbriones-PatientEngagement/app/controllers/participants_controller.rb": [
         1,
         1,
         null,
@@ -303,8 +314,10 @@
         null,
         null
       ],
-      "/Users/KatyX/Desktop/patientengagement/app/models/participant.rb": [
+      "/Users/ryanbriones/Projects/dbc/salamanders/final-projects/ryanbriones-PatientEngagement/app/models/participant.rb": [
         1,
+        null,
+        null,
         1,
         null,
         1,
@@ -312,10 +325,10 @@
         null,
         12,
         null,
+        null,
         1,
         1,
-        1,
-        1,
+        null,
         1,
         null,
         1,
@@ -337,7 +350,7 @@
         null,
         null
       ],
-      "/Users/KatyX/Desktop/patientengagement/app/controllers/password_resets_controller.rb": [
+      "/Users/ryanbriones/Projects/dbc/salamanders/final-projects/ryanbriones-PatientEngagement/app/controllers/password_resets_controller.rb": [
         1,
         null,
         null,
@@ -364,7 +377,7 @@
         null,
         null
       ],
-      "/Users/KatyX/Desktop/patientengagement/app/controllers/questions_controller.rb": [
+      "/Users/ryanbriones/Projects/dbc/salamanders/final-projects/ryanbriones-PatientEngagement/app/controllers/questions_controller.rb": [
         1,
         1,
         null,
@@ -380,12 +393,15 @@
         null,
         null
       ],
-      "/Users/KatyX/Desktop/patientengagement/app/models/question.rb": [
+      "/Users/ryanbriones/Projects/dbc/salamanders/final-projects/ryanbriones-PatientEngagement/app/models/question.rb": [
         1,
         1,
         null,
         1,
         1,
+        null,
+        null,
+        null,
         null,
         1,
         0,
@@ -396,7 +412,7 @@
         null,
         null
       ],
-      "/Users/KatyX/Desktop/patientengagement/app/controllers/sessions_controller.rb": [
+      "/Users/ryanbriones/Projects/dbc/salamanders/final-projects/ryanbriones-PatientEngagement/app/controllers/sessions_controller.rb": [
         1,
         1,
         null,
@@ -405,6 +421,11 @@
         null,
         null,
         1,
+        null,
+        null,
+        null,
+        null,
+        null,
         9,
         9,
         2,
@@ -427,7 +448,7 @@
         null,
         null
       ],
-      "/Users/KatyX/Desktop/patientengagement/app/mailers/user_mailer.rb": [
+      "/Users/ryanbriones/Projects/dbc/salamanders/final-projects/ryanbriones-PatientEngagement/app/mailers/user_mailer.rb": [
         1,
         1,
         null,
@@ -451,7 +472,7 @@
         null,
         null
       ],
-      "/Users/KatyX/Desktop/patientengagement/spec/factories/answers.rb": [
+      "/Users/ryanbriones/Projects/dbc/salamanders/final-projects/ryanbriones-PatientEngagement/spec/factories/answers.rb": [
         null,
         null,
         1,
@@ -460,7 +481,7 @@
         null,
         null
       ],
-      "/Users/KatyX/Desktop/patientengagement/spec/factories/coordinators.rb": [
+      "/Users/ryanbriones/Projects/dbc/salamanders/final-projects/ryanbriones-PatientEngagement/spec/factories/coordinators.rb": [
         null,
         1,
         1,
@@ -470,7 +491,7 @@
         null,
         null
       ],
-      "/Users/KatyX/Desktop/patientengagement/spec/factories/questions.rb": [
+      "/Users/ryanbriones/Projects/dbc/salamanders/final-projects/ryanbriones-PatientEngagement/spec/factories/questions.rb": [
         null,
         null,
         1,
@@ -480,7 +501,7 @@
         null,
         null
       ],
-      "/Users/KatyX/Desktop/patientengagement/spec/factories/user.rb": [
+      "/Users/ryanbriones/Projects/dbc/salamanders/final-projects/ryanbriones-PatientEngagement/spec/factories/user.rb": [
         1,
         1,
         13,
@@ -498,8 +519,14 @@
         null,
         null
       ],
-      "/Users/KatyX/Desktop/patientengagement/config/routes.rb": [
+      "/Users/ryanbriones/Projects/dbc/salamanders/final-projects/ryanbriones-PatientEngagement/config/routes.rb": [
         1,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
         null,
         1,
         null,
@@ -575,7 +602,7 @@
         null,
         null
       ],
-      "/Users/KatyX/Desktop/patientengagement/spec/controllers/session_spec.rb": [
+      "/Users/ryanbriones/Projects/dbc/salamanders/final-projects/ryanbriones-PatientEngagement/spec/controllers/session_spec.rb": [
         1,
         null,
         1,
@@ -610,7 +637,7 @@
         null,
         null
       ],
-      "/Users/KatyX/Desktop/patientengagement/spec/features/first_time_login_spec.rb": [
+      "/Users/ryanbriones/Projects/dbc/salamanders/final-projects/ryanbriones-PatientEngagement/spec/features/first_time_login_spec.rb": [
         1,
         null,
         1,
@@ -643,7 +670,7 @@
         null,
         null
       ],
-      "/Users/KatyX/Desktop/patientengagement/spec/features/login_spec.rb": [
+      "/Users/ryanbriones/Projects/dbc/salamanders/final-projects/ryanbriones-PatientEngagement/spec/features/login_spec.rb": [
         1,
         null,
         1,
@@ -679,7 +706,7 @@
         null,
         null
       ],
-      "/Users/KatyX/Desktop/patientengagement/spec/features/participant_submits_question_spec.rb": [
+      "/Users/ryanbriones/Projects/dbc/salamanders/final-projects/ryanbriones-PatientEngagement/spec/features/participant_submits_question_spec.rb": [
         1,
         null,
         1,
@@ -704,7 +731,7 @@
         null,
         null
       ],
-      "/Users/KatyX/Desktop/patientengagement/spec/helpers/application_helper_spec.rb": [
+      "/Users/ryanbriones/Projects/dbc/salamanders/final-projects/ryanbriones-PatientEngagement/spec/helpers/application_helper_spec.rb": [
         null,
         null,
         null,
@@ -717,7 +744,7 @@
         null,
         null
       ],
-      "/Users/KatyX/Desktop/patientengagement/spec/mailers/user_mailer_spec.rb": [
+      "/Users/ryanbriones/Projects/dbc/salamanders/final-projects/ryanbriones-PatientEngagement/spec/mailers/user_mailer_spec.rb": [
         1,
         null,
         1,
@@ -763,7 +790,7 @@
         null,
         null
       ],
-      "/Users/KatyX/Desktop/patientengagement/spec/models/answer_spec.rb": [
+      "/Users/ryanbriones/Projects/dbc/salamanders/final-projects/ryanbriones-PatientEngagement/spec/models/answer_spec.rb": [
         1,
         null,
         1,
@@ -772,7 +799,7 @@
         null,
         null
       ],
-      "/Users/KatyX/Desktop/patientengagement/spec/models/coordinator_spec.rb": [
+      "/Users/ryanbriones/Projects/dbc/salamanders/final-projects/ryanbriones-PatientEngagement/spec/models/coordinator_spec.rb": [
         1,
         null,
         1,
@@ -793,7 +820,7 @@
         null,
         null
       ],
-      "/Users/KatyX/Desktop/patientengagement/spec/models/participant_spec.rb": [
+      "/Users/ryanbriones/Projects/dbc/salamanders/final-projects/ryanbriones-PatientEngagement/spec/models/participant_spec.rb": [
         1,
         null,
         1,
@@ -834,7 +861,7 @@
         null,
         null
       ],
-      "/Users/KatyX/Desktop/patientengagement/spec/models/question_spec.rb": [
+      "/Users/ryanbriones/Projects/dbc/salamanders/final-projects/ryanbriones-PatientEngagement/spec/models/question_spec.rb": [
         1,
         null,
         1,
@@ -844,6 +871,6 @@
         null
       ]
     },
-    "timestamp": 1385951081
+    "timestamp": 1385996857
   }
 }

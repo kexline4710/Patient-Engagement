@@ -1,4 +1,6 @@
 class Participant < ActiveRecord::Base
+  # Helpers should not be mixed into models. Helpers are for views
+  # What is the purpose of this?
 	include ApplicationHelper
 
   attr_accessible :email, :first_name, :last_name, :password, :authenticity_token, :password_digest, :password_confirmation, :first_time_login, :subject_number
@@ -6,10 +8,10 @@ class Participant < ActiveRecord::Base
 
   before_create { generate_token(:authenticity_token) }
   # before_create { generate_password }
-  validates :email, :presence => true
-  validates :email, :uniqueness => true
-  validates :password, :presence => true
-  validates :password, length: { in: 6..20, message: "- must be between 6 and 20 characters"}
+  # CODE REVIEW: you can move validations for a given attribute to one line
+  validates :email, :presence => true, :uniqueness => true
+  validates :password, :presence => true, 
+                       :length => { in: 6..20, message: "- must be between 6 and 20 characters"}
   has_secure_password
 
   belongs_to :coordinator

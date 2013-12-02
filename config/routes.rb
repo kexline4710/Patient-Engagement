@@ -1,5 +1,11 @@
 PatientEngagement::Application.routes.draw do
   # root :to => "application#login"
+  
+  # CODE REVIEW: My Recommendation
+  # * root :to => "dashboard#show"
+  # * in ApplicationController: before_filter :require_login
+  # * in SessionsController/PasswordResetsController: skip_before_filter :require_login
+  # * in DashboardController#show: redirect to ParticipantsController/CoordinatorsController as appropriate
   root :to => "sessions#new"
 
   post 'login' => 'sessions#create'
