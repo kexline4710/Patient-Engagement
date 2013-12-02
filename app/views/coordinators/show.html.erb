@@ -10,22 +10,33 @@
 
       <% if @participants %>
       	<h2>Participant's Questions</h2>
-        <% @participants.each do |participant| %>
-        	<% if participant.questions %>
-	        	<% participant.questions.each do |question| %>
-		          <div>
-		          	<div>Subject: <%= participant.subject_number %></div>
-		            <div><%= question.title %></div>
-		            <div><%= question.content %></div>
-                  <%= form_for( :answer , url: new_answer_path, :html => {:method => :get}) do |f| %>
-                    <%= hidden_field_tag 'question', question.id %>
-                    <%= f.submit "Answer"%>
-                  <% end %>
-
-		        	</div> <!-- closes question and answer block-->
-		        <% end %>
+        <table>
+          <tr>
+            <th>Subject</th>
+            <th>Title</th>
+            <th></th>
+          </tr>
+          <% @participants.each do |participant| %>
+          	<% if participant.questions %>
+  	        	<% participant.questions.each do |question| %>
+  		          <div>
+                  <tr>
+                    <td><%= participant.subject_number %></td>
+    		            <td><%= question.title %></td>
+                    <td>
+                    <% if question.answer %>
+                      <%= form_for( :answer , url: new_answer_path, :html => {:method => :get}) do |f| %>
+                        <%= hidden_field_tag 'question', question.id %>
+                        <%= f.submit "Answer"%>
+                      <% end %>
+                    <% end %>
+                    </td>
+                  </tr>
+  		        	</div> <!-- closes question and answer block-->
+  		        <% end %>
+            <% end %>
           <% end %>
-        <% end %>
+        </table>
       <% end %>
     </div> <!-- closes content div-->
 
