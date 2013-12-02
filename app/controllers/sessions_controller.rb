@@ -1,6 +1,6 @@
 class SessionsController < ApplicationController
   include ApplicationHelper
-  # before_filter :first_time_visiting?
+  skip_before_filter :require_login
 
 	def new
 	end
