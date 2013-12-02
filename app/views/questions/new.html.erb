@@ -1,3 +1,5 @@
+<fieldset>
+<legend
 <%= form_for :question, url: {action: "create"} do |f| %>
   <%= f.label :title %>
   <%= f.text_field :title %>
@@ -7,6 +9,4 @@
 
   <%= f.submit "Submit"%>
 <% end %>
-
-
-
+</fieldset>
