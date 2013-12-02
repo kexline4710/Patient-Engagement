@@ -5,4 +5,5 @@ FactoryGirl.define do
    f.password "talidaga"
    f.authenticity_token "abc123"
    f.association :trial
+ end
 end
