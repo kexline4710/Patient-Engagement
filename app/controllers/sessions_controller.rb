@@ -6,6 +6,11 @@ class SessionsController < ApplicationController
 	end
 
   def create
+    # CODE REVIEW:
+    # Having Coordinators and Participants being in different objects seems like
+    # unecessary complexity. I probably would have made a User object with a "role"
+    # and a coordinator_id that is NULL for coordinators. It certainly makes
+    # this logic complicated.
       user = Coordinator.find_by_email(params[:session][:email])
     if user && user.authenticate(params[:session][:password])
       session[:authenticity_token] = user.authenticity_token
