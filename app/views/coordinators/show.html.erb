@@ -27,8 +27,10 @@
                     <% if !question.answer %>
                       <%= form_for( :answer , url: new_answer_path, :html => {:method => :get}) do |f| %>
                         <%= hidden_field_tag 'question', question.id %>
-                        <%= f.submit "Answer"%>
+                        <%= f.submit "Answer", :class => "btn btn-block"%>
                       <% end %>
+                    <% else %>
+                    <p class="text-center">Answered</p>
                     <% end %>
                     </td>
                   </tr>
