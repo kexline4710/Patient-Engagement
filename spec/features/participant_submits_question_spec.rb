@@ -5,6 +5,7 @@ describe "Participant submits question" do
   describe "with complete information" do
     let(:question) { FactoryGirl.create(:question) }
     let(:coordinator) { FactoryGirl.create(:coordinator) }
+    let(:trial) { FactoryGirl.create(:trial)}
     let(:participant) { FactoryGirl.create(:participant, :coordinator_id => coordinator.id) }
 
 

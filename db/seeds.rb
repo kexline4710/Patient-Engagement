@@ -27,3 +27,10 @@ c1.participants << p1
 c1.participants << p2
 c1.participants << p3
 
+t1 = Trial.create(number: 231138, title: "Psychlogrine", information: "Many people have suffered from the perception that their lawn is not green enough. Introducing Psychlogrine, a drug that will change that perception. After pouring thousands of dollars into chemical treatments homeowners are typically left unsatisfied. This drug will save money and give users the peace of mind they has alluded them for years.")
+
+c1.trial_id = t1.id
+c1.save
+
+
+
