@@ -23,7 +23,7 @@ class Participant < ActiveRecord::Base
     password = SecureRandom.hex(n=4)
     self.update_attribute(:password, password)
     self.send_initial_email(password)
-    return password
+    password
   end
 
   def send_question_answered_email
