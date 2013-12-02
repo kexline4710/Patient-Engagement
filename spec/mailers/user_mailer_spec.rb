@@ -4,7 +4,7 @@ describe UserMailer do
 
 	describe "#welcome_email" do
 		let(:participant) { FactoryGirl.create(:participant) }
-		let(:mail) { UserMailer.welcome_email(participant) }
+		let(:mail) { UserMailer.welcome_email(participant, "password") }
 
 		it 'renders the receiver email' do
 			expect(mail.to).to eq([participant.email])
