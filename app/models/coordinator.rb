@@ -10,6 +10,7 @@ class Coordinator < ActiveRecord::Base
   has_secure_password
 
   has_many :participants
+  belongs_to :trial
 
   def send_question_notification_email
   	UserMailer.notify_coordinator_new_question(self).deliver
