@@ -1,12 +1,12 @@
 FactoryGirl.define do
-	# sequence :email do |n|
-	# 	"email#{n}@email.com"
-	# end
+	sequence :email do |n|
+		"email#{n}@email.com"
+	end
 
 	factory :participant do
 		first_name "Clay"
 		last_name	"Morten"
-		email	"cman@aol.com"
+		email
 		password "password"
 		subject_number 123
 		coordinator_id 1
