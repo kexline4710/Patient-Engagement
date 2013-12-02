@@ -5,7 +5,7 @@ class UserMailer < ActionMailer::Base
   	 @participant = participant
   	 @url = "http://patientengagement.herokuapp.com/"
   	 @password = password
-  	 mail(to: @participant.email, subject: 'Welcome to <NAME OF APP>! Important Password information in this email')
+  	 mail(to: @participant.email, subject: 'Welcome to SUBJECT1! Important password information in this email')
 	end
 
 	def notify_coordinator_new_question(coordinator)

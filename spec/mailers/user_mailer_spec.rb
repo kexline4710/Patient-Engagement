@@ -11,7 +11,7 @@ describe UserMailer do
 		end
 
 		it 'renders the subject' do
-			expect(mail.subject).to eq('Welcome to <NAME OF APP>! Important Password information in this email')
+			expect(mail.subject).to eq('Welcome to SUBJECT1! Important password information in this email')
 		end
 	end
 

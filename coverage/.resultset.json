@@ -79,6 +79,8 @@
         null,
         1,
         null,
+        null,
+        null,
         null
       ],
       "/Users/KatyX/Desktop/patientengagement/config/boot.rb": [
@@ -214,10 +216,20 @@
         null,
         null
       ],
-      "/Users/KatyX/Desktop/patientengagement/app/models/answer.rb": [
+      "/Users/KatyX/Desktop/patientengagement/app/controllers/application_controller.rb": [
         1,
         1,
         1,
+        null,
+        1,
+        5,
+        2,
+        2,
+        2,
+        null,
+        3,
+        null,
+        null,
         null,
         null
       ],
@@ -240,20 +252,10 @@
         null,
         null
       ],
-      "/Users/KatyX/Desktop/patientengagement/app/controllers/application_controller.rb": [
+      "/Users/KatyX/Desktop/patientengagement/app/models/answer.rb": [
         1,
         1,
         1,
-        null,
-        1,
-        5,
-        2,
-        2,
-        2,
-        null,
-        3,
-        null,
-        null,
         null,
         null
       ],
@@ -844,6 +846,6 @@
         null
       ]
     },
-    "timestamp": 1385951081
+    "timestamp": 1385997292
   }
 }
