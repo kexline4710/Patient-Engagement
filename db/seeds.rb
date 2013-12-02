@@ -10,10 +10,10 @@ p1 = Participant.create(first_name: "Katy", last_name: "Exline", email: "kathryn
 p1.generate_password
 # p1.save
 # p1.send_initial_email
-p2 = Participant.create(first_name: "Jane", last_name: "Smith", email: "j@dbc.com", subject_number: 40009 )
+p2 = Participant.create(first_name: "Jane", last_name: "Smith", email: "j@dbc.com", password: "password", subject_number: 40009 )
 p2.generate_password
 # p2.save
-p3 = Participant.create(first_name: "Clay", last_name: "Lyons", email: "c@dbc.com", subject_number: 40010 )
+p3 = Participant.create(first_name: "Clay", last_name: "Lyons", email: "c@dbc.com", password: "password", subject_number: 40010 )
 p3.generate_password
 # p3.save
 
@@ -21,7 +21,7 @@ p1.questions.create(title: "Question no. 1", content: "What do you think of my f
 p1.questions.create(title: "Question no. 2", content: "What do you think of my second question?")
 p2.questions.create(title: "Question no. 1", content: "What do you think of my first question?")
 
-c1 = Coordinator.create(first_name: james, email: "james@james.com", password: "password")
+c1 = Coordinator.create(first_name: "james", email: "james@james.com", password: "password")
 
 c1.participants << p1
 c1.participants << p2
