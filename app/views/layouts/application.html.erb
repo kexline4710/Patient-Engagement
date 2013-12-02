@@ -17,6 +17,15 @@
               <a  href='/'><img src="/assets/possiblelogo.png" alt="logo" height="58"></a>
             </div>
 
+            <!-- <div class="navbar-collapse collapse navbar-responsive-collapse"> -->
+
+
+              <% if current_user != nil %>
+               <ul class="nav navbar-nav navbar-right">
+                <li> <%= link_to "Log Out", logout_path, {method: :post} %></li>
+              </ul>
+              <% end %>
+         <!--    </div> -->
 
             </div><!-- /.nav-collapse -->
           </div><!-- /.navbar default-->
