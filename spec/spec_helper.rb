@@ -40,4 +40,9 @@ RSpec.configure do |config|
   # the seed, which is printed after each run.
   #     --seed 1234
   config.order = "random"
+
+  #http://stackoverflow.com/questions/5916126/how-do-i-prepare-test-databases-for-rails-rspec-tests-without-running-rake-spe/18039499#18039499
+  # config.after :all do
+  #   ActiveRecord::Base.subclasses.each(&:delete_all)
+  # end
 end
