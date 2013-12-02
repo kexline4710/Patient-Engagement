@@ -1,14 +1,14 @@
 {
   "RSpec": {
     "coverage": {
-      "/Users/alexfroelich/Desktop/patient_engagement/config/environment.rb": [
+      "/Users/KatyX/Desktop/patientengagement/config/environment.rb": [
         null,
         1,
         null,
         null,
         1
       ],
-      "/Users/alexfroelich/Desktop/patient_engagement/config/application.rb": [
+      "/Users/KatyX/Desktop/patientengagement/config/application.rb": [
         1,
         null,
         null,
@@ -81,7 +81,7 @@
         null,
         null
       ],
-      "/Users/alexfroelich/Desktop/patient_engagement/config/boot.rb": [
+      "/Users/KatyX/Desktop/patientengagement/config/boot.rb": [
         1,
         null,
         null,
@@ -89,7 +89,7 @@
         null,
         1
       ],
-      "/Users/alexfroelich/Desktop/patient_engagement/config/environments/test.rb": [
+      "/Users/KatyX/Desktop/patientengagement/config/environments/test.rb": [
         1,
         null,
         null,
@@ -128,7 +128,7 @@
         1,
         null
       ],
-      "/Users/alexfroelich/Desktop/patient_engagement/config/initializers/backtrace_silencers.rb": [
+      "/Users/KatyX/Desktop/patientengagement/config/initializers/backtrace_silencers.rb": [
         null,
         null,
         null,
@@ -137,7 +137,7 @@
         null,
         null
       ],
-      "/Users/alexfroelich/Desktop/patient_engagement/config/initializers/inflections.rb": [
+      "/Users/KatyX/Desktop/patientengagement/config/initializers/inflections.rb": [
         null,
         null,
         null,
@@ -154,14 +154,14 @@
         null,
         null
       ],
-      "/Users/alexfroelich/Desktop/patient_engagement/config/initializers/mime_types.rb": [
+      "/Users/KatyX/Desktop/patientengagement/config/initializers/mime_types.rb": [
         null,
         null,
         null,
         null,
         null
       ],
-      "/Users/alexfroelich/Desktop/patient_engagement/config/initializers/secret_token.rb": [
+      "/Users/KatyX/Desktop/patientengagement/config/initializers/secret_token.rb": [
         null,
         null,
         null,
@@ -170,7 +170,7 @@
         null,
         1
       ],
-      "/Users/alexfroelich/Desktop/patient_engagement/config/initializers/session_store.rb": [
+      "/Users/KatyX/Desktop/patientengagement/config/initializers/session_store.rb": [
         null,
         null,
         1,
@@ -180,7 +180,7 @@
         null,
         null
       ],
-      "/Users/alexfroelich/Desktop/patient_engagement/config/initializers/wrap_parameters.rb": [
+      "/Users/KatyX/Desktop/patientengagement/config/initializers/wrap_parameters.rb": [
         null,
         null,
         null,
@@ -196,7 +196,7 @@
         1,
         null
       ],
-      "/Users/alexfroelich/Desktop/patient_engagement/app/controllers/application_controller.rb": [
+      "/Users/KatyX/Desktop/patientengagement/app/controllers/application_controller.rb": [
         1,
         1,
         1,
@@ -213,7 +213,7 @@
         null,
         null
       ],
-      "/Users/alexfroelich/Desktop/patient_engagement/app/helpers/application_helper.rb": [
+      "/Users/KatyX/Desktop/patientengagement/app/helpers/application_helper.rb": [
         1,
         null,
         1,
@@ -232,7 +232,7 @@
         null,
         null
       ],
-      "/Users/alexfroelich/Desktop/patient_engagement/app/controllers/coordinators_controller.rb": [
+      "/Users/KatyX/Desktop/patientengagement/app/controllers/coordinators_controller.rb": [
         1,
         1,
         null,
@@ -242,7 +242,7 @@
         null,
         null
       ],
-      "/Users/alexfroelich/Desktop/patient_engagement/app/models/coordinator.rb": [
+      "/Users/KatyX/Desktop/patientengagement/app/models/coordinator.rb": [
         1,
         1,
         null,
@@ -261,7 +261,7 @@
         null,
         null
       ],
-      "/Users/alexfroelich/Desktop/patient_engagement/app/controllers/participants_controller.rb": [
+      "/Users/KatyX/Desktop/patientengagement/app/controllers/participants_controller.rb": [
         1,
         1,
         null,
@@ -278,7 +278,7 @@
         null,
         null
       ],
-      "/Users/alexfroelich/Desktop/patient_engagement/app/models/participant.rb": [
+      "/Users/KatyX/Desktop/patientengagement/app/models/participant.rb": [
         1,
         1,
         null,
@@ -299,7 +299,7 @@
         null,
         null
       ],
-      "/Users/alexfroelich/Desktop/patient_engagement/app/controllers/password_resets_controller.rb": [
+      "/Users/KatyX/Desktop/patientengagement/app/controllers/password_resets_controller.rb": [
         1,
         null,
         null,
@@ -321,7 +321,7 @@
         null,
         null
       ],
-      "/Users/alexfroelich/Desktop/patient_engagement/app/controllers/questions_controller.rb": [
+      "/Users/KatyX/Desktop/patientengagement/app/controllers/questions_controller.rb": [
         1,
         1,
         null,
@@ -337,14 +337,14 @@
         null,
         null
       ],
-      "/Users/alexfroelich/Desktop/patient_engagement/app/models/question.rb": [
+      "/Users/KatyX/Desktop/patientengagement/app/models/question.rb": [
         1,
         1,
         null,
         1,
         null
       ],
-      "/Users/alexfroelich/Desktop/patient_engagement/app/controllers/sessions_controller.rb": [
+      "/Users/KatyX/Desktop/patientengagement/app/controllers/sessions_controller.rb": [
         1,
         1,
         null,
@@ -375,7 +375,7 @@
         null,
         null
       ],
-      "/Users/alexfroelich/Desktop/patient_engagement/app/mailers/user_mailer.rb": [
+      "/Users/KatyX/Desktop/patientengagement/app/mailers/user_mailer.rb": [
         1,
         1,
         null,
@@ -392,7 +392,7 @@
         null,
         null
       ],
-      "/Users/alexfroelich/Desktop/patient_engagement/spec/factories/coordinators.rb": [
+      "/Users/KatyX/Desktop/patientengagement/spec/factories/coordinators.rb": [
         null,
         1,
         1,
@@ -402,7 +402,7 @@
         null,
         null
       ],
-      "/Users/alexfroelich/Desktop/patient_engagement/spec/factories/questions.rb": [
+      "/Users/KatyX/Desktop/patientengagement/spec/factories/questions.rb": [
         null,
         null,
         1,
@@ -412,7 +412,7 @@
         null,
         null
       ],
-      "/Users/alexfroelich/Desktop/patient_engagement/spec/factories/user.rb": [
+      "/Users/KatyX/Desktop/patientengagement/spec/factories/user.rb": [
         1,
         1,
         8,
@@ -430,7 +430,7 @@
         null,
         null
       ],
-      "/Users/alexfroelich/Desktop/patient_engagement/config/routes.rb": [
+      "/Users/KatyX/Desktop/patientengagement/config/routes.rb": [
         1,
         null,
         1,
@@ -506,7 +506,7 @@
         null,
         null
       ],
-      "/Users/alexfroelich/Desktop/patient_engagement/spec/controllers/session_spec.rb": [
+      "/Users/KatyX/Desktop/patientengagement/spec/controllers/session_spec.rb": [
         1,
         null,
         1,
@@ -541,7 +541,7 @@
         null,
         null
       ],
-      "/Users/alexfroelich/Desktop/patient_engagement/spec/features/first_time_login_spec.rb": [
+      "/Users/KatyX/Desktop/patientengagement/spec/features/first_time_login_spec.rb": [
         1,
         null,
         1,
@@ -574,7 +574,7 @@
         null,
         null
       ],
-      "/Users/alexfroelich/Desktop/patient_engagement/spec/features/login_spec.rb": [
+      "/Users/KatyX/Desktop/patientengagement/spec/features/login_spec.rb": [
         1,
         null,
         1,
@@ -610,7 +610,7 @@
         null,
         null
       ],
-      "/Users/alexfroelich/Desktop/patient_engagement/spec/features/participant_submits_question_spec.rb": [
+      "/Users/KatyX/Desktop/patientengagement/spec/features/participant_submits_question_spec.rb": [
         1,
         null,
         1,
@@ -635,7 +635,7 @@
         null,
         null
       ],
-      "/Users/alexfroelich/Desktop/patient_engagement/spec/helpers/application_helper_spec.rb": [
+      "/Users/KatyX/Desktop/patientengagement/spec/helpers/application_helper_spec.rb": [
         null,
         null,
         null,
@@ -648,7 +648,7 @@
         null,
         null
       ],
-      "/Users/alexfroelich/Desktop/patient_engagement/spec/mailers/user_mailer_spec.rb": [
+      "/Users/KatyX/Desktop/patientengagement/spec/mailers/user_mailer_spec.rb": [
         1,
         null,
         1,
@@ -681,7 +681,7 @@
         null,
         null
       ],
-      "/Users/alexfroelich/Desktop/patient_engagement/spec/models/coordinator_spec.rb": [
+      "/Users/KatyX/Desktop/patientengagement/spec/models/coordinator_spec.rb": [
         1,
         null,
         1,
@@ -702,7 +702,7 @@
         null,
         null
       ],
-      "/Users/alexfroelich/Desktop/patient_engagement/spec/models/participant_spec.rb": [
+      "/Users/KatyX/Desktop/patientengagement/spec/models/participant_spec.rb": [
         1,
         null,
         1,
@@ -726,7 +726,7 @@
         null,
         null
       ],
-      "/Users/alexfroelich/Desktop/patient_engagement/spec/models/question_spec.rb": [
+      "/Users/KatyX/Desktop/patientengagement/spec/models/question_spec.rb": [
         1,
         null,
         1,
@@ -736,6 +736,6 @@
         null
       ]
     },
-    "timestamp": 1385927740
+    "timestamp": 1385944956
   }
 }
