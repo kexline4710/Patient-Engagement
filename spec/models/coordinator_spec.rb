@@ -17,4 +17,10 @@ describe Coordinator do
 	# 		expect(ActionMailer::Base.deliveries.last.to).to eq([coordinator.email])
  #  	end
 	# end
+
+  describe "associations" do
+    it { should have_many(:participants) }
+    it { should belong_to(:trial) }
+  end
+
 end

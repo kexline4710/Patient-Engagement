@@ -1,6 +1,6 @@
 Collaborators:
 Alex Froelich
-Clay Morton
+Clay Morton ~ hates git
 Kathryn Exline
 Jane Scharankov
 
