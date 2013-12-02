@@ -10,6 +10,11 @@ describe Coordinator do
     it {should have_secure_password}
   end
 
+  describe "associations" do
+    it { should have_many(:participants) }
+    it { should belong_to(:trial) }
+  end
+
   describe "#send_question_notification_email" do
   	it "sends the notification email" do
   		coordinator.send_question_notification_email
