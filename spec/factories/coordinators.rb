@@ -4,6 +4,5 @@ FactoryGirl.define do
    f.email "coor@smo.com"
    f.password "talidaga"
    f.authenticity_token "abc123"
-   f.trial_id Trial.find_by_number(231138)
-  end
+   f.association :trial
 end
