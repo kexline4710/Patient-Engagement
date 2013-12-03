@@ -6,6 +6,7 @@ describe "the coordinator dashboard" do
 
   describe "should display participant's questions" do
     let(:coordinator) { FactoryGirl.create(:coordinator) }
+    let(:trial) { FactoryGirl.create(:trial)}
     let(:participant) { FactoryGirl.create(:participant) }
     let(:question) { FactoryGirl.create(:question) }
     before do
