@@ -73,5 +73,4 @@ module PatientEngagement
     #configs paperclip
     config.paperclip_defaults = {:storage => :fog, :fog_credentials => {:provider => "Local", :local_root => "#{Rails.root}/public/system/participant_file/*.json"}, :fog_directory => "", :fog_host => "localhost"}
   end
-  end
 end
