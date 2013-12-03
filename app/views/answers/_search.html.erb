@@ -1,3 +1,6 @@
-<%= form_tag archive_path, :method => 'get'  %>
+ <%= form_tag archive_path, :method => 'get'  %>
     <%= text_field_tag :subject, params[:subject] %>
     <%= submit_tag "Search", :name => nil %>
+
+<%= form_tag participant_path(current_user), :method => 'put' %>
+	<%= radion_button_tag :feeling_id, feeling_option.id%>

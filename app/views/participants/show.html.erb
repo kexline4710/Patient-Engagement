@@ -64,29 +64,20 @@
         <fieldset>
           <legend>How are you feeling?</legend>
 
-<!-- <#%= form_for :participant, url: {action: "update", method: "PUT"}, html: { class: "bs-example form-horizontal" } do |f| %> -->
+            <%= form_tag participant_path(current_user), :method => 'put' %>
 
-          <%= form_for :participant, url: participant_path(current_user), html: { method: :put, class: "bs-example form-horizontal" } do |f| %>
-
-            <% @feelings.each do |feeling_option| %>
-
-              <div class="form-group">
-                <div class="col-lg-10 col-lg-offset-2">
-                  <%= f.radio_button :feeling_id, feeling_option.id%>
-                  <%= f.label :feeling_id, feeling_option.emotion %>
-                </div>
-              </div>
-
-            <% end %>
+              <% @feelings.each do |feeling_option| %>
+                <%= radio_button_tag :feeling_id, feeling_option.id%>
+                <%= label_tag :feeling_id, feeling_option.emotion%><br>
+              <% end %>
             <div class="form-group">
                 <div class="col-lg-10 col-lg-offset-2">
-                 <%= f.submit "Submit",  :id => "login", :class => "btn btn-info" %>
+                  <%= submit_tag "Submit"%>
+                 <!-- <#%= f.submit "Submit",  :id => "login", :class => "btn btn-info" %> -->
                 </div>
               </div>
-          <% end %>
-
         </fieldset>
-
+        <div>You last said that you were feeling: <%= @current_feeling %></div>
       </div><!--end of class="well" -->
 
     </div> <!--  closes sidebar div -->
