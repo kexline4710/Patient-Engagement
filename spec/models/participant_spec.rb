@@ -60,11 +60,25 @@ describe Participant do
     let(:question) { FactoryGirl.create(:question) }
     let(:participant) { FactoryGirl.create(:participant) }
     let(:answer) { FactoryGirl.create(:question) }
-    before(:each) do
+    before do
       participant.questions << question
     end
     it "should display one pending question" do
       expect(participant.pending_questions).to eq(1)
+    end
+  end
+
+  describe "answers_unviewed" do
+    let(:question) { FactoryGirl.create(:question) }
+    let(:participant) { FactoryGirl.create(:participant) }
+    let(:answer) { FactoryGirl.create(:answer) }
+    before(:each) do
+      participant.questions << question
+      question.answer = answer
+      question.save
+    end
+    it "should display an unviewed question" do
+      expect(participant.answers_unviewed[0]).to_not eq(nil)
     end
   end
 end
