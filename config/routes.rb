@@ -9,7 +9,7 @@ PatientEngagement::Application.routes.draw do
 
   resources :participants
 
-  resources :coordinators, except: [:index]
+  resources :coordinators
 
   resources :questions
 
