@@ -17,9 +17,8 @@ class AnswersController < ApplicationController
   end
 
   def index
-    debugger
-    participant = Participant.where("subject_number LIKE ?",params[:subject])
-      @questions = participant.questions
+    participant = Participant.search(params[:subject].to_i)
+      @questions = participant[0].questions
   end
 
 end

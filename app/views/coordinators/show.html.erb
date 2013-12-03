@@ -57,7 +57,6 @@
 </div> <!-- closes row -->
 </div> <!-- closes container-->
 
- <%= form_tag answers_path do %>
-    <%= text_field_tag :subject, params[:subject] %>
-    <%= submit_tag "Search", name: nil %>
-  <% end %>
+ <div id="search">
+  <%= render :partial => 'answers/search' %>
+ </div>

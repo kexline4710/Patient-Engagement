@@ -1,0 +1,3 @@
+<%= form_tag answers_path, :method => 'get'  %>
+    <%= text_field_tag :subject, params[:subject] %>
+    <%= submit_tag "Search", :name => nil %>
