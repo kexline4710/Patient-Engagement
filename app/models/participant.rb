@@ -36,4 +36,6 @@ class Participant < ActiveRecord::Base
     end while Participant.exists?(column => self[column])
   end
 
+
+
 end
