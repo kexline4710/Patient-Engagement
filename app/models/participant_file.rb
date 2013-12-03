@@ -1,6 +1,5 @@
 class ParticipantFile < ActiveRecord::Base
 	has_attached_file :subject_list
-	:path => ":rails_root/"
 	validates_attachment :subject_list, content_type: { content_type: 'application/json'}
 
 

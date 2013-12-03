@@ -61,8 +61,8 @@ ActiveRecord::Schema.define(:version => 20131203192351) do
     t.text     "content"
     t.datetime "created_at",                        :null => false
     t.datetime "updated_at",                        :null => false
-    t.boolean  "answered",       :default => false
     t.boolean  "private",        :default => false
+    t.boolean  "answered",       :default => false
   end
 
   create_table "trials", :force => true do |t|
