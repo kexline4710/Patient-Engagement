@@ -10,8 +10,8 @@ class QuestionsController < ApplicationController
     redirect_to participant_path(current_user)
   end
 
-  def show
-    @
+  def index
+    @questions = current_user.questions.order("updated_at DESC")
   end
 
 end

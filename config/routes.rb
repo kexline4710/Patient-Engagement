@@ -8,7 +8,7 @@ PatientEngagement::Application.routes.draw do
   resources :trials, only: [:show]
 
   resources :participants do
-    resources :questions, only: [:new, :show, :create]
+    resources :questions, only: [:new, :show, :create, :index]
   end
 
   resources :coordinators
