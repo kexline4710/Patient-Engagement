@@ -36,10 +36,11 @@
     <div class="col-md-4">
       <!-- right hand sidebar butttons-->
 
-      <a href="/participants/<%= current_user.authenticity_token %>/questions/new" class="btn btn-primary btn-lg btn-block">Ask a Question</a>
-      <a href="/participants/<%= current_user.authenticity_token%>/questions" class="btn btn-default btn-lg btn-block">Your Questions</a>
-      <a href="/questions/all" class="btn btn-default btn-lg btn-block">All Questions</a>
+      <%= link_to 'Ask a Question', new_participant_question_path(current_user.authenticity_token), html = { :class => "btn btn-primary btn-lg btn-block"}%>
 
+       <%= link_to 'Your Questions', participant_questions_path(current_user.authenticity_token), html = { :class => "btn btn-default btn-lg btn-block"}%>
+
+       <%= link_to 'All Questions', questions_all_path, html = { :class => "btn btn-default btn-lg btn-block"}%>
 
     </div> <!--  closes sidebar div -->
   </div> <!-- closes row -->
