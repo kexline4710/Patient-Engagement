@@ -11,11 +11,8 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-<<<<<<< HEAD
-ActiveRecord::Schema.define(:version => 20131203020358) do
-=======
 ActiveRecord::Schema.define(:version => 20131203042645) do
->>>>>>> ae9961c7cfc55e6a8410df65f47d4c705b3c90a1
+
 
   create_table "answers", :force => true do |t|
     t.text     "content"
