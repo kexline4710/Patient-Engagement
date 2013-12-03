@@ -15,11 +15,12 @@ class ParticipantFilesController < ApplicationController
 	end
 
 	def create
-		# file = params[:subject_list]
-		#  json = File.read('file')
-		#  obj= JSON.parse(json)
+		file = params[:]
+		debugger
+		 json = File.read('file')
+		 obj= JSON.parse(json)
 
-		#  puts obj
+		 puts obj
 	end
 
 
