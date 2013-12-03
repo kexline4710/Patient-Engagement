@@ -22,11 +22,13 @@
         </tr>
         <tr>
           <% @participants.each do |participant| %>
-          <% if !participant.questions.answered %>
+          <% if participant.questions %>
           <td> <%= participant.subject_number %> </td>
           <td>
             <% participant.questions.each do |question| %>
-            <span><%=question.title %></span><br>
+              <% if !question.answer %>
+                <%=question.title %><br>
+              <% end %>
             <% end %>
           </td>
           <td>

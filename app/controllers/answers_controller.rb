@@ -15,4 +15,6 @@ class AnswersController < ApplicationController
     # current_user.coordinator.send_quest
     redirect_to coordinator_path(current_user)
   end
+
+  def
 end
