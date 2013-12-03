@@ -14,10 +14,7 @@ describe "the participant navbar" do
       fill_in "Email",    with: participant.email
       fill_in "Password", with: participant.password
       click_button "Login"
-      # save_and_open_page
     end
-
-
     it { should have_link('Trial Info'); }
     #find(:xpath, "//a[@href='/foo']").click
   end
@@ -32,7 +29,6 @@ describe "the participant navbar" do
       fill_in "Email",    with: coordinator.email
       fill_in "Password", with: coordinator.password
       click_button "Login"
-
       find(:link, "Trial Info").click
     end
     it { should have_content(trial.title) }

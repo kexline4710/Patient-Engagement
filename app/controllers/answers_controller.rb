@@ -14,4 +14,11 @@ class AnswersController < ApplicationController
     # current_user.coordinator.send_quest
     redirect_to coordinator_path(current_user)
   end
+
+  def index
+    @answers = current_user.answers_unviewed
+    @answers.each do |answer|
+      answer.update_attribute(:viewed, true)
+    end
+  end
 end
