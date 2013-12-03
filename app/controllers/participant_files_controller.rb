@@ -15,13 +15,18 @@ class ParticipantFilesController < ApplicationController
 	end
 
 	def create
-		file = params[:]
-		debugger
-		 json = File.read('file')
-		 obj= JSON.parse(json)
-
-		 puts obj
+		subject_list = params[:participant_file][:subject_list]
+		 json_list = subject_list.read
+		 parsed_list = JSON.parse(json_list)
+		 parsed_list.each do |key, value| 
+		 		new_participant(value)
+		 end
+		 flash[:message] = ["#{parsed_list.length} Participants Uploaded Successfully"]
+		 redirect_to participant_files_path
 	end
 
+	def index
+
+	end
 
 end

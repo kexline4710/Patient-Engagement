@@ -71,6 +71,6 @@ module PatientEngagement
     # config.assets.paths << Rails.root.join("vendor", "assets", "fonts")
 
     #configs paperclip
-    config.paperclip_defaults = :storage => :local_root => "#{Rails.root}/public/system/participant_file/"
+
   end
 end
