@@ -13,7 +13,7 @@ PatientEngagement::Application.routes.draw do
 
   resources :coordinators
 
-  resources :questions, only: [:index]
+  get 'questions/all' => "questions#all"
 
   resources :answers
 
