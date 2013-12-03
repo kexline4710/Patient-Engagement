@@ -11,8 +11,10 @@ describe "Authentication" do
 
 
   describe "allows a participant to login to their account" do
+    let(:feeling) { FactoryGirl.create(:feeling) }
     let(:participant) { FactoryGirl.create(:participant) }
     before do
+      participant.feeling = feeling
       visit root_path
       fill_in "Email",    with: participant.email
       fill_in "Password", with: participant.password
