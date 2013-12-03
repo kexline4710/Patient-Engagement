@@ -50,7 +50,6 @@
     </table>
     <% end %>
   </div> <!-- closes content div-->
-
   <!-- <div class="col-md-4"> -->
   <!-- right hand sidebar butttons-->
   <!-- <a href="/answer/new">Ask a question</a> -->
@@ -58,4 +57,7 @@
 </div> <!-- closes row -->
 </div> <!-- closes container-->
 
-
+ <%= form_tag answers_path do %>
+    <%= text_field_tag :subject, params[:subject] %>
+    <%= submit_tag "Search", name: nil %>
+  <% end %>

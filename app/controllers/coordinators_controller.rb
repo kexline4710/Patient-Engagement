@@ -2,6 +2,7 @@ class CoordinatorsController < ApplicationController
   include ApplicationHelper
 
   def index
+
   end
 
   def show

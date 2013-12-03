@@ -16,5 +16,10 @@ class AnswersController < ApplicationController
     redirect_to coordinator_path(current_user)
   end
 
-  def
+  def index
+    debugger
+    participant = Participant.where("subject_number LIKE ?",params[:subject])
+      @questions = participant.questions
+  end
+
 end
