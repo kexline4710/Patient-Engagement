@@ -12,4 +12,10 @@ class ParticipantsController < ApplicationController
     @feelings = Feeling.all
   end
 
+  def update
+  	id = params[:feeling_id]
+  	p id
+  	current_user.update_attribute(feeling_id: params[:feeling_id])
+  end
+
 end

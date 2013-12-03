@@ -64,7 +64,9 @@
         <fieldset>
           <legend>How are you feeling?</legend>
 
-          <%= form_for :feeling, url: {action: "create"}, html: { class: "bs-example form-horizontal" } do |f| %>
+<!-- <#%= form_for :participant, url: {action: "update", method: "PUT"}, html: { class: "bs-example form-horizontal" } do |f| %> -->
+
+          <%= form_for :participant, url: participant_path(current_user), html: { method: :put, class: "bs-example form-horizontal" } do |f| %>
 
             <% @feelings.each do |feeling_option| %>
 
