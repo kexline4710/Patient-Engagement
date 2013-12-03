@@ -48,7 +48,11 @@ class Participant < ActiveRecord::Base
 
 
   def pending_questions
-    Answer.where(question_id: nil).count
+    n = 0
+    self.questions.each do |question|
+      n +=1 if question.answer.nil?
+    end
+    n
   end
 
   def answers_unviewed
