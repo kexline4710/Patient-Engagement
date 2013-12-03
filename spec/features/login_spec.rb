@@ -23,6 +23,7 @@ describe "Authentication" do
 
   describe "allows a coordinator to login to their account" do
     let(:coordinator) { FactoryGirl.create(:coordinator) }
+    let(:trial) { FactoryGirl.create(:trial)}
     before do
       visit root_path
       fill_in "Email",    with: coordinator.email
