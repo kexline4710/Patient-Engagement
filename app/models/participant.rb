@@ -37,6 +37,11 @@ class Participant < ActiveRecord::Base
     end while Participant.exists?(column => self[column])
   end
 
+  def pending_questions
+    Answer.where(question_id: nil).count
+  end
 
-
+  def answers_unviewed
+    Answer.joins(:question).where(viewed: false).readonly(false)
+  end
 end

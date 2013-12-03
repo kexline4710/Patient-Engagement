@@ -9,6 +9,7 @@ PatientEngagement::Application.routes.draw do
 
   resources :participants do
     resources :questions, only: [:new, :create, :index]
+    resources :answers, only: [:index]
   end
 
   get 'questions/all' => "questions#all"

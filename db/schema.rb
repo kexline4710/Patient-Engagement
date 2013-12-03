@@ -11,14 +11,16 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
+
 ActiveRecord::Schema.define(:version => 20131203154927) do
 
   create_table "answers", :force => true do |t|
     t.text     "content"
     t.integer  "question_id"
-    t.datetime "created_at",     :null => false
-    t.datetime "updated_at",     :null => false
+    t.datetime "created_at",                        :null => false
+    t.datetime "updated_at",                        :null => false
     t.integer  "coordinator_id"
+    t.boolean  "viewed",         :default => false
   end
 
   create_table "coordinators", :force => true do |t|
