@@ -9,6 +9,7 @@ class ParticipantsController < ApplicationController
 
   def show
     @questions = five_recent_questions
+    @feelings = Feeling.all
   end
 
 end

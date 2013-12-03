@@ -1,4 +1,5 @@
 class Feeling < ActiveRecord::Base
-  # attr_accessible :title, :body
+  attr_accessible :emotion
+
   has_many :participants
 end

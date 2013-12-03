@@ -60,6 +60,33 @@
 
        <%= link_to 'All Questions', questions_all_path, html = { :class => "btn btn-default btn-lg btn-block"}%>
 
+       <div class="well">
+        <fieldset>
+          <legend>How are you feeling?</legend>
+
+          <%= form_for :feeling, url: {action: "create"}, html: { class: "bs-example form-horizontal" } do |f| %>
+
+            <% @feelings.each do |feeling_option| %>
+
+              <div class="form-group">
+                <div class="col-lg-10 col-lg-offset-2">
+                  <%= f.radio_button :feeling_id, feeling_option.id%>
+                  <%= f.label :feeling_id, feeling_option.emotion %>
+                </div>
+              </div>
+
+            <% end %>
+            <div class="form-group">
+                <div class="col-lg-10 col-lg-offset-2">
+                 <%= f.submit "Submit",  :id => "login", :class => "btn btn-info" %>
+                </div>
+              </div>
+          <% end %>
+
+        </fieldset>
+
+      </div><!--end of class="well" -->
+
     </div> <!--  closes sidebar div -->
   </div> <!-- closes row -->
 

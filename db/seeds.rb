@@ -32,6 +32,14 @@ t1 = Trial.create(number: 231138, title: "Psychlogrine", information: "Many peop
 c1.trial_id = t1.id
 c1.save
 
+Feeling.create(emotion: "happy")
+Feeling.create(emotion: "comfortable")
+Feeling.create(emotion: "sad")
+Feeling.create(emotion: "depressed")
+Feeling.create(emotion: "sleepy")
+Feeling.create(emotion: "hungry")
+
+
 
 
 
