@@ -1,0 +1,28 @@
+<h1> Archive for Subject: <%=params[:subject]%> </h1>
+		<%= "There are #{@questions.length} questions archived" %>
+    <% if @questions %>
+			<% @questions.each do |question| %>
+			  <div class="panel panel-warning">
+          <div class="panel-heading">
+						<h3 class="panel-title"><%=question.title%></h3>
+					</div>
+
+					<div class="panel-body"> Question asked: <%= question.content %></div>
+
+					<div class="panel-body"> Your response: 
+              <%= if question.answer.content != nil %>
+                <%= question.answer.content %>
+              <% else %>
+                <%= "No Answer has been submitted yet" %>
+              <% end %>
+          </div>
+			<% end %>
+		</div>
+		<% else %>
+			<%= "No questions available" %>
+			<%= link_to "Go Back", root_path %>
+		<% end %>
+	</div>
+	<div>
+	 	<button><%= link_to "Go Back", root_path %></button>
+	</div>

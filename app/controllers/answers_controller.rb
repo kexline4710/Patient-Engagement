@@ -17,8 +17,7 @@ class AnswersController < ApplicationController
   end
 
   def index
-    participant = Participant.search(params[:subject].to_i)
-      @questions = participant[0].questions
+   
   end
 
 end

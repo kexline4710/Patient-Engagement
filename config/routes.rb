@@ -17,6 +17,8 @@ PatientEngagement::Application.routes.draw do
 
   resources :password_resets, only: [:new, :edit, :update, :create]
 
+  get 'archive' => 'coordinators#archive'
+
 
   # The priority is based upon order of creation:
   # first created -> highest priority.
