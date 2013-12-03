@@ -5,7 +5,8 @@ class CoordinatorsController < ApplicationController
   end
 
   def show
+  	collection = []
     @participants = current_user.participants
-  end
+   end
 
 end

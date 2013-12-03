@@ -4,49 +4,56 @@
   </div> <!-- closes row -->
 
   <div class="row">
-  <!-- main body 2 columns-->
+    <!-- main body 2 columns-->
     <div class="col-md-8">
+      <div>
+
+      </div>
       <h1>Welcome</h1>
 
       <% if @participants %>
-      	<h2>Participant Questions</h2>
-        <table class="table">
-          <tr>
-            <th>Subject</th>
-            <th>Title</th>
-            <th></th>
-          </tr>
+      <h2>Participant Questions</h2>
+      <table class="table">
+        <tr>
+          <th>Subject</th>
+          <th>Pending Questions</th>
+          <th>Answer</th>
+          <th>Feeling</th>
+        </tr>
+        <tr>
           <% @participants.each do |participant| %>
-          	<% if participant.questions %>
-  	        	<% participant.questions.each do |question| %>
-  		          <div>
-                  <tr>
-                    <td><%= participant.subject_number %></td>
-    		            <td><%= question.title %></td>
-                    <td>
-                    <% if !question.answer %>
-                      <%= form_for( :answer , url: "/answers/new", :html => {:method => :get}) do |f| %>
-                        <%= hidden_field_tag 'question', question.id %>
-                        <%= f.submit "Answer", :class => "btn btn-block"%>
-                      <% end %>
-                    <% else %>
-                    <p class="text-center">Answered</p>
-                    <% end %>
-                    </td>
-                  </tr>
-  		        	</div> <!-- closes question and answer block-->
-  		        <% end %>
+          <% if !participant.questions.answered %>
+          <td> <%= participant.subject_number %> </td>
+          <td>
+            <% participant.questions.each do |question| %>
+            <span><%=question.title %></span><br>
+            <% end %>
+          </td>
+          <td>
+            <% participant.questions.each do |question| %>
+              <% if !question.answer %>
+                <%= form_for( :answer , url: "/answers/new", :html => {:method => :get}) do |f| %>
+                  <%= hidden_field_tag 'question', question.id %>
+                  <%= f.submit "Answer", :class => "btn btn-block"%>
+                <% end %>
             <% end %>
           <% end %>
-        </table>
+          </td> 
+        </tr>
+      </div> <!-- closes question and answer block-->
       <% end %>
-    </div> <!-- closes content div-->
+      <% end %>
 
-    <!-- <div class="col-md-4"> -->
-      <!-- right hand sidebar butttons-->
-      <!-- <a href="/answer/new">Ask a question</a> -->
-    <!-- </div>  closes sidebar div -->
-  </div> <!-- closes row -->
+
+    </table>
+    <% end %>
+  </div> <!-- closes content div-->
+
+  <!-- <div class="col-md-4"> -->
+  <!-- right hand sidebar butttons-->
+  <!-- <a href="/answer/new">Ask a question</a> -->
+  <!-- </div>  closes sidebar div -->
+</div> <!-- closes row -->
 </div> <!-- closes container-->
 
 
