@@ -42,7 +42,6 @@ describe Participant do
   describe "generate_token" do
     subject { participant }
     it "should change authenticity_token" do
-      # debugger
       token = participant.authenticity_token
       participant.generate_token(:authenticity_token)
       expect(participant.authenticity_token).to_not eq(token)
