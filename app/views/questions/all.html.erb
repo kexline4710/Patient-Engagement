@@ -9,9 +9,7 @@
   <div class="row">
   <!-- main body 2 columns-->
     <div class="col-md-8">
-      <h1>Welcome</h1>
-
-      <h2>Recently Asked Questions</h2>
+      <h2>All Questions</h2>
       <% if @questions.length == 0 %>
         <div>These are the instructions for you to ask a question.</div>
       <% else %>
@@ -32,18 +30,9 @@
         <% end %>
       <% end %>
     </div> <!-- closes class="col-md-8" -->
-
-    <div class="col-md-4">
-      <!-- right hand sidebar butttons-->
-
-      <%= link_to 'Ask a Question', new_participant_question_path(current_user.authenticity_token), html = { :class => "btn btn-primary btn-lg btn-block"}%>
-
-       <%= link_to 'Your Questions', participant_questions_path(current_user.authenticity_token), html = { :class => "btn btn-default btn-lg btn-block"}%>
-
-       <%= link_to 'All Questions', questions_all_path, html = { :class => "btn btn-default btn-lg btn-block"}%>
-
-    </div> <!--  closes sidebar div -->
   </div> <!-- closes row -->
+
+
 
 
 
@@ -52,5 +41,3 @@
 
   </div> <!-- closes row-->
 </div> <!-- closes container-->
-
-

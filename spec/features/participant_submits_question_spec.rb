@@ -14,7 +14,7 @@ describe "Participant submits question" do
       fill_in "Email",    with: participant.email
       fill_in "Password", with: participant.password
       click_button "Login"
-      visit new_question_path
+      visit new_participant_question_path(participant.id)
       fill_in 'Title', with: question.title
       fill_in 'Content', with: question.content
       click_button 'Submit'
@@ -25,7 +25,7 @@ describe "Participant submits question" do
       fill_in "Email",    with: participant.email
       fill_in "Password", with: participant.password
       click_button "Login"
-      visit new_question_path
+      visit new_participant_question_path(participant.id)
       fill_in 'Title', with: question.title
       fill_in 'Content', with: question.content
       choose("question_private_true")
