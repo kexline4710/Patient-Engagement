@@ -36,6 +36,7 @@ class Participant < ActiveRecord::Base
     end while Participant.exists?(column => self[column])
   end
 
+
   def self.search(search)
     if search
       find(:all, :conditions => ['subject_number = ?', search])
@@ -45,4 +46,12 @@ class Participant < ActiveRecord::Base
     end
   end
 
+
+  def pending_questions
+    Answer.where(question_id: nil).count
+  end
+
+  def answers_unviewed
+    Answer.joins(:question).where(viewed: false).readonly(false)
+  end
 end

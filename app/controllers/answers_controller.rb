@@ -17,7 +17,9 @@ class AnswersController < ApplicationController
   end
 
   def index
-   
+    @answers = current_user.answers_unviewed
+    @answers.each do |answer|
+      answer.update_attribute(:viewed, true)
+    end
   end
-
 end

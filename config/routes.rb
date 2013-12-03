@@ -7,11 +7,14 @@ PatientEngagement::Application.routes.draw do
 
   resources :trials, only: [:show]
 
-  resources :participants
+  resources :participants do
+    resources :questions, only: [:new, :create, :index]
+    resources :answers, only: [:index]
+  end
+
+  get 'questions/all' => "questions#all"
 
   resources :coordinators
-
-  resources :questions
 
   resources :answers
 
