@@ -13,6 +13,7 @@
 
 ActiveRecord::Schema.define(:version => 20131203154927) do
 
+
   create_table "answers", :force => true do |t|
     t.text     "content"
     t.integer  "question_id"
@@ -59,6 +60,7 @@ ActiveRecord::Schema.define(:version => 20131203154927) do
     t.text     "content"
     t.datetime "created_at",                        :null => false
     t.datetime "updated_at",                        :null => false
+    t.boolean  "answered",       :default => false
     t.boolean  "private",        :default => false
   end
 

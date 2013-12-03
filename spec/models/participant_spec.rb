@@ -55,4 +55,16 @@ describe Participant do
       expect(participant.authenticity_token).to_not eq(token)
     end
   end
+
+  describe "pending_questions" do
+    let(:question) { FactoryGirl.create(:question) }
+    let(:participant) { FactoryGirl.create(:participant) }
+    let(:answer) { FactoryGirl.create(:question) }
+    before(:each) do
+      participant.questions << question
+    end
+    it "should display one pending question" do
+      expect(participant.pending_questions).to eq(1)
+    end
+  end
 end
