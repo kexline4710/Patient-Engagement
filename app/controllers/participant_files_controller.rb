@@ -1,1 +1,11 @@
-participant_files_controller.rb
+class CoordinatorsController < ApplicationController
+  include ApplicationHelper
+
+
+	def new
+	end
+
+
+
+
+end

@@ -69,5 +69,9 @@ module PatientEngagement
     config.assets.version = '1.0'
 
     # config.assets.paths << Rails.root.join("vendor", "assets", "fonts")
+
+    #configs paperclip
+    config.paperclip_defaults = {:storage => :fog, :fog_credentials => {:provider => "Local", :local_root => "#{Rails.root}/public/system/participant_file/*.json"}, :fog_directory => "", :fog_host => "localhost"}
+  end
   end
 end
