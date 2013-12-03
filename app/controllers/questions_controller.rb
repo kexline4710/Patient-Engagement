@@ -10,4 +10,8 @@ class QuestionsController < ApplicationController
     redirect_to participant_path(current_user)
   end
 
+  def show
+    @
+  end
+
 end
