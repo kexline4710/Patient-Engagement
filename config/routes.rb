@@ -7,11 +7,13 @@ PatientEngagement::Application.routes.draw do
 
   resources :trials, only: [:show]
 
-  resources :participants
+  resources :participants do
+    resources :questions, only: [:new, :show, :create]
+  end
 
   resources :coordinators
 
-  resources :questions
+  resources :questions, only: [:index]
 
   resources :answers
 
