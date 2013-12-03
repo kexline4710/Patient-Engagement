@@ -17,4 +17,8 @@ module ApplicationHelper
       1
     end
   end
+
+  def five_recent_questions
+    Question.where("private = ?", false).order("updated_at DESC").limit(5)
+  end
 end
