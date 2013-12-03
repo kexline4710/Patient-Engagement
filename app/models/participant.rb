@@ -12,6 +12,7 @@ class Participant < ActiveRecord::Base
   has_secure_password
 
   belongs_to :coordinator
+  belongs_to :feeling
   has_one :trial, through: :coordinator
   has_many :questions
 
