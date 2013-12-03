@@ -9,6 +9,7 @@ PatientEngagement::Application.routes.draw do
 
   resources :participants do
     resources :questions, only: [:new, :create, :index]
+    resources :answers, only: [:index]
   end
 
   get 'questions/all' => "questions#all"
@@ -18,6 +19,8 @@ PatientEngagement::Application.routes.draw do
   resources :answers
 
   resources :password_resets, only: [:new, :edit, :update, :create]
+
+  get 'archive' => 'coordinators#archive'
 
 
   # The priority is based upon order of creation:

@@ -37,5 +37,25 @@ class Participant < ActiveRecord::Base
   end
 
 
+  def self.search(search)
+    if search
+      find(:all, :conditions => ['subject_number = ?', search])
+    else
+      flash[:message] = "Subject does not exist"
+      redirect_to root_path
+    end
+  end
 
+
+  def pending_questions
+    n = 0
+    self.questions.each do |question|
+      n +=1 if question.answer.nil?
+    end
+    n
+  end
+
+  def answers_unviewed
+    Answer.joins(:question).where(viewed: false).readonly(false)
+  end
 end
