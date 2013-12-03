@@ -2,5 +2,6 @@
 
 FactoryGirl.define do
   factory :feeling do
+  	emotion "happy"
   end
 end

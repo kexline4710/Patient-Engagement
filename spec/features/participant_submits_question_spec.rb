@@ -3,6 +3,7 @@ require 'spec_helper'
 describe "Participant submits question" do
 
   describe "with complete information" do
+    let(:feeling) { FactoryGirl.create(:feeling)}
     let(:question) { FactoryGirl.create(:question) }
     let(:coordinator) { FactoryGirl.create(:coordinator) }
     let(:trial) { FactoryGirl.create(:trial)}
@@ -10,6 +11,7 @@ describe "Participant submits question" do
 
 
     it 'should direct to dashboard' do
+      participant.feeling = feeling
       visit root_path
       fill_in "Email",    with: participant.email
       fill_in "Password", with: participant.password
@@ -20,7 +22,9 @@ describe "Participant submits question" do
       click_button 'Submit'
       expect(page).to have_content('Welcome')
     end
+
     it "should mark a question private if a participant checks private" do
+      participant.feeling = feeling
       visit root_path
       fill_in "Email",    with: participant.email
       fill_in "Password", with: participant.password
