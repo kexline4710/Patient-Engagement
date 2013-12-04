@@ -11,7 +11,7 @@ describe "the participant dashboard" do
     participant.questions << question
     participant.save
     participant.coordinator = coordinator
-    participant.save
+    participant.save_
     visit root_path
     fill_in "Email",    with: coordinator.email
     fill_in "Password", with: coordinator.password

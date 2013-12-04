@@ -60,13 +60,16 @@ ActiveRecord::Schema.define(:version => 20131203234726) do
     t.boolean  "first_time_login",   :default => true
     t.integer  "feeling_id"
     t.string   "phone_number"
-  end
+
 
   create_table "participants_feelings", :force => true do |t|
     t.integer  "participant_id"
     t.integer  "feeling_id"
     t.datetime "created_at",     :null => false
     t.datetime "updated_at",     :null => false
+    t.integer  "feeling_id"
+    t.string   "phone_number"
+
   end
 
   create_table "questions", :force => true do |t|
