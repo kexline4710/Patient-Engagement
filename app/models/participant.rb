@@ -1,7 +1,8 @@
 class Participant < ActiveRecord::Base
+   include ActiveModel::ForbiddenAttributesProtection
 
 
-  attr_accessible :email, :first_name, :last_name, :password, :authenticity_token, :first_time_login, :subject_number, :feeling_id, :feelings
+  # attr_accessible :email, :first_name, :last_name, :password, :authenticity_token, :first_time_login, :subject_number, :feeling_id, :feelings
 
 
   before_create { generate_token(:authenticity_token) }

@@ -1,5 +1,6 @@
 class Feeling < ActiveRecord::Base
-  attr_accessible :emotion
+	 include ActiveModel::ForbiddenAttributesProtection
+  # attr_accessible :emotion
 
   has_many :participants
 end

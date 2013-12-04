@@ -23,4 +23,11 @@ class QuestionsController < ApplicationController
   def all
     @questions = Question.where("private = ? AND answered = ?", false, false).order("updated_at DESC")
   end
+
+  private
+
+  def question_params
+    params.require(:question).permit!
+  end
+  
 end

@@ -24,4 +24,11 @@ class AnswersController < ApplicationController
       answer.update_attribute(:viewed, true)
     end
   end
+
+  private
+
+  def coordinator_params
+    params.require(:answer).permit!
+  end
+
 end

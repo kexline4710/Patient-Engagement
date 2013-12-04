@@ -19,4 +19,10 @@ class ParticipantsController < ApplicationController
     redirect_to participant_path(current_user)
   end
 
+  private
+
+  def participant_params
+    params.require(:particiapnt).permit!
+  end
+
 end
