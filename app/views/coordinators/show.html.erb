@@ -23,7 +23,11 @@
         <tr>
           <% @participants.each do |participant| %>
           <% if participant.questions %>
-          <td> <%= participant.subject_number %> </td>
+          <td>
+
+            <%= link_to participant.subject_number,archive_path(subject: participant.subject_number.to_s) %>
+
+          </td>
           <td>
             <% participant.questions.each do |question| %>
               <% if !question.answer %>
@@ -35,9 +39,9 @@
             <% participant.questions.each do |question| %>
               <% if !question.answer %>
                 <%= form_for( :answer , url: "/answers/new", :html => {:method => :get}) do |f| %>
-                  <%= hidden_field_tag 'question', question.id %>
-                  <%= f.submit "Answer", :class => "btn btn-block"%>
-                <% end %>
+                <%= hidden_field_tag 'question', question.id %>
+                <%= f.submit "Answer", :class => "btn btn-block"%>
+              <% end %>
             <% end %>
           <% end %>
           </td>
@@ -52,7 +56,6 @@
       </div> <!-- closes question and answer block-->
       <% end %>
       <% end %>
-
 
     </table>
     <% end %>

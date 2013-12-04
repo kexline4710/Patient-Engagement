@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20131203192351) do
+ActiveRecord::Schema.define(:version => 20131203234726) do
 
   create_table "answers", :force => true do |t|
     t.text     "content"
@@ -60,6 +60,16 @@ ActiveRecord::Schema.define(:version => 20131203192351) do
     t.boolean  "first_time_login",   :default => true
     t.integer  "feeling_id"
     t.string   "phone_number"
+
+
+  create_table "participants_feelings", :force => true do |t|
+    t.integer  "participant_id"
+    t.integer  "feeling_id"
+    t.datetime "created_at",     :null => false
+    t.datetime "updated_at",     :null => false
+    t.integer  "feeling_id"
+    t.string   "phone_number"
+
   end
 
   create_table "questions", :force => true do |t|
