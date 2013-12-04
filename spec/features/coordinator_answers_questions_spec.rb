@@ -56,6 +56,6 @@ describe "the coordinator dashboard" do
     end
     #"//a[contains(.,'some string')]"
     #page.should have_xpath('//table/tr')
-    it { should have_content("Participant Questions") }
+    it { should have_content("Participants") }
   end
 end

@@ -1,3 +1,9 @@
- <%= form_tag archive_path, :method => 'get'  %>
-    <%= text_field_tag :subject, params[:subject] %>
-    <%= submit_tag "Search", :name => nil %>
+ <%= form_tag archive_path, :method => 'get', :class => "navbar-form pull-right", :role => "search"  %>
+ <div class="form-group">
+ 	<div class="col-sm-8">
+    <%= text_field_tag :subject, params[:subject], :class => "form-control", :placeholder => "Search by Subject #"%>
+  </div>
+  <div class="col-sm-4">
+    <%= submit_tag "Search", :name => nil, :class => "btn btn-default " %>
+    </div>
+	</div>
