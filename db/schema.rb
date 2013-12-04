@@ -33,13 +33,11 @@ ActiveRecord::Schema.define(:version => 20131203192351) do
     t.integer  "trial_id"
   end
 
-
   create_table "feelings", :force => true do |t|
     t.string   "emotion"
     t.datetime "created_at", :null => false
     t.datetime "updated_at", :null => false
   end
-
 
   create_table "participant_files", :force => true do |t|
     t.integer  "coordinator_id"
@@ -60,8 +58,8 @@ ActiveRecord::Schema.define(:version => 20131203192351) do
     t.datetime "created_at",                           :null => false
     t.datetime "updated_at",                           :null => false
     t.boolean  "first_time_login",   :default => true
-    t.string   "phone_number"
     t.integer  "feeling_id"
+    t.string   "phone_number"
   end
 
   create_table "questions", :force => true do |t|
