@@ -8,15 +8,10 @@ describe "the participant dashboard" do
   let(:answer) { FactoryGirl.create(:answer) }
 
   before(:each) do
-    answer.coordinator_id = coordinator.id
-    answer.save
-    question.answer = answer
-    question.save
     participant.questions << question
+    participant.save
     participant.coordinator = coordinator
     participant.save
-
-
     visit root_path
     fill_in "Email",    with: coordinator.email
     fill_in "Password", with: coordinator.password
@@ -29,6 +24,6 @@ describe "the participant dashboard" do
 
   it "participant subject number should hotlink to archive view" do
     find(:link, participant.subject_number.to_s).click
-    page.should have_content(participant.questions[0].title)
+    page.should have_content(participant.subject_number)
   end
 end
