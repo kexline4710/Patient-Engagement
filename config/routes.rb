@@ -20,6 +20,8 @@ PatientEngagement::Application.routes.draw do
 
   resources :password_resets, only: [:new, :edit, :update, :create]
 
+  resources :participant_files
+
   get 'archive' => 'coordinators#archive'
 
 

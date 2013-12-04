@@ -9,6 +9,7 @@ class Coordinator < ActiveRecord::Base
   validates :password, :presence => true
   has_secure_password
 
+  has_many :participant_files
   has_many :participants
   belongs_to :trial
 
