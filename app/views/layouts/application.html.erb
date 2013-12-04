@@ -20,7 +20,7 @@
             <!-- <div class="navbar-collapse collapse navbar-responsive-collapse"> -->
 
               <% if current_user != nil %>
-              <ul class="nav navbar-nav navbar-right">
+              <ul class="nav navbar-nav navbar-right nav_fix">
                 <li><a href="/">Dashboard</a></li>
                 <li><a href="/trials/<%= current_trial_id %>">Trial Info</a></li>
                 <li> <%= link_to "Log Out", logout_path, {method: :post} %></li>
@@ -34,13 +34,14 @@
                   </div><!-- end of class="bs-example" -->
         </div> <!-- end of div class="col-lg-12" -->
       </div> <!-- end of div class="row" -->
+      <div class="deco-bar"></div>
 
           <% if flash[:message] != nil %>
 
             <div class="row">
               <div class="col-lg-3"> </div> <!-- left page spacing using columns-->
                 <div class="col-lg-6"> <!-- main content space on page using columns-->
-                  
+
 
 
                     <% @messages = flash[:message] %>

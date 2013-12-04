@@ -1,4 +1,4 @@
-<div class="container">
+<div class="container participant_container">
   <div class="row">
     <!--  insert navbar -->
 
@@ -15,7 +15,7 @@
       <% else %>
         <% @questions.each do |question| %>
 
-          <div class="panel panel-warning">
+          <div class="panel panel-default">
             <div class="panel-heading">
               <h3 class="panel-title"><%= question.title %></h3>
             </div><!-- end of class="panel-heading" -->
@@ -30,7 +30,9 @@
         <% end %>
       <% end %>
     </div> <!-- closes class="col-md-8" -->
+    <%= render "participants/sidebar" %>
   </div> <!-- closes row -->
+
 
 
 

@@ -1,8 +1,8 @@
-<div class="container">
+<div class="container participant_container">
   <div class="row">
-    <div class="col-lg-3"> </div> <!-- left page spacing using columns-->
+    <!-- <div class="col-lg-3"> </div>  left page spacing using columns -->
 
-    <div class="col-lg-6"> <!-- main content space on page using columns-->
+    <div class="col-lg-8"> <!-- main content space on page using columns-->
       <div class="well">
         <fieldset>
           <legend>Ask a Question</legend>
@@ -23,19 +23,22 @@
           	      <%= f.label :content, "Content:", :input_html => { :class => "control-label"} %>
                 </div>
                 <div class="col-lg-10">
-          	      <%= f.text_area :content, :input_html => { :class => "form-control" } %>
+          	      <%= f.text_area :content, :value => flash[:content] ,
+  :input_html => { :class => "form-control" } %>
                 </div>
               </div>
                 <img id= "img" src="/assets/ajax-loader.gif">
               <div class="form-group">
-                <div class="col-lg-10 col-lg-offset-2">
+                <div class="col-lg-1">
                   <%= f.check_box :private%>
-                  <%= f.label "Would you like this question to be private? Or else, other viewers will be able to see the question" %>
+                  </div>
+                  <div class="col-lg-11">
+                  <%= f.label "I would like my question to remain private and not be shared with other participants in the trial." %>
                 </div>
               </div>
               <div class="form-group">
                 <div class="col-lg-10 col-lg-offset-2">
-          	     <%= f.submit "Submit",  :id => "login", :class => "btn btn-info" %>
+          	     <%= f.submit "Submit Question",  :id => "login", :class => "btn btn-info" %>
                 </div>
               </div>
 
@@ -45,7 +48,9 @@
         </fieldset>
 
       </div><!--end of class="well" -->
-    </div><!-- end of class="col-lg-6" -->
-    <div class="col-lg-3"></div><!-- end of class="col-lg-3" -->
+    </div><!-- end of class="col-lg-8" -->
+    <%= render "participants/sidebar" %>
+
+    <!-- <div class="col-lg-3"></div>end of class="col-lg-3" -->
   </div>  <!-- end of class="row"-->
 </div><!-- end of class="container"-->

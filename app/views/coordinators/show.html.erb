@@ -1,15 +1,22 @@
-<div class="container">
+<div class="container participant_container">
   <div class="row">
     <!--  insert navbar -->
   </div> <!-- closes row -->
 
   <div class="row">
     <!-- main body 2 columns-->
-    <div class="col-md-8">
-      <div>
-        <h5> You have <%= @questions.length %>  unanswered questions </h5>
+    <div class="col-md-12">
+      <div class="alert alert-warning">
+        <h4> You have <%= @questions.length %>  unanswered questions </h4>
       </div>
-      <h1>Welcome</h1>
+
+      <div class="col-lg-8">
+        <h1>Welcome</h1>
+      </div>
+      <div id="search" class="col-lg-4">
+        <%= render :partial => 'answers/search' %>
+      </div>
+
       <% if @participants %>
       <h2>Participant Questions</h2>
       <table class="table">
@@ -66,9 +73,7 @@
 </div> <!-- closes row -->
 </div> <!-- closes container-->
 
- <div id="search">
-  <%= render :partial => 'answers/search' %>
- </div>
+
 
  <div>
   <%= link_to "Upload Subject List", new_participant_file_path %>

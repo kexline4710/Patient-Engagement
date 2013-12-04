@@ -1,0 +1,27 @@
+<div class="col-md-4">
+      <!-- right hand sidebar butttons-->
+      <div class="well">
+      <%= link_to 'Ask a Question', new_participant_question_path(current_user.authenticity_token), html = { :class => "btn btn-primary btn-lg btn-block"}%>
+
+       <%= link_to 'Your Questions', participant_questions_path(current_user.authenticity_token), html = { :class => "btn btn-info btn-lg btn-block"}%>
+
+       <%= link_to 'All Questions', questions_all_path, html = { :class => "btn btn-success btn-lg btn-block"}%>
+       </div>
+       <div class="well">
+        <fieldset>
+          <legend>How are you feeling?</legend>
+            <div class="form-group">
+            <%= form_tag participant_path(current_user), :method => 'put' %>
+              <% feelings.each do |feeling_option| %>
+                <%= radio_button_tag :feeling_id, feeling_option.id%>
+                <%= label_tag :feeling_id, feeling_option.emotion%><br>
+              <% end %><br>
+              <%= submit_tag "Submit", :class => "btn btn-danger"%>
+              </div>
+        </fieldset>
+        <% if @current_feeling %>
+        <div>You last said that you were feeling: <%= @current_feeling %></div>
+        <% end %>
+      </div><!--end of class="well" -->
+
+    </div> <!--  closes sidebar div -->

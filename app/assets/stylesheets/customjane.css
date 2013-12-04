@@ -15,7 +15,7 @@
 .deco-bar {
   position: relative;
   min-height: 20px;
-  /*margin-bottom: 20px;*/
+  /*margin-bottom: 55px;*/
   border: 1px solid transparent;
   background-color: #b2d271;
   background-image:url('wallpapersmall.png');
@@ -26,4 +26,11 @@
   position:absolute;
   top:50px;
 }
+
+.participant_container {
+  margin-top: 25px;
+}
+
+.nav_fix {
+  margin-top: 17px;
 }

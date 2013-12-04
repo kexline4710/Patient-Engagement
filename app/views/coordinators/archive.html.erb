@@ -1,3 +1,5 @@
+<div class="deco-bar">
+</div>
 <h1> Archive for Subject: <%=params[:subject]%> </h1>
 		<% if @questions %>
 			<h5><%= pluralize(@questions.length, "question") %> archived</h5>
@@ -21,6 +23,26 @@
 			<%= link_to "Go Back", root_path %>
 		<% end %>
 	</div>
+
+	<div>
+		<% if @feelings %>
+			<table border="1">
+				<tr>
+					<% @feelings.each do |feeling| %>
+					<td>
+						<%= feeling.emotion %>
+					</td>
+					<% end %>
+				</tr>
+					<% @feelings.each do |feeling| %>
+					<td>
+						<%= feeling.created_at.strftime("%D")%>
+					</td>
+					<% end %>
+			</table>
+		<% end %>
+	</div>
+
 	<div>
 	 	<button><%= link_to "Go Back", root_path %></button>
 	</div>

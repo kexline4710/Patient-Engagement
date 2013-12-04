@@ -1,4 +1,5 @@
 class DashboardsController < ApplicationController
+  include ApplicationHelper
 
 
   def show

@@ -15,8 +15,10 @@ class CoordinatorsController < ApplicationController
     end
   end
 
-   def archive
+  def archive
      participant = Participant.search(params[:subject].to_i)
+     questions = participant[0].questions
+      @feelings = participant[0].feelings.order(:created_at)
      if participant.length > 0
       @questions = participant[0].questions
     else
