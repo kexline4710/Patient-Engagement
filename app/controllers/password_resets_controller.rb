@@ -17,6 +17,7 @@ class PasswordResetsController < ApplicationController
       if params[:participant][:password_digest] == params[:participant][:password_confirmation]
        	if participant.update_attributes(password: params[:participant][:password_digest])
        		flash[:message] = ["Password Updated!"]
+          session.clear
        	redirect_to login_path
         end
    	  else
