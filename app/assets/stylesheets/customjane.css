@@ -40,5 +40,12 @@
 
 .nested_table td {
   padding: 3px;
+}
 
+.well {
+  border: 2px solid #D5D5D5;
+}
+
+.participant_table {
+  margin-top: 20px;
 }
