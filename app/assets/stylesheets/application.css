@@ -9,6 +9,28 @@
  * compiled file, but it's generally better to create a new file per style scope.
  *
  *= require bootstrap-modified
+ *= require jquery.ui.all
  *= require_self
  *= require_tree .
  */
+
+
+
+.flash_messages{
+	text-align: center;
+	background-color: deeppink;
+	margin: auto;
+
+}
+
+th{
+	text-align: center;
+}
+
+td{
+	text-align: center;
+}
+
+.ui-front {
+	z-index: 2000;
+}

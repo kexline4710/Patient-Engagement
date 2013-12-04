@@ -1,7 +1,7 @@
 <div class="col-md-4">
       <!-- right hand sidebar butttons-->
       <div class="well">
-      <%= link_to 'Ask a Question', new_participant_question_path(current_user.authenticity_token), html = { :class => "btn btn-primary btn-lg btn-block"}%>
+      <%= link_to 'Ask a Question', new_participant_question_path(current_user.authenticity_token), html = { :class => "btn btn-primary btn-lg btn-block", :id => "ask_question"}%>
 
        <%= link_to 'Your Questions', participant_questions_path(current_user.authenticity_token), html = { :class => "btn btn-info btn-lg btn-block"}%>
 
@@ -16,7 +16,7 @@
                 <%= radio_button_tag :feeling_id, feeling_option.id%>
                 <%= label_tag :feeling_id, feeling_option.emotion%><br>
               <% end %><br>
-              <%= submit_tag "Submit", :class => "btn btn-danger"%>
+              <%= submit_tag "Submit", :class => "btn btn-danger", id: "submit_tag" %>
               </div>
         </fieldset>
         <% if @current_feeling %>
