@@ -7,7 +7,7 @@
         <fieldset>
           <legend>Ask a Question</legend>
 
-          <%= form_for :question, url: {action: "create"}, html: { class: "bs-example form-horizontal" } do |f| %>
+          <%= form_for :question, url: {action: "create"}, html: { class: "bs-example form-horizontal", id: "question_form" } do |f| %>
 
               <div class="form-group">
                 <div class="col-lg-2">

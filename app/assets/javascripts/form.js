@@ -7,12 +7,13 @@ $(document).ready(function(){
 		});
 	});
 
-	$("#ask_question").on('click', function(event){
+	$("#ask_question").on( 'click', function(event){
 			event.preventDefault();
 			var link = $(event.currentTarget).attr("href")
 	$.get(link, function(data){
-			$(data).find("form").dialog({title: "Ask a Question", modal: true, height: "auto", width: "auto"});
+			$(data).find("#question_form").dialog({title: "Ask a Question", modal: true, height: "auto", width: "auto"});
 			$('#img').hide()
+			$()
 			
 		});
 	});
