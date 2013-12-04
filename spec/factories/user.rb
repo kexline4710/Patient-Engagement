@@ -12,5 +12,6 @@ FactoryGirl.define do
 		coordinator_id 1
 		authenticity_token "12412wer"
 		first_time_login false
+		feeling_id 1
 	end
 end

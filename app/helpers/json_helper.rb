@@ -18,6 +18,5 @@ module JsonHelper
 		p.password       = subject[4]
 		p.subject_number = subject[5]
 		p.coordinator_id = coordinator.to_i
-		p.save!
 	end
 end

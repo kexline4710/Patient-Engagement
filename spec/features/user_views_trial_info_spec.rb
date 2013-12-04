@@ -31,6 +31,6 @@ describe "the participant navbar" do
       click_button "Login"
       find(:link, "Trial Info").click
     end
-    it { should have_content(trial.title) }
+    it { should have_content('Trial of Oral') }
   end
 end

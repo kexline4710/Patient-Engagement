@@ -60,6 +60,27 @@
 
        <%= link_to 'All Questions', questions_all_path, html = { :class => "btn btn-default btn-lg btn-block"}%>
 
+       <div class="well">
+        <fieldset>
+          <legend>How are you feeling?</legend>
+
+            <%= form_tag participant_path(current_user), :method => 'put' %>
+
+              <% @feelings.each do |feeling_option| %>
+                <%= radio_button_tag :feeling_id, feeling_option.id%>
+                <%= label_tag :feeling_id, feeling_option.emotion%><br>
+              <% end %>
+            <div class="form-group">
+                <div class="col-lg-10 col-lg-offset-2">
+                  <%= submit_tag "Submit"%>
+                </div>
+              </div>
+        </fieldset>
+        <% if @current_feeling %>
+        <div>You last said that you were feeling: <%= @current_feeling %></div>
+        <% end %>
+      </div><!--end of class="well" -->
+
     </div> <!--  closes sidebar div -->
   </div> <!-- closes row -->
 
