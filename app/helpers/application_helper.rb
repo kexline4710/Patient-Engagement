@@ -19,6 +19,6 @@ module ApplicationHelper
   end
 
   def five_recent_questions
-    Question.where("private = ?", false).order("updated_at DESC").limit(5)
+    Question.where("private = ? AND answered = ?", false, false).order("updated_at DESC").limit(5)
   end
 end
