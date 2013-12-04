@@ -21,8 +21,8 @@ class ParticipantsController < ApplicationController
 
   private
 
-  def participant_params
-    params.require(:particiapnt).permit!
+  def feeling_params
+    params.require(:feeling_id).permit!
   end
 
 end
