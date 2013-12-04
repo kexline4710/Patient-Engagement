@@ -12,9 +12,10 @@ $(document).ready(function(){
 			var link = $(event.currentTarget).attr("href")
 	$.get(link, function(data){
 			$(data).find("#question_form").dialog({title: "Ask a Question", modal: true, height: "auto", width: "auto"});
-			$('#img').hide()
-			$()
-			
+			$('#img').hide();
+			$('#login').on('click', function(){
+			$('#img').show();
+			});
 		});
 	});
 

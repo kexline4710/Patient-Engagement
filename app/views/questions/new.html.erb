@@ -26,7 +26,6 @@
           	      <%= f.text_area :content, :value => flash[:content] ,  :input_html => { :class => "form-control" }, :cols => 45, :rows => 6 %>
                 </div>
               </div>
-                <img id= "img" src="/assets/ajax-loader.gif">
               <div class="form-group">
                 <div class="col-lg-1">
                   <%= f.check_box :private%>
@@ -37,6 +36,7 @@
               </div>
               <div class="form-group">
                 <div class="col-lg-10 col-lg-offset-2">
+                  <img id= "img" src="/assets/ajax-loader.gif">
           	     <%= f.submit "Submit Question",  :id => "login", :class => "btn btn-info" %>
                 </div>
               </div>
