@@ -26,14 +26,13 @@
           	      <%= f.text_area :content, :input_html => { :class => "form-control" } %>
                 </div>
               </div>
-
+                <img id= "img" src="/assets/ajax-loader.gif">
               <div class="form-group">
                 <div class="col-lg-10 col-lg-offset-2">
                   <%= f.check_box :private%>
                   <%= f.label "Would you like this question to be private? Or else, other viewers will be able to see the question" %>
                 </div>
               </div>
-
               <div class="form-group">
                 <div class="col-lg-10 col-lg-offset-2">
           	     <%= f.submit "Submit",  :id => "login", :class => "btn btn-info" %>

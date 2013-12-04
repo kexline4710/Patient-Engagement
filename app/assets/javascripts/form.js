@@ -12,6 +12,8 @@ $(document).ready(function(){
 			var link = $(event.currentTarget).attr("href")
 	$.get(link, function(data){
 			$(data).find("form").dialog({title: "Ask a Question", modal: true, height: "auto", width: "auto"});
+			$('#img').hide()
+			
 		});
 	});
 
