@@ -1,17 +1,10 @@
-<div class="container">
+<div class="container participant_container">
   <div class="row">
     <!--  insert navbar -->
-
   </div> <!-- closes row -->
-
-
-
   <div class="row">
   <!-- main body 2 columns-->
     <div class="col-md-8">
-      <h1>Welcome</h1>
-
-
       <h2>Your Questions</h2>
       <% if @questions.length == 0 %>
         <div>These are the instructions for you to ask a question.</div>
@@ -33,6 +26,8 @@
         <% end %>
       <% end %>
     </div> <!-- closes class="col-md-8" -->
+    <%= render "participants/sidebar" %>
+
   </div> <!-- closes row -->
 
 

@@ -1,8 +1,8 @@
-<div class="container">
+<div class="container participant_container">
   <div class="row">
-    <div class="col-lg-3"> </div> <!-- left page spacing using columns-->
+    <!-- <div class="col-lg-3"> </div>  left page spacing using columns -->
 
-    <div class="col-lg-6"> <!-- main content space on page using columns-->
+    <div class="col-lg-8"> <!-- main content space on page using columns-->
       <div class="well">
         <fieldset>
           <legend>Ask a Question</legend>
@@ -46,7 +46,9 @@
         </fieldset>
 
       </div><!--end of class="well" -->
-    </div><!-- end of class="col-lg-6" -->
-    <div class="col-lg-3"></div><!-- end of class="col-lg-3" -->
+    </div><!-- end of class="col-lg-8" -->
+    <%= render "participants/sidebar" %>
+
+    <!-- <div class="col-lg-3"></div>end of class="col-lg-3" -->
   </div>  <!-- end of class="row"-->
 </div><!-- end of class="container"-->

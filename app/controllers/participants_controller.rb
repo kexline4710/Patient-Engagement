@@ -9,7 +9,6 @@ class ParticipantsController < ApplicationController
 
   def show
     @questions = five_recent_questions
-    @feelings = Feeling.all
     @current_feeling = current_user.feeling.try(:emotion)
   end
 
