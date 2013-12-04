@@ -17,6 +17,4 @@ class QuestionsController < ApplicationController
   def all
     @questions = Question.where("private = ?", false).order("updated_at DESC")
   end
-
-
 end
