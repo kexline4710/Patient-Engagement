@@ -1,4 +1,4 @@
-<div class="container">
+<div class="container participant_container">
   <div class="row">
     <div class="col-lg-3"> </div> <!-- left page spacing using columns-->
 
@@ -6,7 +6,9 @@
       <div class="well">
         <fieldset id="form">
           <legend id="answer_q">Answer Question</legend>
-          
+          <div>Subject: <%= @participant.subject_number %> </div>
+          <div><%= @question.title %></div>
+          <div><%= @question.content %></div><br>
 
           <%= form_for :answer, url: {action: "create"}, html: { class: "bs-example form-horizontal" } do |f| %>
               <div class ="subject">Subject: <%= @participant.subject_number %> </div>
@@ -18,7 +20,7 @@
           	      <%= f.label :content, :input_html => { :class => "control-label"} %>
                 </div>
                 <div class="col-lg-10">
-          	      <%= f.text_area :content, :input_html => { :class => "form-control"} %>
+          	      <%= f.text_area :content, :input_html => { :class => "form-control"}, :cols => 45, :rows => 6 %>
           	      <%= hidden_field_tag 'question_id', @question.id %>
                 </div>
               </div>
