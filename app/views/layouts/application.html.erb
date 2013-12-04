@@ -46,7 +46,7 @@
 
                     <% @messages = flash[:message] %>
                     <% @messages.each do |msg| %>
-                      <div class="alert alert-danger"> <%= msg %> </div>
+                      <div class="alert alert-danger flash_errors"> <%= msg %> </div>
                     <% end %>
 
                   </div><!-- end of class="flash_errors" -->

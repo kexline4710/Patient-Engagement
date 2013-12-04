@@ -12,18 +12,3 @@
  *= require_self
  *= require_tree .
  */
-
-.flash_messages{
-	text-align: center;
-	background-color: deeppink;
-	margin: auto;
-
-}
-
-th{
-	text-align: center;
-}
-
-td{
-	text-align: center;
-}
