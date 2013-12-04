@@ -1,7 +1,7 @@
 class Participant < ActiveRecord::Base
 
 
-  attr_accessible :email, :first_name, :last_name, :password, :authenticity_token, :password_confirmation, :first_time_login, :subject_number, :feeling_id
+  attr_accessible :email, :first_name, :last_name, :password, :authenticity_token, :password_confirmation, :first_time_login, :subject_number, :feeling_id, :feelings
 
 
   before_create { generate_token(:authenticity_token) }
@@ -15,7 +15,8 @@ class Participant < ActiveRecord::Base
   belongs_to :feeling
   has_one :trial, through: :coordinator
   has_many :questions
-  has_many :particpantsfeelingsrake
+  has_many :participants_feelings
+  has_many :feelings, :through => :participants_feelings
 
   def send_initial_email(password)
   	UserMailer.welcome_email(self, password).deliver
@@ -38,7 +39,6 @@ class Participant < ActiveRecord::Base
     end while Participant.exists?(column => self[column])
   end
 
-
   def self.search(search)
     if search
       find(:all, :conditions => ['subject_number = ?', search])
@@ -47,7 +47,6 @@ class Participant < ActiveRecord::Base
       redirect_to root_path
     end
   end
-
 
   def pending_questions
     n = 0

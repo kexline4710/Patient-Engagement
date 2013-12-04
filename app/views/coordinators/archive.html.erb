@@ -23,6 +23,26 @@
 			<%= link_to "Go Back", root_path %>
 		<% end %>
 	</div>
+
+	<div>
+		<% if @feelings %>
+			<table border="1">
+				<tr>
+					<% @feelings.each do |feeling| %>
+					<td>
+						<%= feeling.emotion %>
+					</td>
+					<% end %>
+				</tr>
+					<% @feelings.each do |feeling| %>
+					<td>
+						<%= feeling.created_at.strftime("%D")%>
+					</td>
+					<% end %>
+			</table>
+		<% end %>
+	</div>
+
 	<div>
 	 	<button><%= link_to "Go Back", root_path %></button>
 	</div>

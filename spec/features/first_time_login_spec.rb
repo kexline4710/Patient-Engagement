@@ -9,8 +9,8 @@ describe "First Time User Reset" do
   end
 
   describe "allows first time user to login" do
-  	  participant  = FactoryGirl.create(:participant, first_time_login: true) 
-  		
+  	  participant  = FactoryGirl.create(:participant, first_time_login: true)
+
   		before do
   		visit root_path
       fill_in "Email",    with: participant.email
@@ -22,7 +22,7 @@ describe "First Time User Reset" do
 	  			fill_in "Password", with: "Alexander"
 	  			fill_in "Password_Confirmation", with: "Alexander"
 	  			click_button "Update Password"
-				expect(page).to have_content("Email")	  			
+				expect(page).to have_content("Email")
 	  		end
 	 end
 end
