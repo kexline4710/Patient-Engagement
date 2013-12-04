@@ -4,8 +4,10 @@ $(document).ready(function(){
 	$.get("/answers/new?utf=✓&question=2&commit=Answer.html", function(data){
 			var page = $(data);
 			var contents = page.filter('#id');
-			console.log(contents)
-		$(contents).dialog("option", "autoOpen");
+			console.log(contents);
+			debugger
+
+			$(contents.prevObject).dialog();
 	});
 
 	});
