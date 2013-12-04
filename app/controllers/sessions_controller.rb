@@ -17,7 +17,7 @@ class SessionsController < ApplicationController
           first_time_visiting?
         else
           flash[:message] = ["Invalid email or Password"]
-          redirect_to root_path
+          redirect_to login_path
       end
     end
   end
