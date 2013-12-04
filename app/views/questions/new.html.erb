@@ -29,8 +29,8 @@
 
               <div class="form-group">
                 <div class="col-lg-10 col-lg-offset-2">
-                  <%= f.radio_button :private, true%>
-                  <%= f.label :private, "Would you like this question to be private? Or else, other viewers will be able to see the question" %>
+                  <%= f.check_box :private%>
+                  <%= f.label "Would you like this question to be private? Or else, other viewers will be able to see the question" %>
                 </div>
               </div>
 

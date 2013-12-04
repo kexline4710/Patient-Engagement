@@ -15,8 +15,6 @@ class QuestionsController < ApplicationController
   end
 
   def all
-    @questions = Question.where("private = ?", false).order("updated_at DESC")
+    @questions = Question.where("private = ? AND answered = ?", false, false).order("updated_at DESC")
   end
-
-
 end
