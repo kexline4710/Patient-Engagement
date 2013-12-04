@@ -1,6 +1,6 @@
 <h1> Archive for Subject: <%=params[:subject]%> </h1>
 		<% if @questions %>
-			<%= "There are #{@questions.length} archived" %>
+			<%= "There are #{@questions.length} questions archived" %>
 			<% @questions.each do |question| %>
 			  <div class="panel panel-warning">
           <div class="panel-heading">
