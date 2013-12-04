@@ -11,10 +11,10 @@ class ParticipantFilesController < ApplicationController
 			
 		if true
 		 flash[:message] = ["Participants Uploaded Successfully"]
-		 redirect_to participant_files_path
+		 redirect_to coordinator_path(current_user)
 		else
 			flash[:message] = ["Participants were not loaded successfully, please try again"]
-			redirect_to new_participant_files_path
+			redirect_to coordinator_path(current_user)
 		end
 	end
 

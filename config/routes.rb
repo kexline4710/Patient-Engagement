@@ -22,6 +22,7 @@ PatientEngagement::Application.routes.draw do
 
   resources :participant_files
 
+  
   get 'archive' => 'coordinators#archive'
 
 
