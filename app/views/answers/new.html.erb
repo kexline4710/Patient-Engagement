@@ -47,8 +47,8 @@
 
               <div class="form-group">
                 <div class="col-lg-12">
-                  <%= f.radio_button :private, true%>
-                  <%= f.label :private, "Would you like this question to be private and not be shared with the test group" %>
+                  <%= f.check_box :private%>
+                  <%= f.label "Would you like this question to be private and not be shared with the test group" %>
                 </div>
               </div>
                 <% end %>
