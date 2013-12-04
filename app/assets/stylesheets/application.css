@@ -9,8 +9,8 @@
  * compiled file, but it's generally better to create a new file per style scope.
  *
  *= require bootstrap-modified
- *= require_self
  *= require jquery.ui.all
+ *= require_self
  *= require_tree .
  */
 
@@ -28,4 +28,8 @@ th{
 
 td{
 	text-align: center;
+}
+
+.ui-front {
+	z-index: 2000;
 }
