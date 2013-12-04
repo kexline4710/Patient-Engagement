@@ -34,3 +34,11 @@
 .nav_fix {
   margin-top: 17px;
 }
+.nested_table {
+  width: 100%;
+}
+
+.nested_table td {
+  padding: 3px;
+
+}
