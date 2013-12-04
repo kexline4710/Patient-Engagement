@@ -5,4 +5,10 @@ class TrialsController < ApplicationController
   def show
     @trial = Trial.find(current_trial_id)
   end
+
+  private
+
+  	def trial_params
+  		params.require(:trial).permit!
+  	end
 end

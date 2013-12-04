@@ -19,4 +19,10 @@ class ParticipantsController < ApplicationController
     redirect_to participant_path(current_user)
   end
 
+  private
+
+  def feeling_params
+    params.require(:feeling_id).permit!
+  end
+
 end

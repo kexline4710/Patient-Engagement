@@ -22,4 +22,10 @@ class ParticipantFilesController < ApplicationController
 
 	end
 
+	private
+
+	def participant_file_params
+		params.require(:participant_file).permit!
+	end
+
 end
