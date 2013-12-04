@@ -69,5 +69,8 @@ module PatientEngagement
     config.assets.version = '1.0'
 
     # config.assets.paths << Rails.root.join("vendor", "assets", "fonts")
+
+    #configs paperclip
+
   end
 end
