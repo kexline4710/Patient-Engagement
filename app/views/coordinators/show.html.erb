@@ -6,7 +6,7 @@
   <div class="row">
     <!-- main body 2 columns-->
     <div class="col-md-12">
-      <div class="alert alert-warning">
+      <div class="alert alert-warning col-md-8">
         <h4> You have <%= @questions.length %>  unanswered questions </h4>
       </div>
 
@@ -32,29 +32,30 @@
         </tr>
         <tr>
           <% @participants.each do |participant| %>
-          <% if participant.questions %>
-          <td>
 
+          <td> <!-- SUBJECT # COL-->
             <%= link_to participant.subject_number,archive_path(subject: participant.subject_number.to_s) %>
+          </td>
 
-          </td>
-          <td>
-            <% participant.questions.each do |question| %>
-              <% if !question.answer %>
-                <%=question.title %><br>
+          <td colspan="2"> <!-- NESTED TABLE 2 COL -->
+            <table class="nested_table">
+               <% if participant.questions %>
+                <% participant.questions.each do |question| %>
+                  <% if !question.answer %>
+                    <tr>
+                      <td><%=question.title %>
+                      </td>
+                      <td><%= form_for( :answer , url: "/answers/new", :html => {:method => :get}) do |f| %>
+                        <%= hidden_field_tag 'question', question.id %>
+                        <%= f.submit "Answer", :class => "btn btn-danger"%>
+                      </td>
+                    </tr>
+                <% end %>
               <% end %>
-            <% end %>
-          </td>
-          <td>
-            <% participant.questions.each do |question| %>
-              <% if !question.answer %>
-                <%= form_for( :answer , url: "/answers/new", :html => {:method => :get}) do |f| %>
-                <%= hidden_field_tag 'question', question.id %>
-                <%= f.submit "Answer", :class => "btn btn-block"%>
-              <% end %>
-            <% end %>
           <% end %>
+          </table>
           </td>
+
           <td>
           <% if participant.feeling %>
             <%= participant.feeling.emotion %>
