@@ -49,7 +49,7 @@
                     <tr>
                       <td><%=question.title %>
                       </td>
-                      <td><%= form_for( :answer , url: "/answers/new", :html => {:method => :get}) do |f| %>
+                      <td><%= form_for( :answer , url: "/answers/new", :html => {:method => :get, :class => "answer_button"}) do |f| %>
                         <%= hidden_field_tag 'question', question.id %>
                         <%= f.submit "Answer", :class => "btn btn-danger"%>
                       </td>
