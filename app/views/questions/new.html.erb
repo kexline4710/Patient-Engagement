@@ -23,7 +23,8 @@
           	      <%= f.label :content, "Content:", :input_html => { :class => "control-label"} %>
                 </div>
                 <div class="col-lg-10">
-          	      <%= f.text_area :content, :input_html => { :class => "form-control" } %>
+          	      <%= f.text_area :content, :value => flash[:content] ,
+  :input_html => { :class => "form-control" } %>
                 </div>
               </div>
 

@@ -8,7 +8,7 @@ PatientEngagement::Application.routes.draw do
   resources :trials, only: [:show]
 
   resources :participants do
-    resources :questions, only: [:new, :create, :index]
+    resources :questions, only: [:new, :index, :create]
     resources :answers, only: [:index]
   end
 
@@ -22,7 +22,7 @@ PatientEngagement::Application.routes.draw do
 
   resources :participant_files
 
-  
+
   get 'archive' => 'coordinators#archive'
 
 
