@@ -13,7 +13,7 @@ class PasswordResetsController < ApplicationController
 
   def update
    	participant = current_user
-    if params[:participant][:password_digest].length > 6
+    if params[:participant][:password_digest].length >= 6
       if params[:participant][:password_digest] == params[:participant][:password_confirmation]
        	if participant.update_attributes(password: params[:participant][:password_digest])
        		flash[:message] = ["Password Updated!"]
@@ -29,4 +29,10 @@ class PasswordResetsController < ApplicationController
       redirect_to edit_password_reset_path(participant.authenticity_token)
     end
   end
+
+  private
+
+    def participant_params
+      params.require(:participant).permit!
+    end
 end

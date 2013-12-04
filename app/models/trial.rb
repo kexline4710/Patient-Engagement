@@ -1,5 +1,6 @@
 class Trial < ActiveRecord::Base
-  attr_accessible :information, :number, :title
+	 include ActiveModel::ForbiddenAttributesProtection
+ 
 
   has_many :coordinators
 end
