@@ -20,7 +20,7 @@
             <!-- <div class="navbar-collapse collapse navbar-responsive-collapse"> -->
 
               <% if current_user != nil %>
-              <ul class="nav navbar-nav navbar-right">
+              <ul class="nav navbar-nav navbar-right nav_fix">
                 <li><a href="/">Dashboard</a></li>
                 <li><a href="/trials/<%= current_trial_id %>">Trial Info</a></li>
                 <li> <%= link_to "Log Out", logout_path, {method: :post} %></li>
