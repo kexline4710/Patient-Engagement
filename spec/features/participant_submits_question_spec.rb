@@ -23,7 +23,6 @@ describe "Participant submits question" do
     end
 
     it "should mark a question private if a participant checks private" do
-      # click_buton "question[private]"
       click_button 'Submit Question'
     end
 
