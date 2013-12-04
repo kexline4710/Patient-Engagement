@@ -17,7 +17,8 @@ class CoordinatorsController < ApplicationController
    end
 
    def archive
-     participant = Participant.search(params[:subject].to_i)
+      participant = Participant.search(params[:subject].to_i)
       @questions = participant[0].questions
+      @feelings = participant[0].feelings.order(:created_at)
   end
 end
