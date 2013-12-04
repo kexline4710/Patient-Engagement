@@ -15,7 +15,8 @@ class Participant < ActiveRecord::Base
   belongs_to :feeling
   has_one :trial, through: :coordinator
   has_many :questions
-  has_many :particpantsfeelingsrake
+  has_many :particpantsfeelings
+  has_many :feelings, :through => :participantsfeelings
 
   def send_initial_email(password)
   	UserMailer.welcome_email(self, password).deliver
