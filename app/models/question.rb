@@ -1,7 +1,6 @@
 class Question < ActiveRecord::Base
 	 include ActiveModel::ForbiddenAttributesProtection
-  # attr_accessible :title, :content, :participant_id, :private, :answered
-
+  
   belongs_to :participant
   has_one :answer
   has_one :coordinator, :through => :answer
