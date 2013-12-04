@@ -16,11 +16,10 @@ class CoordinatorsController < ApplicationController
   end
 
   def archive
-     participant = Participant.search(params[:subject].to_i)
-     questions = participant[0].questions
-      @feelings = participant[0].feelings.order(:created_at)
-     if participant.length > 0
-      @questions = participant[0].questions
+    participant = Participant.search(params[:subject].to_i)[0]
+    if participant
+      @questions = participant.questions
+      @feelings = participant.feelings.order(:created_at)
     else
       flash[:message] = ["Subject with that number was not found"]
       redirect_to coordinator_path(current_user.authenticity_token)
@@ -32,5 +31,5 @@ class CoordinatorsController < ApplicationController
   def coordinator_params
     params.require(:coordinator).permit!
   end
-  
+
 end
