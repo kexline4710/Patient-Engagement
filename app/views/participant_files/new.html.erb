@@ -1,0 +1,11 @@
+<h1> Upload Subject List </h1>
+
+<%= form_for :participant_file, url: {action: "create"}, :html => {:multipart => true} do |f| %>
+	<%= f.hidden_field :current_user, "value" => current_user.id %>
+	<p>
+		<%= f.file_field :subject_list %>
+	</p>
+		<p><%= f.submit "Upload" %></p>
+<% end %>
+
+<%= link_to "Go Back", root_path %>

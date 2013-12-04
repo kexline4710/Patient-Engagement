@@ -9,7 +9,11 @@
 
 					<div class="panel-body"> Question asked: <%= question.content %></div>
 
+							<% if !question.answer%>
+								<%= "There is no answer to this question" %>
+							<% else %>
 					<div class="panel-body"> Your response: <%= question.answer.content %></div>
+							<% end %>
 			<% end %>
 		</div>
 		<% else %>
