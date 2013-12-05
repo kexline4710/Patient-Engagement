@@ -5,5 +5,5 @@
 ##Collaborators:
 - Alex Froelich
 - Clay Morton
-- Kathryn Exline
+- Kathryn Exline (kathryn.exline@gmail.com)
 - Jane Scharankov
