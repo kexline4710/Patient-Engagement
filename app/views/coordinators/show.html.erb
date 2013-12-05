@@ -35,30 +35,28 @@
       <table class="table">
         <% if @participants %>
         <tr>
-          <th>Email</th>
-          <th>Subject</th>
+          <th class="subject">Subject</th>
           <th>Pending Questions</th>
-          <th>Answer</th>
-          <th>Feeling</th>
+          <th class="answer">Answer</th>
+          <th class="feeling">Feeling</th>
         </tr>
         <tr>
           <% @participants.each do |participant| %>
 
-          
-
-          <td> <!-- SUBJECT # COL-->
-            <%= link_to participant.subject_number,archive_path(subject: participant.subject_number.to_s) %>
+          <td class="subject"> <!-- SUBJECT # COL-->
+            <%= link_to participant.subject_number,archive_path(subject: participant.subject_number.to_s), :class => "subject-links" %>
           </td>
 
           <td colspan="2"> <!-- NESTED TABLE 2 COL -->
-            <table class="nested_table">
+            <table class="table-striped nested_table ">
+            <tbody>
                <% if participant.questions %>
                 <% participant.questions.each do |question| %>
                   <% if !question.answer %>
                     <tr>
-                      <td><%=question.title %>
+                      <td class="nested_title"><%=question.title %>
                       </td>
-                      <td><%= form_for( :answer , url: "/answers/new", :html => {:method => :get, :class => "answer_button"}) do |f| %>
+                      <td class="nested_button"><%= form_for( :answer , url: "/answers/new", :html => {:method => :get, :class => "answer_button"}) do |f| %>
                         <%= hidden_field_tag 'question', question.id %>
                         <%= f.submit "Answer", :class => "btn btn-danger"%>
                       </td>
@@ -66,6 +64,7 @@
                 <% end %>
               <% end %>
           <% end %>
+          </tbody>
           </table>
           </td>
 

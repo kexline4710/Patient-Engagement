@@ -52,3 +52,4 @@ gem 'bcrypt-ruby', '~> 3.0.0'
 # group :development do
 # 	gem 'debugger'
 # end
+ruby "1.9.3"
