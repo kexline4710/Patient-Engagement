@@ -39,16 +39,24 @@
 }
 
 .nested_table td {
-  padding: 3px;
+  padding: 10px;
+}
+
+.nested_table > tbody > tr:nth-child(odd) > td,
+.nested_table > tbody > tr:nth-child(odd) > th {
+  background-color: #E1E1E1;
 }
 
 .nested_table .nested_title {
   width: 70%;
+  text-align: left;
 }
 
 .nested_table .nested_button {
   width: 30%;
 }
+
+
 
 .well {
   border: 2px solid #D5D5D5;

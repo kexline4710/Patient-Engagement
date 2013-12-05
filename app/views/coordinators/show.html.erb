@@ -48,7 +48,8 @@
           </td>
 
           <td colspan="2"> <!-- NESTED TABLE 2 COL -->
-            <table class="nested_table">
+            <table class="table-striped nested_table ">
+            <tbody>
                <% if participant.questions %>
                 <% participant.questions.each do |question| %>
                   <% if !question.answer %>
@@ -63,6 +64,7 @@
                 <% end %>
               <% end %>
           <% end %>
+          </tbody>
           </table>
           </td>
 
