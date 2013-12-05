@@ -136,12 +136,12 @@ a.subject-links:focus {
 
 
 #footer {
-  height: 100px;
+  height: 80px;
   color: #ffffff;
   background-color: #555555;
-  border-top: 12px solid #b8b6b6;
+  border-top: 8px solid #b8b6b6;
   padding: 15px;
-  font-size:120%;
+  font-size:85%;
   text-align: center;
 }
 
