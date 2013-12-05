@@ -6,6 +6,9 @@
 #   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
 #   Mayor.create(name: 'Emanuel', city: cities.first)
 
+#!/bin/env ruby
+# encoding: utf-8
+
 p1 = Participant.create(first_name: "Katy", last_name: "Exline", email: "kathryn.exline@gmail.com", password: "password", subject_number: 40008 )
 p1.generate_password
 p1.save
@@ -113,13 +116,6 @@ Feeling.create(emotion: "sleepy")
 Feeling.create(emotion: "hungry")
 
 
-
-
-
-
-
-
-
 title1 = "My family doesn't understand what a trial is."
 
 question1 = "I am getting bombarded with questions by my family about why I am participating in this trial. They are concerned that I am spending less time with them and the compensation is not worth it."
@@ -134,7 +130,7 @@ answer2 = "There certainly is a plethora of documentation that a participant has
 
 title3 = "Insurance won't help with new glasses."
 
-queston2 = "The past couple weeks my sight has been bothering me. I don’t see is well with the glasses that I have might be time for a new pair of course insurance isn’t going to cover it right now. What are some options to help me get an updated prescription?"
+question3 = "The past couple weeks my sight has been bothering me. I don't see as well with the glasses that I have might be time for a new pair of course insurance isn't going to cover it right now. What are some options to help me get an updated prescription?"
 
 answer3 = "I'm sorry to hear your eyesight has been bothering you. I understand how difficult it can be to pay for new glasses and optometrist visits. If you need a new presrcription made I can make you an apointment through the clinic and they have discounted eyewear available. If you still find the options they provide too expensive, there are charitiable organizations in your community that can help. Let me know if you would like an appointment at the clinic or if I can provide information on organizations that provide assistance with purchasing eyewear."
 
@@ -150,6 +146,4 @@ question5 = "My daughter was asking me questions about wether she will inherit t
 
 answer5 = "The genetic factors in contracting Retinitis Pigmentosa
  are not fully known. I believe that your family will benefit by being informed and asking questions. Traits of X-linked retinitis pigmentosa are passed on by carrier mothers or affected fathers, females are rarely affected by this form of the diease. Patients with this from of retinitis pigmentosa present with symptoms of night blindness from childhood; they have progressive constriction of visual fields and loss of vision in mid-life. Consider bringing your daughter along when you visit your physician and the research facilities. She will have the opportunity to ask her own questions and become more comfortable with the process of medical treatment."
-
-"
 
