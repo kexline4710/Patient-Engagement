@@ -54,6 +54,24 @@
   margin-top: 20px;
 }
 
+.blue-background {
+  background-color: #5bc0de;
+}
+
+.pattern-background {
+  background-image:url('wallpapersmall.png');
+  background-repeat:repeat;
+}
+
+.panel-dark {
+  border-color: #e0e0e0;
+  background-color: #fffff;
+}
+.panel-dark > .panel-heading {
+  color: #ffffff;
+  background-color: #e0e0e0;
+  border-color: #e0e0e0;
+}
 .pending_notification {
   padding: 5px;
   padding-right: 20px;
@@ -64,4 +82,3 @@
 .search-form {
   margin-top: 27px;
 }
-
