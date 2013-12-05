@@ -1,17 +1,22 @@
-<div class="container">
 
+<div class="container participant_container">
+<div class="col-lg-10">
 
-<h1> Upload Subject List </h1>
+		<div class="well">
+			<fieldset>
+				<legend><h1> Upload Subject List </h1></legend>
 
-<%= form_for :participant_file, url: {action: "create"}, :html => {:multipart => true} do |f| %>
-	<%= f.hidden_field :current_user, "value" => current_user.id %>
-	<p>
-		<%= f.file_field :subject_list %>
-	</p>
-		<p><%= f.submit "Upload" %></p>
-<% end %>
-
+					<%= form_for :participant_file, url: {action: "create"}, :html => {:multipart => true, :class => "bs-example form-horizontal"} do |f| %>
+					<div class="form-group">
+						<%= f.hidden_field :current_user, "value" => current_user.id%>
+						<%= f.file_field :subject_list, :class => "control-label"  %>
+						</div>
+						<div class="form-group">
+						<%= f.submit "Upload", :class => "btn btn-success" %>
+						</div>
+					<% end %>
+			</fieldset>
+		</div>
+	</div>
 <%= link_to "Go Back", root_path %>
-
 </div>
-

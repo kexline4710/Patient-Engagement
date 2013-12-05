@@ -1,6 +1,6 @@
-<div class="container">
 
-<h1> Archive for Subject: <%=params[:subject]%> </h1>
+ <div class="container participant_container">
+ <h1> Archive for Subject: <%=params[:subject]%> </h1>
 		<% if @questions %>
 		<div class="panel panel-primary">
       <div class="panel-heading">
@@ -63,6 +63,7 @@
 	</div>
 
 	<div>
+
 	 	<button class="btn btn-primary pull-right some_top_space"><%= link_to "Go Back", root_path %></button>
 	</div>
 
