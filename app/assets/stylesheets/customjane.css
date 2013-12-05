@@ -34,6 +34,14 @@
 .nav_fix {
   margin-top: 17px;
 }
+.table .subject {
+  width: 10%;
+}
+
+.table .feeling  {
+  width: 15%;
+}
+
 .nested_table {
   width: 100%;
 }
@@ -55,8 +63,6 @@
 .nested_table .nested_button {
   width: 30%;
 }
-
-
 
 .well {
   border: 2px solid #D5D5D5;
@@ -105,6 +111,19 @@
   margin-top: 27px;
 }
 
+.subject-links {
+  margin: 5px;
+  padding: 10px 15px;
+  color: black;
+  font-size: 20px;
+}
+
+a.subject-links:hover,
+a.subject-links:focus {
+  border-radius: 4px;
+  background-color: deeppink;
+  text-decoration: none;
+}
 
 
 #footer {

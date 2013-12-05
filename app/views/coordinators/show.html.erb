@@ -35,16 +35,16 @@
       <table class="table">
         <% if @participants %>
         <tr>
-          <th>Subject</th>
+          <th class="subject">Subject</th>
           <th>Pending Questions</th>
           <th>Answer</th>
-          <th>Feeling</th>
+          <th class="feeling">Feeling</th>
         </tr>
         <tr>
           <% @participants.each do |participant| %>
 
           <td> <!-- SUBJECT # COL-->
-            <%= link_to participant.subject_number,archive_path(subject: participant.subject_number.to_s) %>
+            <%= link_to participant.subject_number,archive_path(subject: participant.subject_number.to_s), :class => "subject-links" %>
           </td>
 
           <td colspan="2"> <!-- NESTED TABLE 2 COL -->
