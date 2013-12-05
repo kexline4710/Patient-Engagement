@@ -98,7 +98,7 @@
 }(jQuery);
 
 /* ========================================================================
- * Bootstrap: button.js v3.0.2
+ * Bootstrap: button.js
  * http://getbootstrap.com/javascript/#buttons
  * ========================================================================
  * Copyright 2013 Twitter, Inc.
