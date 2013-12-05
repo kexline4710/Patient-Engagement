@@ -21,7 +21,7 @@ class AnswersController < ApplicationController
     question.update_attribute(:private, true) if params[:answer][:private] == "1"
     question.answered = true
     question.save
-    flash[:message] = ["#{question.title} answered and added to archive"]
+    flash[:message] = ["\"#{question.title}\" answered and added to archive"]
     redirect_to coordinator_path(current_user)
   end
 

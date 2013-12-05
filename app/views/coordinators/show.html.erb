@@ -52,7 +52,7 @@
             <tbody>
                <% if participant.questions %>
                 <% participant.questions.each do |question| %>
-                  <% if !question.answer %>
+                  <% unless question.answered %>
                     <tr>
                       <td class="nested_title"><%=question.title %>
                       </td>
