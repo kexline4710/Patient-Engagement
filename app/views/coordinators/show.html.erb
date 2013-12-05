@@ -35,6 +35,7 @@
       <table class="table">
         <% if @participants %>
         <tr>
+          <th>Email</th>
           <th>Subject</th>
           <th>Pending Questions</th>
           <th>Answer</th>
@@ -42,6 +43,8 @@
         </tr>
         <tr>
           <% @participants.each do |participant| %>
+
+          
 
           <td> <!-- SUBJECT # COL-->
             <%= link_to participant.subject_number,archive_path(subject: participant.subject_number.to_s) %>

@@ -59,4 +59,13 @@ class Participant < ActiveRecord::Base
   def answers_unviewed
     Answer.joins(:question).where(viewed: false).readonly(false)
   end
+
+  private
+
+  def participant_params
+    params.require(:participant).permit!
+    params.require(:participant).permit(:password)
+  end
+
+
 end
