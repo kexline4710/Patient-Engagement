@@ -13,7 +13,11 @@ class QuestionsController < ApplicationController
     end
     current_user.questions.create(question_params)
     current_user.coordinator.send_question_notification_email
-    redirect_to participant_path(current_user)
+      if request.xhr?
+        render json: {success: true}
+      else 
+       redirect_to participant_path(current_user)
+      end
   end
 
   def index
