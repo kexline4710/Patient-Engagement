@@ -8,7 +8,7 @@
 
        <%= link_to 'All Questions', questions_all_path, html = { :class => "btn btn-success btn-lg btn-block"}%>
        </div>
-       <div class="well text-center">
+       <div class="well text-center", id="pending_questions">
         <% if current_user.pending_questions > 0 %>
           <% if current_user.pending_questions == 1 %>
           <h4> You have <%= current_user.pending_questions %> pending question</h4>
