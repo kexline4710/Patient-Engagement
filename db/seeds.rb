@@ -140,9 +140,11 @@ a1.coordinator_id = c1.id
 a1.save
 p2.questions << q1
 p2.save
+q1.update_attribute(:private, false)
 q1.answer = a1
 q1.save
 q1.answered = true
+q1.save
 
 
 title2 = "Known side effects."
@@ -161,6 +163,7 @@ p3.save
 q2.answer = a2
 q2.save
 q2.answered = true
+q2.save
 
 title3 = "Insurance won't help with new glasses."
 
@@ -178,6 +181,7 @@ p4.save
 q3.answer = a3
 q3.save
 q3.answered = true
+q3.save
 
 title4 = "Having trouble with transportation."
 
@@ -195,6 +199,7 @@ p3.save
 q4.answer = a4
 q4.save
 q4.answered = true
+q4.save
 
 title5 = "Genetic links to Retinitis Pigmentosa."
 
@@ -209,10 +214,12 @@ a5 = Answer.create(content: answer5)
 a5.coordinator_id = c1.id
 a5.save
 p2.questions << q5
+q5.update_attribute(:private, false)
 p2.save
 q5.answer = a5
 q5.save
 q5.answered = true
+q5.save
 
 title6 = "They're not giving me direct answers."
 
