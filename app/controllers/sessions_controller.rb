@@ -24,6 +24,6 @@ class SessionsController < ApplicationController
 
   def destroy
     session.delete(:authenticity_token)
-    redirect_to root_path
+    redirect_to login_path
   end
 end
