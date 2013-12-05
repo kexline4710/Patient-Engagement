@@ -1,7 +1,5 @@
 Collaborators:
 Alex Froelich
-Clay Morton ~ hates git
+Clay Morton
 Kathryn Exline
 Jane Scharankov
-
-http://patientengagement.herokuapp.com/
