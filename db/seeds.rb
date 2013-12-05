@@ -9,22 +9,22 @@
 #!/bin/env ruby
 # encoding: utf-8
 
-p1 = Participant.create(first_name: "Katy", last_name: "Exline", email: "kathryn.exline@gmail.com", password: "password", subject_number: 40008 )
+p1 = Participant.create(first_name: "Katy", last_name: "Exline", email: "kathryn.exline@gmail.com", password: "password", subject_number: 40011 )
 p1.generate_password
 p1.save
-p2 = Participant.create(first_name: "Jane", last_name: "Smith", email: "j@dbc.com", password: "password", subject_number: 40009 )
+p2 = Participant.create(first_name: "Jane", last_name: "Smith", email: "j@dbc.com", password: "password", subject_number: 40008 )
 # p2.generate_password
 # p2.save
-p3 = Participant.create(first_name: "Alex", last_name: "Brett", email: "c@dbc.com", password: "password", subject_number: 40010 )
+p3 = Participant.create(first_name: "Alex", last_name: "Brett", email: "c@dbc.com", password: "password", subject_number: 40012 )
 # p3.generate_password
 # p3.save
-p4 = Participant.create(first_name: "John", last_name: "Franks", email: "a@dbc.com", password: "password", subject_number: 40011 )
+p4 = Participant.create(first_name: "John", last_name: "Franks", email: "a@dbc.com", password: "password", subject_number: 40013 )
 # p4.generate_password
 # p4.save
-p5 = Participant.create(first_name: "Judy", last_name: "Smith", email: "b@dbc.com", password: "password", subject_number: 40012 )
+p5 = Participant.create(first_name: "Judy", last_name: "Smith", email: "b@dbc.com", password: "password", subject_number: 40010 )
 # p5.generate_password
 # p5.save
-p6 = Participant.create(first_name: "Francis", last_name: "Astonia", email: "d@dbc.com", password: "password", subject_number: 40013 )
+p6 = Participant.create(first_name: "Francis", last_name: "Astonia", email: "d@dbc.com", password: "password", subject_number: 40009 )
 # p6.generate_password
 # p6.save
 p7 = Participant.create(first_name: "Maria", last_name: "Peters", email: "e@dbc.com", password: "password", subject_number: 40014 )
@@ -228,7 +228,7 @@ title7 = "Pending surgery"
 
 question7 = "My doctor has suggested I have surgery on my cataracts. Will this cause me to have to leave the trial? If I have to leave control group can I continue taking the Valproic Acid? What about consoltation with my physician about other treatment options?"
 
-q7 = Question.create(title: title7, content: question6)
+q7 = Question.create(title: title7, content: question7)
 
 p3.questions << q7
 p3.save
@@ -238,16 +238,16 @@ title8 = "Feeling alone"
 
 question8 = "I haven't written for a while I've been busy. My eyesight is getting a lot worse it's hard to get around it would be so easy to isolate, but I force myself to get outside. I'm scared of getting lost or not seeing obstacles when I go out alone. What do other patients do when they are at the final stage of being sightful?"
 
-q8 = Question.create(title: title8, content: question6)
+q8 = Question.create(title: title8, content: question8)
 
-p2.questions << q6
+p2.questions << q8
 p2.save
 
 title9 = "Annoyed with loved ones."
 
 question9 = "Do you ever get annoyed at your loved ones for trying to help and they over help! It's annoying-we will let you know if we need help thank you. I'm still capable of so much and learning how to do new things without good vision every day."
 
-q9 = Question.create(title: title9, content: question6)
+q9 = Question.create(title: title9, content: question9)
 
 p4.questions << q9
 p4.save
@@ -256,11 +256,30 @@ title10 = "Financial troubles!"
 
 question10 = "Last December I maxed out my credit cards and my wife has been supporting me ever since. Lately she has to take an extra job and we are both really stressed. I will have to look for work soon. My old boss has generously offered to give me some work on the phone banks, but the hours will conflict with appointments at the research clinic. I am facing a situation where I will have to drop out of the trial unless I can get more compensation. Is there a process of financial aid I can apply for?"
 
-q10 = Question.create(title: title10, content: question6)
-
+q10 = Question.create(title: title10, content: question10)
 
 p5.questions << q10
 p5.save
+
+title11 = "Medical Jargon"
+
+question11 = "What does this mean? Defects in the peripherin protein can result in autosomal dominant retinitis pigmentosa. I get so many mailers with medical terminology should I ignore them or try to do researc."
+
+q11 = Question.create(title: title11, content: question11)
+
+p5.questions << q11
+p5.save
+
+title12 = "Internet research OK?"
+
+question12 = "Can I do research on the internet to figure out why I am getting ulcers. Is wikipedia bad, but established medical sites good. What links do you recommend?"
+
+q12 = Question.create(title: title12, content: question12)
+
+p5.questions << q12
+p5.save
+
+
 
 
 
