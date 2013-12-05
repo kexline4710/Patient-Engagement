@@ -140,4 +140,9 @@ a.subject-links:focus {
   color: #ffffff;
   background-color: #555555;
   border-top: 12px solid #b8b6b6;
+  padding: 15px;
+  font-size:120%;
+  text-align: center;
 }
+
+
