@@ -115,6 +115,18 @@ Feeling.create(emotion: "depressed")
 Feeling.create(emotion: "sleepy")
 Feeling.create(emotion: "hungry")
 
+sub = 40009
+5.times do |t|
+  participant = Participant.find_by_subject_number(sub + t)
+
+  participant.feeling = Feeling.find(rand(6) + 1)
+  20.times do
+    participant.feelings << Feeling.find(rand(6) + 1)
+    date = Date.today - rand(1000)
+    participant.feelings.last.update_attribute(:created_at, date )
+  end
+end
+
 
 title1 = "My family doesn't understand what a trial is."
 
@@ -130,6 +142,7 @@ p2.questions << q1
 p2.save
 q1.answer = a1
 q1.save
+q1.answered = true
 
 
 title2 = "Known side effects."
@@ -147,6 +160,7 @@ p3.questions << q2
 p3.save
 q2.answer = a2
 q2.save
+q2.answered = true
 
 title3 = "Insurance won't help with new glasses."
 
@@ -163,6 +177,7 @@ p4.questions << q3
 p4.save
 q3.answer = a3
 q3.save
+q3.answered = true
 
 title4 = "Having trouble with transportation."
 
@@ -179,6 +194,7 @@ p3.questions << q4
 p3.save
 q4.answer = a4
 q4.save
+q4.answered = true
 
 title5 = "Genetic links to Retinitis Pigmentosa."
 
@@ -196,6 +212,7 @@ p2.questions << q5
 p2.save
 q5.answer = a5
 q5.save
+q5.answered = true
 
 title6 = "They're not giving me direct answers."
 
