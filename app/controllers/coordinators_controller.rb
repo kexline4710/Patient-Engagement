@@ -26,4 +26,11 @@ class CoordinatorsController < ApplicationController
       redirect_to coordinator_path(current_user.authenticity_token)
     end
   end
+
+  private
+
+  def coordinator_params
+    params.require(:coordinator).permit!
+  end
+  
 end

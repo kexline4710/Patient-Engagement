@@ -8,6 +8,13 @@ class AnswersController < ApplicationController
   end
 
   def create
+    if params[:answer][:content].empty?
+      @question = Question.find(params[:question_id])
+      @participant = Participant.find(@question.participant_id)
+      flash[:message] = ["You didn't provide an answer!"]
+      redirect_to new_answer_path(:question => params[:question_id])
+      return
+    end
     content = params[:answer][:content]
     question = Question.find(params[:question_id].to_i)
     answer = Answer.create(content: content, question_id: question.id, coordinator_id: current_user.id)
@@ -24,4 +31,11 @@ class AnswersController < ApplicationController
       answer.update_attribute(:viewed, true)
     end
   end
+
+  private
+
+  def coordinator_params
+    params.require(:answer).permit!
+  end
+
 end
