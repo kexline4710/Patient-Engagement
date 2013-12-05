@@ -18,7 +18,7 @@ describe "the participant dashboard" do
         fill_in "Password", with: participant.password
         click_button "Login"
       end
-      it { should have_content("Pending Questions") }
+      it { should have_content("pending") }
     end
   end
 end
