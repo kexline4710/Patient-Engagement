@@ -13,16 +13,9 @@
           <% if current_user.answers_unviewed[0] %>
             <tr>
               <td>
-                <%= link_to 'You have answered questions!', participant_answers_path(current_user.authenticity_token), html = { :class => "btn btn-default btn-lg btn-block", id: "answered_unviewed"}%>
+                <%= link_to 'You have answered questions!', participant_answers_path(current_user.authenticity_token), html = { :class => "btn btn-default btn-lg btn-block answered_unviewed"}%>
                 <div id="slide_info"></div>
               </td>
-            </tr>
-          <% end %>
-          <% if current_user.pending_questions > 0 %>
-            <tr>
-              <td>
-                Pending Questions
-                <%= current_user.pending_questions %>
             </tr>
           <% end %>
         </table>

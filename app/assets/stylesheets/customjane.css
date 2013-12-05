@@ -40,7 +40,14 @@
 
 .nested_table td {
   padding: 3px;
+}
 
+.well {
+  border: 2px solid #D5D5D5;
+}
+
+.participant_table {
+  margin-top: 150px;
 }
 
 .some_top_space {
@@ -64,4 +71,14 @@
   color: #ffffff;
   background-color: #e0e0e0;
   border-color: #e0e0e0;
+}
+.pending_notification {
+  padding: 5px;
+  padding-right: 20px;
+  margin-top: 25px;
+  text-align: center;
+}
+
+.search-form {
+  margin-top: 27px;
 }
