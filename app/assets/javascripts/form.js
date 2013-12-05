@@ -21,7 +21,8 @@ $(document).ready(function(){
 			var data = $(this).serialize();
 			$('#gif_in_form').show();
 			$.post(url, data, function(){ 
-				$("#question_form").dialog("close");
+				$('#gif_in_form').hide();
+				$("#question_form").dialog("destroy");
 			$("#pending_questions").animate({backgroundColor:'#b2d271'},3000, function(){
 					$(this).animate({backgroundColor: original},3000);
 					});
