@@ -10,7 +10,9 @@
       <h1>Welcome</h1>
       <div id>
           <% if current_user.answers_unviewed[0] %>
+
                 <%= link_to 'You have answered questions!', participant_answers_path(current_user.authenticity_token), html = { :class => "btn btn-primary btn-lg answered_unviewed"}%>
+
                 <div id="slide_info"></div>
           <% end %>
       </div>
