@@ -88,3 +88,12 @@
 .search-form {
   margin-top: 27px;
 }
+
+
+
+#footer {
+  height: 100px;
+  color: #ffffff;
+  background-color: #555555;
+  border-top: 12px solid #b8b6b6;
+}
