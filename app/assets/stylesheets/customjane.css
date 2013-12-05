@@ -147,6 +147,25 @@ a.subject-links:focus {
 
 #gif_in_form {
 
+
 display: none;
 
 }
+
+.subject {
+  margin-top: 15px;
+}
+
+.title {
+  margin-top: 15px;
+}
+
+.question-content {
+  margin-top: 15px;
+}
+
+.qa-spacing {
+  margin-top: 15px;
+}
+
+
