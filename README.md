@@ -1,5 +1,5 @@
 #SubjectOne
-============
+----------------
 
 Collaborators:
 - Alex Froelich
