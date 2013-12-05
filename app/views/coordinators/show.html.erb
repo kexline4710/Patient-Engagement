@@ -37,13 +37,13 @@
         <tr>
           <th class="subject">Subject</th>
           <th>Pending Questions</th>
-          <th>Answer</th>
+          <th class="answer">Answer</th>
           <th class="feeling">Feeling</th>
         </tr>
         <tr>
           <% @participants.each do |participant| %>
 
-          <td> <!-- SUBJECT # COL-->
+          <td class="subject"> <!-- SUBJECT # COL-->
             <%= link_to participant.subject_number,archive_path(subject: participant.subject_number.to_s), :class => "subject-links" %>
           </td>
 

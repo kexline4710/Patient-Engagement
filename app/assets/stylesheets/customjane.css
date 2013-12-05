@@ -34,8 +34,10 @@
 .nav_fix {
   margin-top: 17px;
 }
+
 .table .subject {
   width: 10%;
+  padding: 20px;
 }
 
 .table .feeling  {
@@ -89,6 +91,7 @@
   border-color: #e0e0e0;
   background-color: #fffff;
 }
+
 .panel-dark > .panel-heading {
   color: #ffffff;
   background-color: #e0e0e0;
@@ -114,14 +117,20 @@
 .subject-links {
   margin: 5px;
   padding: 10px 15px;
-  color: black;
+  /*color: #a6ce46;*/
+  color: #4a640a;
+  /*border: 2px solid #b0d35a;*/
+  border: 2px solid #4a640a;
+  border-radius: 4px;
   font-size: 20px;
 }
 
 a.subject-links:hover,
 a.subject-links:focus {
   border-radius: 4px;
-  background-color: deeppink;
+  border: 2px solid #b0d35a;
+  background-color: #b0d35a;
+  color: #ffffff;
   text-decoration: none;
 }
 
