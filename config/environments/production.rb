@@ -70,7 +70,7 @@ PatientEngagement::Application.configure do
   config.action_mailer.smtp_settings = {
   address:              'smtp.gmail.com',
   port:                 587,
-  domain:               'http://patientengagement.herokuapp.com/',
+  domain:               'http://subjectone.herokuapp.com/',
   user_name:            'Winston.Thorman@gmail.com',
   password:             'MvcLover',
   authentication:       'plain',
