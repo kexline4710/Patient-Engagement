@@ -1,10 +1,14 @@
-<div class="deco-bar">
-</div>
+<div class="container">
+
 <h1> Archive for Subject: <%=params[:subject]%> </h1>
 		<% if @questions %>
-			<h5><%= pluralize(@questions.length, "question") %> archived</h5>
+		<div class="panel panel-primary">
+      <div class="panel-heading">
+				<h3 class="panel-title"><%= pluralize(@questions.length, "question") %> archived</h3>
+			</div>
+			<div class="panel-body">
 			<% @questions.each do |question| %>
-			  <div class="panel panel-warning">
+			  <div class="panel panel-default">
           <div class="panel-heading">
 						<h3 class="panel-title"><%=question.title%></h3>
 					</div>
@@ -16,33 +20,51 @@
 							<% else %>
 					<div class="panel-body"> Your response: <%= question.answer.content %></div>
 							<% end %>
+								</div>
 			<% end %>
-		</div>
+
 		<% else %>
 			<%= "No questions available" %>
 			<%= link_to "Go Back", root_path %>
 		<% end %>
 	</div>
+</div>
 
-	<div>
 		<% if @feelings %>
-			<table border="1">
-				<tr>
-					<% @feelings.each do |feeling| %>
-					<td>
-						<%= feeling.emotion %>
-					</td>
+		<div>
+			<div class="panel panel-primary">
+      	<div class="panel-heading">
+      		<h3 class="panel-title">Participant generated data on sentiments check box </h3>
+      	</div>
+      		 <div class="panel-body">
+						<table>
+							<tr>
+								<% @feelings.each do |feeling| %>
+								<td>
+									<%= feeling.created_at.strftime("%D")%>
+								</td>
+								<td>&nbsp
+								</td>
+
+								<% @feelings.each do |feeling| %>
+								<td>
+									<%= feeling.emotion %>
+								</td>
+								<% end %>
+							</div>
+
+							</tr>
+								<% end %>
+						</table>
 					<% end %>
-				</tr>
-					<% @feelings.each do |feeling| %>
-					<td>
-						<%= feeling.created_at.strftime("%D")%>
-					</td>
-					<% end %>
-			</table>
-		<% end %>
+	<!-- 			</div>
+				</div> -->
+			</div>
 	</div>
 
 	<div>
-	 	<button><%= link_to "Go Back", root_path %></button>
+	 	<button class="btn btn-primary pull-right some_top_space"><%= link_to "Go Back", root_path %></button>
 	</div>
+
+</div><!-- end of outer panel container -->
+</div>
