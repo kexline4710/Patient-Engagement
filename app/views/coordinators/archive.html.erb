@@ -1,6 +1,5 @@
-<div class="deco-bar">
-</div>
-<h1> Archive for Subject: <%=params[:subject]%> </h1>
+ <div class="container participant_container">
+ <h1> Archive for Subject: <%=params[:subject]%> </h1>
 		<% if @questions %>
 			<h5><%= pluralize(@questions.length, "question") %> archived</h5>
 			<% @questions.each do |question| %>
@@ -46,3 +45,4 @@
 	<div>
 	 	<button><%= link_to "Go Back", root_path %></button>
 	</div>
+</div>

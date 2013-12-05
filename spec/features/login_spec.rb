@@ -32,6 +32,6 @@ describe "Authentication" do
       fill_in "Password", with: coordinator.password
       click_button "Login"
     end
-    it { should have_content('Welcome') }
+    it { should have_content('Participants') }
   end
 end
