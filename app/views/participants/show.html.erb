@@ -9,16 +9,10 @@
     <div class="col-md-8">
       <h1>Welcome</h1>
       <div id>
-        <table>
           <% if current_user.answers_unviewed[0] %>
-            <tr>
-              <td>
                 <%= link_to 'You have answered questions!', participant_answers_path(current_user.authenticity_token), html = { :class => "btn btn-primary btn-lg answered_unviewed"}%>
                 <div id="slide_info"></div>
-              </td>
-            </tr>
           <% end %>
-        </table>
       </div>
 
       <h2>Recently Asked Questions</h2>
