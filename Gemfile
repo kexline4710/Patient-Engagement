@@ -8,6 +8,7 @@ gem 'strong_parameters'
 gem 'pg'
 gem "paperclip", "~> 3.0"
 gem "json", "~> 1.8.1"
+gem 'faker'
 # Gems used only for assets and not required
 # in production environments by default.
 group :assets do
