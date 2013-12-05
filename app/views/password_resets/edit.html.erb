@@ -11,7 +11,7 @@
         <fieldset>
           <legend>Login</legend>
 
-<%= form_for @participant, :url => password_reset_path(current_user.authenticity_token), html: { class: "bs-example form-horizontal" } do |f| %>
+<%= form_for @participant, url: {action: 'update'}, html: { class: "bs-example form-horizontal" } do |f| %>
 		<% if @participant.errors.any? %>
 			<div class="error_messages">
 					<h2> Form is Invalid </h2>
@@ -44,7 +44,7 @@
 
     <div class="form-group">
       <div class="col-md-10 col-md-offset-5">
-			 <div> <%=f.submit "Update Password", :id => "update-password", :class => "btn btn-info"  %></div>
+			 <div> <%=f.submit "Update Password",:id => "update-password", :class => "btn btn-info"%></div>
       </div>
     </div>
   </div> <!-- end of inner row -->
