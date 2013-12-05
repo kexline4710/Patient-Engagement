@@ -145,4 +145,8 @@ a.subject-links:focus {
   text-align: center;
 }
 
+#gif_in_form {
 
+display: none;
+
+}

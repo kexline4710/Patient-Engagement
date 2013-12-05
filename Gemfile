@@ -1,5 +1,7 @@
 source 'https://rubygems.org'
 
+ruby "1.9.3"
+
 gem 'rails', '3.2.15'
 gem 'strong_parameters'
 # Bundle edge Rails instead:
@@ -52,4 +54,3 @@ gem 'bcrypt-ruby', '~> 3.0.0'
 # group :development do
 # 	gem 'debugger'
 # end
-ruby "1.9.3"
