@@ -1,5 +1,6 @@
 <div class="col-md-4">
       <!-- right hand sidebar butttons-->
+
       <div class="well">
       <%= link_to 'Ask a Question', new_participant_question_path(current_user.authenticity_token), html = { :class => "btn btn-primary btn-lg btn-block", :id => "ask_question"}%>
 
@@ -7,6 +8,15 @@
 
        <%= link_to 'All Questions', questions_all_path, html = { :class => "btn btn-success btn-lg btn-block"}%>
        </div>
+       <div class="well text-center">
+        <% if current_user.pending_questions > 0 %>
+          <% if current_user.pending_questions == 1 %>
+          <h4> You have <%= current_user.pending_questions %> pending question</h4>
+          <% else %>
+          <h4> You have <%= current_user.pending_questions %> pending questions</h4>
+          <% end %>
+        <% end %>
+          </div>
        <div class="well">
         <fieldset>
           <legend>How are you feeling?</legend>
