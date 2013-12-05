@@ -15,25 +15,3 @@
  *= require jquery-ui-1.9.2.custom
  */
 
-
-
-.flash_messages{
-	text-align: center;
-	background-color: deeppink;
-	margin: auto;
-
-}
-
-th{
-	text-align: center;
-}
-
-td{
-	text-align: center;
-}
-
-.ui-front {
-	z-index: 2000;
-}
-
-

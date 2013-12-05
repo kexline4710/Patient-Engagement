@@ -42,6 +42,14 @@
   padding: 3px;
 }
 
+.nested_table .nested_title {
+  width: 70%;
+}
+
+.nested_table .nested_button {
+  width: 30%;
+}
+
 .well {
   border: 2px solid #D5D5D5;
 }
