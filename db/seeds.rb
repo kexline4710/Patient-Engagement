@@ -120,53 +120,6 @@ Feeling.create(emotion: "hungry")
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 title1 = "My family doesn't understand what a trial is."
 
 question1 = "I am getting bombarded with questions by my family about why I am participating in this trial. They are concerned that I am spending less time with them and the compensation is not worth it."
