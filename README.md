@@ -1,7 +1,7 @@
 #SubjectOne
 ----------------
 
-Collaborators:
+##Collaborators:
 - Alex Froelich
 - Clay Morton
 - Kathryn Exline
