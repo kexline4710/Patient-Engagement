@@ -8,14 +8,15 @@
   <!-- main body 2 columns-->
     <div class="col-md-8">
       <h1>Welcome</h1>
-      <div id>
+      <div class= "answered_unviewed">
           <% if current_user.answers_unviewed[0] %>
 
                 <%= link_to 'You have answered questions!', participant_answers_path(current_user.authenticity_token), html = { :class => "btn btn-primary btn-lg answered_unviewed"}%>
 
-                <div id="slide_info"></div>
+
           <% end %>
       </div>
+          <div id="slide_info"></div>
 
       <h2>Recently Asked Questions</h2>
       <% if @questions.length == 0 %>
