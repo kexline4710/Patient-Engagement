@@ -3,14 +3,12 @@ $(document).ready(function(){
 		event.preventDefault();
 		var num = $(event.target.outerHTML).find('input[name=question]').val();
 		$.get("/answers/new?utf=✓&question=" + num + "&commit=Answer.html", function(data){
-			console.log("why are we here?")
 			$(data).find("form").dialog({title: "Answer Question", modal: true, height: "auto", width: "auto"});
 		});
 	});
 
 
 	$("#ask_question").on( 'click', function(event){
-		console.log("ask question...")
 		event.preventDefault();
 		var link = $(this).attr("href");
 		var original = $("#pending_questions").css('background');
@@ -22,12 +20,8 @@ $(document).ready(function(){
 			questionForm.submit(function(e){
 				e.preventDefault();
 				var url = $(this).attr("action")
-				console.log(url)
-				console.log("here")
 				var data = $(this).serialize();
 				$('#gif_in_form').show();
-				console.log(data)
-				console.log("there")
 				$.post(url, data, function(){
 					$('#gif_in_form').hide();
 					dialog.dialog("destroy");
