@@ -8,7 +8,7 @@ The app was inspired by this ChallengePost challenge: http://patientengagement.c
 http://subjectone.herokuapp.com
 
 ##Collaborators:
-- Alex Froelich
+- Alex Froelich (froeal01@gmail.com)
 - Clay Morton
 - Kathryn Exline (kathryn.exline@gmail.com)
 - Jane Scharankov
