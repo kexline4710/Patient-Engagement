@@ -41,6 +41,9 @@ ActiveRecord::Schema.define(:version => 20131203234726) do
 
   create_table "participant_files", :force => true do |t|
     t.integer  "coordinator_id"
+
+## Where do these column names come from? There is no corresponding migration,
+## nor are they used.  -clm
     t.string   "subject_list_file_name"
     t.string   "subject_list_content_type"
     t.integer  "subject_list_file_size"

@@ -3,11 +3,14 @@ class UserMailer < ActionMailer::Base
 
   def welcome_email(participant, password)
   	 @participant = participant
+
+## Should the url be changed to ~/subjectone...?  -clm
   	 @url = "http://patientengagement.herokuapp.com/"
   	 @password = password
   	 mail(to: @participant.email, subject: 'Welcome to SUBJECT1! Important password information in this email')
 	end
 
+## Change to daily email notify_coordinator_new_questions. -clm
 	def notify_coordinator_new_question(coordinator)
 		@coordinator = coordinator
 		@url = "http://patientengagement.herokuapp.com/"

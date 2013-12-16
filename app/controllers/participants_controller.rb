@@ -15,8 +15,8 @@ class ParticipantsController < ApplicationController
 
   def update
   	current_user.update_attribute(:feeling_id, params[:feeling_id])
-    current_user.feelings << Feeling.find(params[:feeling_id])
-    redirect_to participant_path(current_user)
+
+      redirect_to participant_path(current_user)
   end
 
   private

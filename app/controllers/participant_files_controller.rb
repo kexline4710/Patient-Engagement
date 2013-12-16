@@ -7,8 +7,10 @@ class ParticipantFilesController < ApplicationController
 	end
 
 	def create
+## This could be passed like parse_subject_list(params[:participant_file]) and retrieved like
+## def parse_subject_list(participant_file) ; participant_file[:subject_list], etc.. -clm
 	 parse_subject_list(params[:participant_file][:subject_list],params[:participant_file][:current_user])
-			
+
 		if true
 		 flash[:message] = ["Participants Uploaded Successfully"]
 		 redirect_to coordinator_path(current_user)

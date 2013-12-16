@@ -5,6 +5,8 @@ class SessionsController < ApplicationController
 	def new
 	end
 
+## Checkout Hartl tutorial for expanded security with a token;
+##  http://ruby.railstutorial.org/chapters/supplement?version=3.2#sec-encrypted_remember_tokens  -clm
   def create
       user = Coordinator.find_by_email(params[:session][:email])
     if user && user.authenticate(params[:session][:password])
@@ -23,6 +25,7 @@ class SessionsController < ApplicationController
   end
 
   def destroy
+## session.reset!
     session.delete(:authenticity_token)
     redirect_to login_path
   end

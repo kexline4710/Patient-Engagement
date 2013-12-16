@@ -17,8 +17,12 @@ class AnswersController < ApplicationController
     end
     content = params[:answer][:content]
     question = Question.find(params[:question_id].to_i)
+
+## Can this be configured to; answer = Answer.create(params[:answer])? -clm
     answer = Answer.create(content: content, question_id: question.id, coordinator_id: current_user.id)
     question.update_attribute(:private, true) if params[:answer][:private] == "1"
+
+## question.update_attribute(:answered, true) -clm
     question.answered = true
     question.save
     flash[:message] = ["\"#{question.title}\" answered and added to archive"]
@@ -34,6 +38,7 @@ class AnswersController < ApplicationController
 
   private
 
+## Should this be answer_params? -clm
   def coordinator_params
     params.require(:answer).permit!
   end

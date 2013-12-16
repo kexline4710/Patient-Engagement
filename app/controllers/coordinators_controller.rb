@@ -7,6 +7,8 @@ class CoordinatorsController < ApplicationController
 
   def show
     @questions = []
+
+## @participants = Participant.where(coordinator_id: current_user.id).order(:subject_number) -clm
     @participants =Participant.where("coordinator_id = ?", current_user.id).order("subject_number ASC")
     @participants.each do |participant|
      participant.questions.each do |question|
@@ -16,6 +18,7 @@ class CoordinatorsController < ApplicationController
   end
 
   def archive
+## participant = Participant.find_by_subject_number(params[:subject_number]) -clm
     participant = Participant.search(params[:subject].to_i)[0]
     if participant
       @questions = participant.questions
