@@ -13,6 +13,8 @@ class PasswordResetsController < ApplicationController
 
   def update
    	participant = current_user
+
+## This line can be skipped because there is a validation in model.  -clm
     if params[:participant][:password_digest].length >= 6
       if params[:participant][:password_digest] == params[:participant][:password_confirmation]
        	if participant.update_attributes(:password => params[:participant][:password_digest])
@@ -21,6 +23,8 @@ class PasswordResetsController < ApplicationController
        	redirect_to login_path
         end
    	  else
+
+## Showing full_errors would reveal this.  -clm
         flash[:message] = ["Password and password confirmation must match!"]
         redirect_to edit_password_reset_path(participant.authenticity_token)
       end

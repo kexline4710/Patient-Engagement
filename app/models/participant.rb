@@ -2,7 +2,7 @@ class Participant < ActiveRecord::Base
    include ActiveModel::ForbiddenAttributesProtection
 
 
-  
+
 
   before_create { generate_token(:authenticity_token) }
 
@@ -12,6 +12,8 @@ class Participant < ActiveRecord::Base
   has_secure_password
 
   belongs_to :coordinator
+
+## This can be replaced with a participants_feeling most_recent method.  -clm
   belongs_to :feeling
   has_one :trial, through: :coordinator
   has_many :questions
@@ -33,12 +35,18 @@ class Participant < ActiveRecord::Base
     UserMailer.notify_participant_question_answered(self).deliver
   end
 
+## Is the (column) parameter necessary? Checkout the Hartl tutorial;
+## http://ruby.railstutorial.org/chapters/sign-in-sign-out?version=3.2#sec-remember_me  -clm
   def generate_token(column)
     begin
       self[column] = SecureRandom.urlsafe_base64
     end while Participant.exists?(column => self[column])
   end
 
+## This method can be replaced with one liner;
+## Participant.find_by_subject_number(subject_number)
+## +Else+ block is never triggered. The actual validation logic
+## lives in the Coordinator Controller. -clm
   def self.search(search)
     if search
       find(:all, :conditions => ['subject_number = ?', search])
@@ -49,6 +57,9 @@ class Participant < ActiveRecord::Base
   end
 
   def pending_questions
+
+## Question.joins(:answer).where(participant_id: self.id).count  or this
+## self.questions.where(answered: false).count -clm
     n = 0
     self.questions.each do |question|
       n +=1 if question.answer.nil?
@@ -64,6 +75,8 @@ class Participant < ActiveRecord::Base
 
   def participant_params
     params.require(:participant).permit!
+
+## Is this redundant?
     params.require(:participant).permit(:password)
   end
 
