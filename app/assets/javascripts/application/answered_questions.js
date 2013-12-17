@@ -24,3 +24,5 @@ $(document).ready(function(){
 
 	});
 });
+
+// need to get this working and create functions instead of one giant method//
