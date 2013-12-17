@@ -23,6 +23,7 @@ class AnswersController < ApplicationController
     question.save
     flash[:message] = ["\"#{question.title}\" answered and added to archive"]
     redirect_to coordinator_path(current_user)
+    # break this into a helper method and smaller methods.
   end
 
   def index

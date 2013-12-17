@@ -9,7 +9,7 @@ module JsonHelper
 		 end
 	end
 
-	def new_participant(subject,coordinator)
+	def new_participant(subject,coordinator) # this can be cleaned up....
 		p=Participant.new
 		p.first_name     = subject[0]
 		p.last_name	     = subject[1]

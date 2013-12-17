@@ -19,7 +19,8 @@ class QuestionsController < ApplicationController
        redirect_to participant_path(current_user)
       end
   end
-
+# need to be able to update the counter with the ajax request. If the user does not submit the correct content
+# need the message to pop up on the form
   def index
     @questions = current_user.questions.order("updated_at DESC")
   end

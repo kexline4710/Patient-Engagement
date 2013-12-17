@@ -19,6 +19,7 @@ class PasswordResetsController < ApplicationController
        		flash[:message] = ["Password Updated!"]
           session.clear
        	redirect_to login_path
+        # this should be able to be cleaned up with an && statement
         end
    	  else
         flash[:message] = ["Password and password confirmation must match!"]

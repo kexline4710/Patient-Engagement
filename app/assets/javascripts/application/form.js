@@ -36,4 +36,4 @@ $(document).ready(function(){
 	});
 });
 
-//
+// break this into various functions instead of one //
