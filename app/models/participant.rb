@@ -67,6 +67,9 @@ class Participant < ActiveRecord::Base
     n
   end
 
+## This method produces all unviewed answers regardless of whether they are a
+## particular participants.
+## Answer.joins(:question).where("answers.viewed = false AND questions.participant_id = ?", current_user.id)  -clm
   def answers_unviewed
     Answer.joins(:question).where(viewed: false).readonly(false)
   end

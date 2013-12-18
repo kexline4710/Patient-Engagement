@@ -9,6 +9,8 @@ class AnswersController < ApplicationController
 
   def create
     if params[:answer][:content].empty?
+
+## @question && @participant don't need to be defined here.  -clm
       @question = Question.find(params[:question_id])
       @participant = Participant.find(@question.participant_id)
       flash[:message] = ["You didn't provide an answer!"]
